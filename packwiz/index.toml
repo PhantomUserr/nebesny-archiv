@@ -309,10 +309,6 @@ file = "kubejs/assets/nebesnyarchiv/tips/start_quests.json"
 hash = "bc851b912fd32a26bd6eea8f04b6f9aa165cf674135f0e56f66d19572a010e1e"
 
 [[files]]
-file = "kubejs/assets/nebesnyarchiv/tips/story.json"
-hash = "470b494fd254a7d3b9c5cfe1b896fb09fdd07a611006a8837d6710d9457a1ef8"
-
-[[files]]
 file = "kubejs/assets/nebesnyarchiv/tips/theurgy.json"
 hash = "2db0e287f6a14abcfd3b70f6bc2ff1d55e71db157aef51d7c9f0b1be0d967849"
 
@@ -327,6 +323,10 @@ hash = "b95f7aab05a12188d2254b39226b862cc8fc4a3ddfae7b1dc1be39686c579c38"
 [[files]]
 file = "kubejs/assets/nebesnyarchiv/tips/waystones.json"
 hash = "cb3a0a083e765ca81141d0d2fd26252245b1679ddbdae35bcc6e12e4f8011704"
+
+[[files]]
+file = "kubejs/assets/nebesnyarchiv/tips/world.json"
+hash = "4699bd34988f4053434a559bf8b601be7becb64e2d2f883c948b966cbfb2f6a9"
 
 [[files]]
 file = "kubejs/assets/nebesnyarchiv/tips/xaero_maps.json"
