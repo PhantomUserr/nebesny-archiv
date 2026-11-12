@@ -17,16 +17,21 @@
 | Исследование | Alex's Caves, Alex's Mobs, Aether, Deep Aether, Deeper and Darker, Cataclysm, Mowzie's Mobs, Dungeons Arise |
 | Боссы | Cataclysm, Mowzie's Mobs, Bosses of Mass Destruction, Born in Chaos, Goety |
 | Удобство | JEI, Jade, FTB Quests, FTB Teams, Sophisticated Storage/Backpacks, Waystones, Lootr, Bountiful |
-| Сюжет | Easy NPC 7.18.0 (+ Config UI), EasyNPC x FTB Quests Compat 1.0.2 |
+| QoL | Mouse Tweaks, AppleSkin, Mod Menu, BetterF3, Controlling, Chat Heads, Reese's Sodium Options, ShulkerBoxTooltip, Inventory Profiles Next, No Chat Reports |
 | Графика | Sodium, Iris, Distant Horizons, EMF/ETF, Particle Rain, Sound Physics — **шейдеры выключены по умолчанию** |
 
-Полный список — в `packwiz/mods/` (213 Modrinth-модов + 3 FTB-мода локально).
+Полный список — в `packwiz/mods/` (223 Modrinth-модов + 3 FTB-мода локально).
 
 ### Квесты
 
-18 глав, 333 квеста, 599 задач. Текст полностью на русском, рассчитан на новичка:
+18 глав, 329 квестов, 595 задач. Текст полностью на русском, рассчитан на новичка:
 что крафтить, где искать, какие клавиши нажимать. Ветки техники и магии независимы —
 можно пройти одну, а вторую изучать потом.
+
+Каждый квест — это инструкция: что это за предмет, как его получить (пошагово) и
+практический совет, чтобы не тратить время впустую. Тексты собираются из
+`tools/quest-lore.mjs`, русские названия предметов берутся из языковых файлов модов
+(`research/registry-items-ru.txt`).
 
 | Группа | Главы |
 |---|---|
@@ -36,26 +41,15 @@
 | Магия | `magic`, `occult`, `arsaddons` |
 | Мир | `exploration`, `goetycat`, `finale` |
 
-Farmer's Delight встроен в сюжет: ветка `farm` → `kitchen` заканчивается пиром флота,
+Farmer's Delight обязателен: ветка `farm` → `kitchen` заканчивается пиром флота,
 а финальный квест `finale:fleet` требует праздничный стол. Без еды корабли не взлетают.
 
 ### Сюжет
 
-Живые NPC с ветвящимся диалогом, который меняется по ходу выполнения квестов.
-
-| NPC | Кто такая | Что говорит |
-|---|---|---|
-| **Веста Урбан** | старший смотритель Каталога | объясняет, что произошло, и даёт первые задания |
-| **Мия Тинь** | инвентаризатор, дочь Ирмы | рассказывает, где что лежит, и ищет мать |
-
-- NPC ставятся сами: скрипт `kubejs/server_scripts/story.js` после старта сервера
-  импортирует их рядом с точкой появления.
-- У каждого NPC несколько диалогов с кнопками-ветками.
-- Пока квест не выполнен, NPC говорит одно; после выполнения — другое
-  (правило хранится в EasyNPC x FTB Quests Compat и привязано к ID квеста).
-- Квесты «Веста Урбан» и «Мия Тинь» закрываются тем, что игрок прочитал диалог.
-- Реплики и правила лежат в `tools/story-data.mjs`, генерируются скриптом
-  `tools/generate-story.mjs`.
+Слой диалогов **временно отключён**: Easy NPC, EasyNPC x FTB Quests Compat и
+скрипт `kubejs/server_scripts/story.js` убраны из пака, NPC-задачи сняты с квестов.
+Канон и заготовки диалогов сохранены в `docs/story-bible.md` и `tools/story-data.mjs` —
+вернуть слой можно одной командой, когда тексты будут доведены.
 
 ---
 

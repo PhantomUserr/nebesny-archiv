@@ -43,6 +43,12 @@
  */
 
 /** @type {StoryNode[]} */
+// Слой диалогов временно отключён: Easy NPC и совместимость с FTB Quests
+// убраны из пака, NPC-задачи сняты с квестов. Канон и заготовки диалогов
+// сохранены здесь — вернуть слой можно, поставив enabled = true,
+// вернув моды easy_npc / easynpc_ftbq_compat и скрипт story.js.
+export const storyEnabled = false;
+
 export const storyNodes = [
   {
     id: 'vesta',

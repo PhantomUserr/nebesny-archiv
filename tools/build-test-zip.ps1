@@ -71,7 +71,7 @@ Nebesny Archiv — PC test build 1.0.0
 ===================================
 
 Что внутри:
-- NebesnyArchiv-1.0.0.mrpack — полный PC-клиент, 216 модов.
+- NebesnyArchiv-1.0.0.mrpack — полный PC-клиент, 226 модов.
 
 Запуск в XMCL:
 1. XMCL -> Instances -> Import modpack.
@@ -87,13 +87,15 @@ Nebesny Archiv — PC test build 1.0.0
 - Запущен локально: localhost:25565.
 - Multiplayer -> Direct Connect -> localhost.
 - Для друзей по Radmin VPN: 26.x.x.x:25565.
-- 18 глав, 333 квеста, 599 задач, тестовый мир.
+- 18 глав, 329 квестов, 595 задач, тестовый мир.
 
-Сюжет в этом билде:
-- Два NPC с ветвящимся диалогом: Веста Урбан и Мия Тинь.
-- Они появляются сами рядом с точкой появления.
-- Их реплики меняются по ходу выполнения квестов.
-- Фермерство (Farmer's Delight) обязательно: без пира флот не взлетает.
+Что есть в этом билде:
+- Полноценные русские гайды в квестах: что это за предмет, как его получить
+  по шагам и практический совет.
+- Удобство: Mouse Tweaks, AppleSkin, Mod Menu, BetterF3, Controlling,
+  Chat Heads, Reese's Sodium Options, ShulkerBoxTooltip, Inventory Profiles Next.
+- Farmer's Delight обязателен: без пира флота финал не закрывается.
+- Слой диалогов временно отключён.
 
 Примечание:
 - Это тестовый билд, не финальный GitHub Release.

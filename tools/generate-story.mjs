@@ -17,12 +17,18 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { storyNodes } from './story-data.mjs';
+import { storyNodes, storyEnabled } from './story-data.mjs';
 import { questId } from './quest-id.mjs';
 import { chapters } from './quest-data.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '..');
+
+if (!storyEnabled) {
+  console.log('Слой сюжета отключён (story-data.mjs: storyEnabled = false).');
+  console.log('Канон диалогов сохранён в tools/story-data.mjs и docs/story-bible.md.');
+  process.exit(0);
+}
 
 // Where the generated presets are written. The server reads them from
 // config/easy_npc/preset and imports them with

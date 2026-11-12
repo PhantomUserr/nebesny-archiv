@@ -2,6 +2,7 @@
 import { join } from 'node:path';
 import { chapters, groups } from './quest-data.mjs';
 import { questId } from './quest-id.mjs';
+import { ITEM_GUIDE, CHAPTER_TIP } from './quest-lore.mjs';
 
 const root = process.cwd();
 const targets = [
@@ -13,11 +14,83 @@ const targets = [
 ];
 const itemsFile = join(root, 'research', 'registry-items.txt');
 const entitiesFile = join(root, 'research', 'registry-entities.txt');
+const itemsRuFile = join(root, 'research', 'registry-items-ru.txt');
 const errors = [];
 function hash16(text) { return questId(text); }
 function readList(path) { if (!existsSync(path)) return null; return new Set(readFileSync(path, 'utf8').split(/\r?\n/).map(s => s.trim()).filter(Boolean)); }
 const items = readList(itemsFile);
 const entities = readList(entitiesFile);
+// Русские названия предметов — вытащены из ru_ru.json модов
+const itemNames = new Map();
+if (existsSync(itemsRuFile)) {
+  for (const line of readFileSync(itemsRuFile, 'utf8').split(/\r?\n/)) {
+    if (!line.trim()) continue;
+    const i = line.indexOf('\t');
+    if (i < 0) continue;
+    itemNames.set(line.slice(0, i), line.slice(i + 1).trim());
+  }
+}
+const MOD_NAMES = {
+  minecraft: 'ванильного Minecraft', create: 'Create', farmersdelight: 'Farmer\'s Delight',
+  ae2: 'Applied Energistics 2', aeronautics: 'Create Aeronautics', mekanism: 'Mekanism',
+  ars_nouveau: 'Ars Nouveau', occultism: 'Occultism', modonomicon: 'Modonomicon',
+  createaddition: 'Create: Crafts & Additions', createbigcannons: 'Create: Big Cannons',
+  create_new_age: 'Create: New Age', createoreexcavation: 'Create Ore Excavation',
+  createthrusters: 'Create: Gadgets & Gizmos', create_connected: 'Create: Connected',
+  sophisticatedstorage: 'Sophisticated Storage', sophisticatedbackpacks: 'Sophisticated Backpacks',
+  ae2cs: 'AE2 Crystal Science', ae2additions: 'AE2 Additions', ae2lt: 'AE2 Lightning Tech',
+  create_enchantment_industry: 'Create: Enchantment Industry', createdieselgenerators: 'Create: Diesel Generators',
+  create_submarine: 'Create: Deep Seas', create_high_seas: 'Create: High Seas',
+  createkinetic: 'Create: Kinetic', createframed: 'Create: Framed', createdeco: 'Create: Deco',
+  createcasing: 'Create: Encased', create_compact_transmission: 'Create: Compact Transmission',
+  create_aeronautics_toolgun: 'Create Aeronautics: Toolgun', aeroencasedpipe: 'Create Aeronautics: Encased Fluid Pipes',
+  aeronautics_utility_objects: 'Create Aeronautics: Transmission & Linkage',
+  create_sa: 'Create: Shadows of Anonima', create_power_loader: 'Create: Power Loader',
+  create_tsr: 'Create: Track Switch Radio', create_jetpack: 'Create: Jetpack',
+  create_confectionery: 'Create: Confectionery', create_dragons_plus: 'Create: Dragons Plus',
+  create_simulated_additions: 'Create: Simulated Additions', createcasing: 'Create: Encased',
+  ars_additions: 'Ars Additions', occultengineering: 'Create: Occult Engineering',
+  mekanismtools: 'Mekanism: Tools', mekanismadditions: 'Mekanism: Additions',
+  ae2wtlib: 'AE2 Wireless Terminals', goety_cataclysm: 'Goety: Cataclysm',
+  ae2_pattern_restocker: 'AE2 Pattern Restocker',
+};
+const modName = (ns) => MOD_NAMES[ns] || ns;
+
+/**
+ * Собирает полное описание квеста: авторский текст + «как получить» +
+ * практические советы. Без этого квест читается как список вещей,
+ * а не как инструкция.
+ */
+function composeDesc(chapter, quest) {
+  const out = [...(quest.desc || [])];
+  const howLines = [];
+  const tips = [];
+  // если авторский текст уже объясняет действие, подробная инструкция из
+  // базы знаний будет повтором — тогда оставляем только совет
+  const alreadyExplains = (quest.desc || []).some(l => /(нажми|кликни|поставь|сделай|крафт|размести|добавь|собери|положи|наведи|правой кнопкой|в сетке|выбери|окро|правь|сними|возьми|закрой|открой|подойди|зарой|копай|сломай)/i.test(l));
+  for (const task of quest.tasks) {
+    if (task.type !== 'item') continue;
+    const guide = ITEM_GUIDE[task.item];
+    if (!guide) continue;
+    if (guide.how && !howLines.includes(guide.how) && !alreadyExplains) howLines.push(guide.how);
+    if (guide.tip && !tips.includes(guide.tip)) tips.push(guide.tip);
+  }
+  // Нет инструкции — подсказываем, как найти предмет в JEI, зная русское название
+  if (!howLines.length) {
+    const itemTask = quest.tasks.find(t => t.type === 'item');
+    if (itemTask) {
+      const name = itemNames.get(itemTask.item);
+      const ns = itemTask.item.split(':')[0];
+      const label = name ? `«${name}»` : itemTask.item;
+      howLines.push(`${label} — предмет из мода «${modName(ns)}». Открой JEI (клавиша R) и найди его по названию: там есть полная рецептура, список ингредиентов и нужный станок.`);
+    }
+  }
+  out.push(...howLines);
+  const chapterTip = CHAPTER_TIP[chapter.filename];
+  for (const tip of tips.slice(0, 2)) out.push(`Совет: ${tip}`);
+  if (chapterTip && tips.length < 2) out.push(`Совет: ${chapterTip}`);
+  return out;
+}
 function checkItem(id, where) { if (!id || typeof id !== 'string' || !id.includes(':')) { errors.push(`${where}: invalid item id "${id}"`); return; } if (items && !items.has(id)) errors.push(`${where}: unknown item "${id}"`); }
 function checkEntity(id, where) { if (!id || typeof id !== 'string' || !id.includes(':')) { errors.push(`${where}: invalid entity id "${id}"`); return; } if (entities && !entities.has(id)) errors.push(`${where}: unknown entity "${id}"`); }
 const questIds = new Map();
@@ -34,6 +107,12 @@ for (const chapter of chapters) {
 }
 function qid(chapterFilename, questKey) { const id = questIds.get(`${chapterFilename}:${questKey}`); if (!id) throw new Error(`unknown quest reference ${chapterFilename}:${questKey}`); return id; }
 function str(value) { return JSON.stringify(value); }
+// Ключи в lang-файлах FTB Quests пишутся БЕЗ кавычек: парсер FTB Library
+// читает ключ как «слово до двоеточия», и кавычки попадают в само имя ключа.
+// Из-за этого переводы не находятся и FTB Quests показывает «Unnamed Group».
+// Рабочий вид (проверено на All the Mods 10 и FTB Evolution):
+//   chapter_group.05ADA6ADB5D0E5C0.title: "Пролог"
+function key(name) { return name; }
 function snbtChapter(chapter) {
   const chapterId = hash16(`nebesnyarchiv:chapter:${chapter.filename}`);
   const lines = ['{','\tdefault_hide_dependency_lines: false','\tdefault_quest_shape: "circle"',`\tfilename: ${str(chapter.filename)}`,`\tgroup: ${str(chapter.group ? hash16(`nebesnyarchiv:group:${chapter.group}`) : '')}`,'\ticon: {',`\t\tid: ${str(chapter.icon)}`,'\t}',`\tid: ${str(chapterId)}`,`\torder_index: ${chapter.order ?? 0}`,'\tprogression_mode: "flexible"'];
@@ -84,6 +163,7 @@ function snbtData() { return `{
 \tdisable_gui: false
 \tdrop_loot_crates: false
 \temergency_items_cooldown: 300
+\tfallback_locale: "ru_ru"
 \tgrid_scale: 0.5d
 \ticon: {\n\t\tid: "ftbquests:book"\n\t}
 \tlock_message: ""
@@ -94,10 +174,36 @@ function snbtData() { return `{
 \tversion: 13
 }
 `; }
-function snbtChapterGroups() { const lines = ['{','\tchapter_groups: [']; for (const group of groups) { lines.push('\t\t{',`\t\t\tid: ${str(hash16(`nebesnyarchiv:group:${group.key}`))}`,'\t\t}'); } lines.push('\t]','}'); return lines.join('\n')+'\n'; }
-function snbtChapterLangTitles() { const lines=['{']; for (const chapter of chapters){ const id=hash16(`nebesnyarchiv:chapter:${chapter.filename}`); lines.push(`\t${str(`chapter.${id}.chapter_subtitle`)}: [${str(chapter.subtitle||'')}]`); lines.push(`\t${str(`chapter.${id}.title`)}: ${str(chapter.title)}`);} lines.push('}'); return lines.join('\n')+'\n'; }
-function snbtChapterGroupLang() { const lines=['{']; for (const group of groups){ const id=hash16(`nebesnyarchiv:group:${group.key}`); lines.push(`\t${str(`chapter_group.${id}.title`)}: ${str(group.title)}`);} lines.push('}'); return lines.join('\n')+'\n'; }
-function snbtChapterLang(chapter) { const lines=['{']; for (const quest of chapter.quests){ const id=qid(chapter.filename,quest.key); const desc=(quest.desc||[]).map(str).join(', '); lines.push(`\t${str(`quest.${id}.quest_desc`)}: [${desc}]`); lines.push(`\t${str(`quest.${id}.title`)}: ${str(quest.title)}`);} lines.push('}'); return lines.join('\n')+'\n'; }
+function snbtChapterGroups() { const lines = ['{','\tchapter_groups: [']; for (const group of groups) { lines.push(`\t\t{ id: ${str(hash16(`nebesnyarchiv:group:${group.key}`))} }`); } lines.push('\t]','}'); return lines.join('\n')+'\n'; }
+// FTB Quests 2101.x читает переводы из файлов вида lang/<locale>.snbt:
+// локаль берётся из ИМЕНИ ФАЙЛА, а TranslationManager делает Files.list()
+// (ровно один уровень), поэтому подпапки вида lang/ru_ru/ игнорируются.
+// В одном файле лежат все ключи: главы, группы, квесты и заголовок пака.
+const PACK_TITLE = 'Небесный Архив';
+const PACK_FILE_ID = '0000000000000001';
+function snbtLang() {
+  const lines = ['{'];
+  lines.push(`\t${key(`file.${PACK_FILE_ID}.title`)}: ${str(PACK_TITLE)}`);
+  for (const group of groups) {
+    const id = hash16(`nebesnyarchiv:group:${group.key}`);
+    lines.push(`\t${key(`chapter_group.${id}.title`)}: ${str(group.title)}`);
+  }
+  for (const chapter of chapters) {
+    const id = hash16(`nebesnyarchiv:chapter:${chapter.filename}`);
+    lines.push(`\t${key(`chapter.${id}.chapter_subtitle`)}: [${str(chapter.subtitle || '')}]`);
+    lines.push(`\t${key(`chapter.${id}.title`)}: ${str(chapter.title)}`);
+  }
+  for (const chapter of chapters) {
+    for (const quest of chapter.quests) {
+      const id = qid(chapter.filename, quest.key);
+      const desc = composeDesc(chapter, quest).map(str).join(', ');
+      lines.push(`\t${key(`quest.${id}.quest_desc`)}: [${desc}]`);
+      lines.push(`\t${key(`quest.${id}.title`)}: ${str(quest.title)}`);
+    }
+  }
+  lines.push('}');
+  return lines.join('\n') + '\n';
+}
 function writeSet(baseDir) {
   const chaptersDir = join(baseDir, 'chapters');
   if (existsSync(chaptersDir)) rmSync(chaptersDir, { recursive: true, force: true });
@@ -106,11 +212,11 @@ function writeSet(baseDir) {
   writeFileSync(join(baseDir, 'chapter_groups.snbt'), snbtChapterGroups(), 'utf8');
   for (const chapter of chapters) writeFileSync(join(chaptersDir, `${chapter.filename}.snbt`), snbtChapter(chapter), 'utf8');
   for (const locale of ['en_us','ru_ru']) {
-    const langDir = join(baseDir,'lang',locale); const langChaptersDir = join(langDir,'chapters');
-    if (existsSync(langChaptersDir)) rmSync(langChaptersDir,{recursive:true,force:true}); mkdirSync(langChaptersDir,{recursive:true});
-    writeFileSync(join(langDir,'chapter.snbt'), snbtChapterLangTitles(), 'utf8');
-    writeFileSync(join(langDir,'chapter_group.snbt'), snbtChapterGroupLang(), 'utf8');
-    for (const chapter of chapters) writeFileSync(join(langChaptersDir, `${chapter.filename}.snbt`), snbtChapterLang(chapter), 'utf8');
+    const langDir = join(baseDir,'lang');
+    // старые подпапки lang/<locale>/ FTB Quests не читает — убираем
+    if (existsSync(join(langDir, locale))) rmSync(join(langDir, locale), { recursive: true, force: true });
+    if (!existsSync(langDir)) mkdirSync(langDir, { recursive: true });
+    writeFileSync(join(langDir, `${locale}.snbt`), snbtLang(), 'utf8');
   }
 }
 const totalQuests = chapters.reduce((n,c)=>n+c.quests.length,0);

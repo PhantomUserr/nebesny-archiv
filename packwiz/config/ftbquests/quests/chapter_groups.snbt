@@ -1,19 +1,9 @@
 {
 	chapter_groups: [
-		{
-			id: "05ADA6ADB5D0E5C0"
-		}
-		{
-			id: "0CF7FB199BF26906"
-		}
-		{
-			id: "0E2842BED84458E2"
-		}
-		{
-			id: "09573D5735C2780B"
-		}
-		{
-			id: "026C7E41AE40BA73"
-		}
+		{ id: "05ADA6ADB5D0E5C0" }
+		{ id: "0CF7FB199BF26906" }
+		{ id: "0E2842BED84458E2" }
+		{ id: "09573D5735C2780B" }
+		{ id: "026C7E41AE40BA73" }
 	]
 }

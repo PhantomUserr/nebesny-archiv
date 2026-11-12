@@ -775,24 +775,6 @@
       "category": "visual"
     },
     {
-      "slug": "easy-npc-core",
-      "version": "7.18.0+mc1.21.1",
-      "side": "both",
-      "category": "story"
-    },
-    {
-      "slug": "easy-npc-config-ui",
-      "version": "7.18.0+mc1.21.1",
-      "side": "both",
-      "category": "story"
-    },
-    {
-      "slug": "easynpc-x-ftb-quests-compat",
-      "version": "1.21.1+1.0.2",
-      "side": "both",
-      "category": "story"
-    },
-    {
       "slug": "create-ore-excavation",
       "version": "1.21.1-1.6.8",
       "side": "both",
@@ -827,6 +809,78 @@
       "version": "1.1.0",
       "side": "both",
       "category": "ae2"
+    },
+    {
+      "slug": "mouse-tweaks",
+      "version": "2.26.1",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "appleskin",
+      "version": "3.0.9",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "mod-menu-neoforge-edition",
+      "version": "1.0.2",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "betterf3",
+      "version": "11.0.3",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "controlling",
+      "version": "19.0.5",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "searchables",
+      "version": "1.0.2",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "chat-heads",
+      "version": "0.15.7",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "reeses-sodium-options",
+      "version": "2.2.4",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "shulkerboxtooltip",
+      "version": "5.1.9",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "no-chat-reports",
+      "version": "2.9.1",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "inventory-profiles-next",
+      "version": "2.2.5",
+      "side": "client",
+      "category": "qol"
+    },
+    {
+      "slug": "libipn",
+      "version": "6.6.3",
+      "side": "client",
+      "category": "qol"
     }
   ]
 }
