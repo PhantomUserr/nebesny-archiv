@@ -2,24 +2,24 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "exploration"
-	group: "26C7E41AE40BA738"
+	group: "026C7E41AE40BA73"
 	icon: {
 		id: "minecraft:ender_eye"
 	}
-	id: "5A1D6D1BFEC4E8E1"
+	id: "05A1D6D1BFEC4E8E"
 	order_index: 6
 	progression_mode: "flexible"
 	quests: [
 		{
-			dependencies: ["81AF63F940B03D1D"]
+			dependencies: ["081AF63F940B03D1"]
 			icon: {
 				id: "waystones:warp_stone"
 			}
-			id: "96678F3071D4453F"
+			id: "096678F3071D4453"
 			min_width: 220
 			rewards: [
 				{
-					id: "2B10699B4E491595"
+					id: "02B10699B4E49159"
 					type: "xp"
 					xp: 20
 				}
@@ -29,7 +29,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "95AA1E51DAC0DFAF"
+					id: "095AA1E51DAC0DFA"
 					item: {
 						count: 1
 						id: "waystones:warp_stone"
@@ -41,15 +41,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["96678F3071D4453F"]
+			dependencies: ["096678F3071D4453"]
 			icon: {
 				id: "naturescompass:naturescompass"
 			}
-			id: "7943C546267E7316"
+			id: "07943C546267E731"
 			min_width: 220
 			rewards: [
 				{
-					id: "64C8A921322DA33F"
+					id: "064C8A921322DA33"
 					type: "xp"
 					xp: 20
 				}
@@ -59,7 +59,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "0BB793B038B6BB74"
+					id: "00BB793B038B6BB7"
 					item: {
 						count: 1
 						id: "naturescompass:naturescompass"
@@ -71,15 +71,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["0335C6DFB87DD741"]
+			dependencies: ["00335C6DFB87DD74"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "236FB373FE35468D"
+			id: "0236FB373FE35468"
 			min_width: 220
 			rewards: [
 				{
-					id: "CEB3E99050738087"
+					id: "0CEB3E9905073808"
 					type: "xp"
 					xp: 20
 				}
@@ -89,7 +89,7 @@
 			tasks: [
 				{
 					dimension: "minecraft:the_nether"
-					id: "AFF8CBC822A0E749"
+					id: "0AFF8CBC822A0E74"
 					type: "dimension"
 				}
 			]
@@ -97,15 +97,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["236FB373FE35468D"]
+			dependencies: ["0236FB373FE35468"]
 			icon: {
 				id: "minecraft:blaze_rod"
 			}
-			id: "C76BF012DD5C5B29"
+			id: "0C76BF012DD5C5B2"
 			min_width: 220
 			rewards: [
 				{
-					id: "CD97C096DCA3A95A"
+					id: "0CD97C096DCA3A95"
 					type: "xp"
 					xp: 25
 				}
@@ -115,7 +115,7 @@
 			tasks: [
 				{
 					count: 6
-					id: "FFD13F9F0BD21A70"
+					id: "0FFD13F9F0BD21A7"
 					item: {
 						count: 1
 						id: "minecraft:blaze_rod"
@@ -127,15 +127,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["236FB373FE35468D"]
+			dependencies: ["0236FB373FE35468"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "6FE7D3AE9C2FF015"
+			id: "06FE7D3AE9C2FF01"
 			min_width: 220
 			rewards: [
 				{
-					id: "6AD0BD65A1ADDBC8"
+					id: "06AD0BD65A1ADDBC"
 					type: "xp"
 					xp: 40
 				}
@@ -145,7 +145,7 @@
 			tasks: [
 				{
 					entity: "cataclysm:netherite_monstrosity"
-					id: "A5CE0A5A367A913A"
+					id: "0A5CE0A5A367A913"
 					type: "kill"
 					value: 1
 				}
@@ -154,15 +154,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6FE7D3AE9C2FF015"]
+			dependencies: ["06FE7D3AE9C2FF01"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "DAD239B0AC82E630"
+			id: "0DAD239B0AC82E63"
 			min_width: 220
 			rewards: [
 				{
-					id: "3BEF07E3C9DFF22A"
+					id: "03BEF07E3C9DFF22"
 					type: "xp"
 					xp: 40
 				}
@@ -172,7 +172,7 @@
 			tasks: [
 				{
 					entity: "cataclysm:ancient_remnant"
-					id: "350D455EBB88DE81"
+					id: "0350D455EBB88DE8"
 					type: "kill"
 					value: 1
 				}
@@ -181,15 +181,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["C76BF012DD5C5B29"]
+			dependencies: ["0C76BF012DD5C5B2"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "DB194EAAA0308612"
+			id: "0DB194EAAA030861"
 			min_width: 220
 			rewards: [
 				{
-					id: "21F8070BD5B7FD89"
+					id: "021F8070BD5B7FD8"
 					type: "xp"
 					xp: 30
 				}
@@ -199,7 +199,7 @@
 			tasks: [
 				{
 					dimension: "minecraft:the_end"
-					id: "31F90B60C64E857B"
+					id: "031F90B60C64E857"
 					type: "dimension"
 				}
 			]
@@ -207,15 +207,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DB194EAAA0308612"]
+			dependencies: ["0DB194EAAA030861"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "5BF5EEE3B7C032D5"
+			id: "05BF5EEE3B7C032D"
 			min_width: 220
 			rewards: [
 				{
-					id: "E550A90B5E3C5856"
+					id: "0E550A90B5E3C585"
 					type: "xp"
 					xp: 60
 				}
@@ -225,7 +225,7 @@
 			tasks: [
 				{
 					entity: "minecraft:ender_dragon"
-					id: "977C687F54002FDF"
+					id: "0977C687F54002FD"
 					type: "kill"
 					value: 1
 				}
@@ -234,15 +234,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5BF5EEE3B7C032D5"]
+			dependencies: ["05BF5EEE3B7C032D"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "40B017D33391EC6B"
+			id: "040B017D33391EC6"
 			min_width: 220
 			rewards: [
 				{
-					id: "6423CDE49719F2CB"
+					id: "06423CDE49719F2C"
 					type: "xp"
 					xp: 50
 				}
@@ -252,7 +252,7 @@
 			tasks: [
 				{
 					entity: "cataclysm:ender_guardian"
-					id: "81999C0598D3543A"
+					id: "081999C0598D3543"
 					type: "kill"
 					value: 1
 				}
@@ -261,15 +261,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["C76BF012DD5C5B29"]
+			dependencies: ["0C76BF012DD5C5B2"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "A0835DA9996CA441"
+			id: "0A0835DA9996CA44"
 			min_width: 220
 			rewards: [
 				{
-					id: "8EB7062674AAD9B9"
+					id: "08EB7062674AAD9B"
 					type: "xp"
 					xp: 50
 				}
@@ -279,7 +279,7 @@
 			tasks: [
 				{
 					entity: "minecraft:wither"
-					id: "0794745E04557D4D"
+					id: "00794745E04557D4"
 					type: "kill"
 					value: 1
 				}
@@ -288,15 +288,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["A0835DA9996CA441"]
+			dependencies: ["0A0835DA9996CA44"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "46339DAF909D25B3"
+			id: "046339DAF909D25B"
 			min_width: 220
 			rewards: [
 				{
-					id: "58BA2D3BD3F66972"
+					id: "058BA2D3BD3F6697"
 					type: "xp"
 					xp: 50
 				}
@@ -306,7 +306,7 @@
 			tasks: [
 				{
 					entity: "goety:vizier"
-					id: "52DBB7BDE5F5DC30"
+					id: "052DBB7BDE5F5DC3"
 					type: "kill"
 					value: 1
 				}
@@ -315,15 +315,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DB194EAAA0308612"]
+			dependencies: ["0DB194EAAA030861"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "1A79092B0F32F023"
+			id: "01A79092B0F32F02"
 			min_width: 220
 			rewards: [
 				{
-					id: "8DDC46DB5C9D85A9"
+					id: "08DDC46DB5C9D85A"
 					type: "xp"
 					xp: 40
 				}
@@ -333,7 +333,7 @@
 			tasks: [
 				{
 					entity: "mowziesmobs:ferrous_wroughtnaut"
-					id: "5CC3EEE36C951B21"
+					id: "05CC3EEE36C951B2"
 					type: "kill"
 					value: 1
 				}
@@ -342,15 +342,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["46339DAF909D25B3"]
+			dependencies: ["046339DAF909D25B"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "B481433B78922A55"
+			id: "0B481433B78922A5"
 			min_width: 220
 			rewards: [
 				{
-					id: "8AB8A70ED444D3E1"
+					id: "08AB8A70ED444D3E"
 					type: "xp"
 					xp: 50
 				}
@@ -360,7 +360,7 @@
 			tasks: [
 				{
 					entity: "irons_spellbooks:dead_king"
-					id: "3A60B3BC2F34DBF9"
+					id: "03A60B3BC2F34DBF"
 					type: "kill"
 					value: 1
 				}
@@ -369,15 +369,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["1A79092B0F32F023"]
+			dependencies: ["01A79092B0F32F02"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "82668E645C13BA92"
+			id: "082668E645C13BA9"
 			min_width: 220
 			rewards: [
 				{
-					id: "093773AA70BF4F0B"
+					id: "0093773AA70BF4F0"
 					type: "xp"
 					xp: 50
 				}
@@ -387,7 +387,7 @@
 			tasks: [
 				{
 					entity: "bosses_of_mass_destruction:void_blossom"
-					id: "0FDA4A7EB31EF566"
+					id: "00FDA4A7EB31EF56"
 					type: "kill"
 					value: 1
 				}
@@ -396,15 +396,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["626DFC8FBBD81345"]
+			dependencies: ["0626DFC8FBBD8134"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "9FF93584B0AD6747"
+			id: "09FF93584B0AD674"
 			min_width: 220
 			rewards: [
 				{
-					id: "8F7EE9A2C532EC8D"
+					id: "08F7EE9A2C532EC8"
 					type: "xp"
 					xp: 50
 				}
@@ -414,7 +414,7 @@
 			tasks: [
 				{
 					entity: "aether:valkyrie_queen"
-					id: "B37CB1FFE975B0D9"
+					id: "0B37CB1FFE975B0D"
 					type: "kill"
 					value: 1
 				}
@@ -423,15 +423,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DB194EAAA0308612"]
+			dependencies: ["0DB194EAAA030861"]
 			icon: {
 				id: "minecraft:echo_shard"
 			}
-			id: "DEBB53EF5F6F23AE"
+			id: "0DEBB53EF5F6F23A"
 			min_width: 220
 			rewards: [
 				{
-					id: "D9A530407ECF7BE1"
+					id: "0D9A530407ECF7BE"
 					type: "xp"
 					xp: 25
 				}
@@ -441,7 +441,7 @@
 			tasks: [
 				{
 					count: 4
-					id: "78A573824655D92A"
+					id: "078A573824655D92"
 					item: {
 						count: 1
 						id: "minecraft:echo_shard"
@@ -453,15 +453,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DEBB53EF5F6F23AE"]
+			dependencies: ["0DEBB53EF5F6F23A"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "B3673ADD17AFFE0B"
+			id: "0B3673ADD17AFFE0"
 			min_width: 220
 			rewards: [
 				{
-					id: "EE61A2CEB94C5DF4"
+					id: "0EE61A2CEB94C5DF"
 					type: "xp"
 					xp: 40
 				}
@@ -471,7 +471,7 @@
 			tasks: [
 				{
 					dimension: "deeperdarker:otherside"
-					id: "55840D74ACA3DEB7"
+					id: "055840D74ACA3DEB"
 					type: "dimension"
 				}
 			]
@@ -479,15 +479,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DEBB53EF5F6F23AE"]
+			dependencies: ["0DEBB53EF5F6F23A"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "5EC79E08BA72A892"
+			id: "05EC79E08BA72A89"
 			min_width: 220
 			rewards: [
 				{
-					id: "401FD2B7BAF51303"
+					id: "0401FD2B7BAF5130"
 					type: "xp"
 					xp: 30
 				}
@@ -496,7 +496,7 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "5AF4CC5A702FF2FA"
+					id: "05AF4CC5A702FF2F"
 					type: "checkmark"
 				}
 			]
@@ -505,15 +505,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["7943C546267E7316"]
+			dependencies: ["07943C546267E731"]
 			icon: {
 				id: "minecraft:map"
 			}
-			id: "9A3AF953679ABE51"
+			id: "09A3AF953679ABE5"
 			min_width: 220
 			rewards: [
 				{
-					id: "CA5907A980BE33FA"
+					id: "0CA5907A980BE33F"
 					type: "xp"
 					xp: 30
 				}
@@ -523,7 +523,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "D505E76A1F4C5A14"
+					id: "0D505E76A1F4C5A1"
 					item: {
 						count: 1
 						id: "minecraft:map"

@@ -3,11 +3,11 @@
 // Structure files: config/ftbquests/quests/chapters/*.snbt
 // Texts:           config/ftbquests/quests/lang/<locale>/{chapter,chapter_group}.snbt
 //                                                   /chapters/<filename>.snbt
-import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chapters, groups } from './quest-data.mjs';
+import { questId } from './quest-id.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '..');
@@ -20,7 +20,7 @@ const errors = [];
 const warnings = [];
 
 function hash16(text) {
-  return createHash('md5').update(text).digest('hex').slice(0, 16).toUpperCase();
+  return questId(text);
 }
 
 function readList(path) {

@@ -2,24 +2,24 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "finale"
-	group: "26C7E41AE40BA738"
+	group: "026C7E41AE40BA73"
 	icon: {
 		id: "minecraft:nether_star"
 	}
-	id: "24AF87849C48F5B1"
+	id: "024AF87849C48F5B"
 	order_index: 7
 	progression_mode: "flexible"
 	quests: [
 		{
-			dependencies: ["A0835DA9996CA441"]
+			dependencies: ["0A0835DA9996CA44"]
 			icon: {
 				id: "minecraft:netherite_ingot"
 			}
-			id: "477295F5E9A1E24C"
+			id: "0477295F5E9A1E24"
 			min_width: 220
 			rewards: [
 				{
-					id: "34D89F1515ED7E91"
+					id: "034D89F1515ED7E9"
 					type: "xp"
 					xp: 40
 				}
@@ -29,7 +29,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "96B5953BB4CF8DAD"
+					id: "096B5953BB4CF8DA"
 					item: {
 						count: 1
 						id: "minecraft:netherite_ingot"
@@ -41,15 +41,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["477295F5E9A1E24C"]
+			dependencies: ["0477295F5E9A1E24"]
 			icon: {
 				id: "minecraft:beacon"
 			}
-			id: "4D294D08ED6BBDB5"
+			id: "04D294D08ED6BBDB"
 			min_width: 220
 			rewards: [
 				{
-					id: "0B551BB1A9F155CE"
+					id: "00B551BB1A9F155C"
 					type: "xp"
 					xp: 40
 				}
@@ -59,7 +59,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "41D18499723F877F"
+					id: "041D18499723F877"
 					item: {
 						count: 1
 						id: "minecraft:beacon"
@@ -71,15 +71,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["A0835DA9996CA441"]
+			dependencies: ["0A0835DA9996CA44"]
 			icon: {
 				id: "minecraft:nether_star"
 			}
-			id: "F04E328B38E57625"
+			id: "0F04E328B38E5762"
 			min_width: 220
 			rewards: [
 				{
-					id: "650304E9DA5D7453"
+					id: "0650304E9DA5D745"
 					type: "xp"
 					xp: 30
 				}
@@ -89,7 +89,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "14C6F541A897E1DF"
+					id: "014C6F541A897E1D"
 					item: {
 						count: 1
 						id: "minecraft:nether_star"
@@ -101,15 +101,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5BF5EEE3B7C032D5"]
+			dependencies: ["05BF5EEE3B7C032D"]
 			icon: {
 				id: "minecraft:elytra"
 			}
-			id: "0151C0A5EE49F38E"
+			id: "00151C0A5EE49F38"
 			min_width: 220
 			rewards: [
 				{
-					id: "AF2766D795E1EBF3"
+					id: "0AF2766D795E1EBF"
 					type: "xp"
 					xp: 40
 				}
@@ -119,7 +119,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "DA78B277C7029035"
+					id: "0DA78B277C702903"
 					item: {
 						count: 1
 						id: "minecraft:elytra"
@@ -131,15 +131,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["477295F5E9A1E24C"]
+			dependencies: ["0477295F5E9A1E24"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "865A7AD21F4A7582"
+			id: "0865A7AD21F4A758"
 			min_width: 220
 			rewards: [
 				{
-					id: "F0F0AC863A225BF5"
+					id: "0F0F0AC863A225BF"
 					type: "xp"
 					xp: 40
 				}
@@ -148,7 +148,7 @@
 			size: 1.2d
 			tasks: [
 				{
-					id: "2DC448A32E6F5812"
+					id: "02DC448A32E6F581"
 					type: "checkmark"
 				}
 			]
@@ -156,15 +156,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["A97E8E373C21F592"]
+			dependencies: ["0A97E8E373C21F59"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "3A4E2E4089BB241E"
+			id: "03A4E2E4089BB241"
 			min_width: 220
 			rewards: [
 				{
-					id: "1A74C197469FDF01"
+					id: "01A74C197469FDF0"
 					type: "xp"
 					xp: 50
 				}
@@ -173,7 +173,7 @@
 			size: 1.2d
 			tasks: [
 				{
-					id: "395804B5E4D301F5"
+					id: "0395804B5E4D301F"
 					type: "checkmark"
 				}
 			]
@@ -181,15 +181,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["9BDAEC055CF53B00", "E956E2D733D08C57"]
+			dependencies: ["09BDAEC055CF53B0", "0E956E2D733D08C5"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "F5778D9C11F05143"
+			id: "0F5778D9C11F0514"
 			min_width: 220
 			rewards: [
 				{
-					id: "D658F3886F6C4373"
+					id: "0D658F3886F6C437"
 					type: "xp"
 					xp: 60
 				}
@@ -198,7 +198,7 @@
 			size: 1.3d
 			tasks: [
 				{
-					id: "E9D3104F4DCBCB46"
+					id: "0E9D3104F4DCBCB4"
 					type: "checkmark"
 				}
 			]
@@ -206,15 +206,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["865A7AD21F4A7582"]
+			dependencies: ["0865A7AD21F4A758"]
 			icon: {
 				id: "minecraft:bookshelf"
 			}
-			id: "FA4E757F2B83F198"
+			id: "0FA4E757F2B83F19"
 			min_width: 220
 			rewards: [
 				{
-					id: "6D377D60C36E1790"
+					id: "06D377D60C36E179"
 					type: "xp"
 					xp: 30
 				}
@@ -224,7 +224,7 @@
 			tasks: [
 				{
 					count: 32
-					id: "2A22E1C18A8F0EB5"
+					id: "02A22E1C18A8F0EB"
 					item: {
 						count: 1
 						id: "minecraft:bookshelf"
@@ -236,15 +236,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["865A7AD21F4A7582"]
+			dependencies: ["0865A7AD21F4A758"]
 			icon: {
 				id: "minecraft:diamond_block"
 			}
-			id: "A8AAD3B279D0BF31"
+			id: "0A8AAD3B279D0BF3"
 			min_width: 220
 			rewards: [
 				{
-					id: "59BD4575FD1E7BEE"
+					id: "059BD4575FD1E7BE"
 					type: "xp"
 					xp: 40
 				}
@@ -254,7 +254,7 @@
 			tasks: [
 				{
 					count: 4
-					id: "DB91BEDFA0C2AE82"
+					id: "0DB91BEDFA0C2AE8"
 					item: {
 						count: 1
 						id: "minecraft:diamond_block"
@@ -267,15 +267,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["40B017D33391EC6B", "6FE7D3AE9C2FF015", "46339DAF909D25B3"]
+			dependencies: ["040B017D33391EC6", "06FE7D3AE9C2FF01", "046339DAF909D25B"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "B6526CB678FDB289"
+			id: "0B6526CB678FDB28"
 			min_width: 220
 			rewards: [
 				{
-					id: "E153102BD4324139"
+					id: "0E153102BD432413"
 					type: "xp"
 					xp: 60
 				}
@@ -284,7 +284,7 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "FB9FEFA854DC16BB"
+					id: "0FB9FEFA854DC16B"
 					type: "checkmark"
 				}
 			]
@@ -293,15 +293,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["F5778D9C11F05143", "3A4E2E4089BB241E", "FA4E757F2B83F198"]
+			dependencies: ["0F5778D9C11F0514", "03A4E2E4089BB241", "0FA4E757F2B83F19"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "E8D59F1B93F31AF9"
+			id: "0E8D59F1B93F31AF"
 			min_width: 220
 			rewards: [
 				{
-					id: "AE3E81B736595122"
+					id: "0AE3E81B73659512"
 					type: "xp"
 					xp: 100
 				}
@@ -310,7 +310,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "F2D150A722DF6147"
+					id: "0F2D150A722DF614"
 					type: "checkmark"
 				}
 			]
@@ -318,15 +318,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["865A7AD21F4A7582"]
+			dependencies: ["0865A7AD21F4A758"]
 			icon: {
 				id: "minecraft:knowledge_book"
 			}
-			id: "60559198D4384125"
+			id: "060559198D438412"
 			min_width: 220
 			rewards: [
 				{
-					id: "D41862DD9C4624D6"
+					id: "0D41862DD9C4624D"
 					type: "xp"
 					xp: 80
 				}
@@ -336,7 +336,7 @@
 			tasks: [
 				{
 					count: 3
-					id: "BC5ACC8D6F74B411"
+					id: "0BC5ACC8D6F74B41"
 					item: {
 						count: 1
 						id: "minecraft:knowledge_book"

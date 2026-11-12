@@ -2,24 +2,24 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "aeronautics"
-	group: "E2842BED84458E29"
+	group: "0E2842BED84458E2"
 	icon: {
 		id: "createpropulsion:thruster"
 	}
-	id: "812DE831D7302EC2"
+	id: "0812DE831D7302EC"
 	order_index: 3
 	progression_mode: "flexible"
 	quests: [
 		{
-			dependencies: ["5E6EE1C4F9032440"]
+			dependencies: ["05E6EE1C4F903244"]
 			icon: {
 				id: "createpropulsion:raw_platinum"
 			}
-			id: "7BE83E155D670629"
+			id: "07BE83E155D67062"
 			min_width: 220
 			rewards: [
 				{
-					id: "8889F3DA1459641F"
+					id: "08889F3DA1459641"
 					type: "xp"
 					xp: 20
 				}
@@ -29,7 +29,7 @@
 			tasks: [
 				{
 					count: 8
-					id: "9285719FD68C57BC"
+					id: "09285719FD68C57B"
 					item: {
 						count: 1
 						id: "createpropulsion:raw_platinum"
@@ -41,15 +41,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7BE83E155D670629"]
+			dependencies: ["07BE83E155D67062"]
 			icon: {
 				id: "createpropulsion:platinum_ingot"
 			}
-			id: "B0CA6DDA0DA06FA9"
+			id: "0B0CA6DDA0DA06FA"
 			min_width: 220
 			rewards: [
 				{
-					id: "8D975CF60E79EB1E"
+					id: "08D975CF60E79EB1"
 					type: "xp"
 					xp: 20
 				}
@@ -59,7 +59,7 @@
 			tasks: [
 				{
 					count: 4
-					id: "B53F4A4042D2F298"
+					id: "0B53F4A4042D2F29"
 					item: {
 						count: 1
 						id: "createpropulsion:platinum_ingot"
@@ -71,15 +71,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B0CA6DDA0DA06FA9"]
+			dependencies: ["0B0CA6DDA0DA06FA"]
 			icon: {
 				id: "createpropulsion:wing"
 			}
-			id: "8E943B3B705562A2"
+			id: "08E943B3B705562A"
 			min_width: 220
 			rewards: [
 				{
-					id: "16AD2EB92AE88FB6"
+					id: "016AD2EB92AE88FB"
 					type: "xp"
 					xp: 20
 				}
@@ -89,7 +89,7 @@
 			tasks: [
 				{
 					count: 2
-					id: "B3F530D8B3679A86"
+					id: "0B3F530D8B3679A8"
 					item: {
 						count: 1
 						id: "createpropulsion:wing"
@@ -101,15 +101,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["B0CA6DDA0DA06FA9"]
+			dependencies: ["0B0CA6DDA0DA06FA"]
 			icon: {
 				id: "createpropulsion:solid_fuel_thruster"
 			}
-			id: "9BCE2F3F797C3010"
+			id: "09BCE2F3F797C301"
 			min_width: 220
 			rewards: [
 				{
-					id: "A451D1A88D339DE7"
+					id: "0A451D1A88D339DE"
 					type: "xp"
 					xp: 25
 				}
@@ -119,7 +119,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "4383029AEB438C41"
+					id: "04383029AEB438C4"
 					item: {
 						count: 1
 						id: "createpropulsion:solid_fuel_thruster"
@@ -131,15 +131,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B0CA6DDA0DA06FA9"]
+			dependencies: ["0B0CA6DDA0DA06FA"]
 			icon: {
 				id: "createpropulsion:liquid_burner"
 			}
-			id: "C7D8DB010D9163D3"
+			id: "0C7D8DB010D9163D"
 			min_width: 220
 			rewards: [
 				{
-					id: "11C8E64877B9FFC0"
+					id: "011C8E64877B9FFC"
 					type: "xp"
 					xp: 25
 				}
@@ -149,7 +149,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "546803B2EDC879DC"
+					id: "0546803B2EDC879D"
 					item: {
 						count: 1
 						id: "createpropulsion:liquid_burner"
@@ -161,15 +161,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["C7D8DB010D9163D3"]
+			dependencies: ["0C7D8DB010D9163D"]
 			icon: {
 				id: "createpropulsion:vector_thruster"
 			}
-			id: "EAB760A1987CC091"
+			id: "0EAB760A1987CC09"
 			min_width: 220
 			rewards: [
 				{
-					id: "0F0C0813AB1A32FE"
+					id: "00F0C0813AB1A32F"
 					type: "xp"
 					xp: 30
 				}
@@ -179,7 +179,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "3CEB92F11FB847B4"
+					id: "03CEB92F11FB847B"
 					item: {
 						count: 1
 						id: "createpropulsion:vector_thruster"
@@ -191,15 +191,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8E943B3B705562A2"]
+			dependencies: ["08E943B3B705562A"]
 			icon: {
 				id: "createpropulsion:tilt_adapter"
 			}
-			id: "49A58BC10BD116C5"
+			id: "049A58BC10BD116C"
 			min_width: 220
 			rewards: [
 				{
-					id: "88C8F7C7D5F81E6B"
+					id: "088C8F7C7D5F81E6"
 					type: "xp"
 					xp: 20
 				}
@@ -209,7 +209,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "F219CE066B3E2B85"
+					id: "0F219CE066B3E2B8"
 					item: {
 						count: 1
 						id: "createpropulsion:tilt_adapter"
@@ -221,15 +221,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["EAB760A1987CC091"]
+			dependencies: ["0EAB760A1987CC09"]
 			icon: {
 				id: "createpropulsion:auto_glue"
 			}
-			id: "8A84F7CDDD6F9B9F"
+			id: "08A84F7CDDD6F9B9"
 			min_width: 220
 			rewards: [
 				{
-					id: "C4F58887E081A49D"
+					id: "0C4F58887E081A49"
 					type: "xp"
 					xp: 20
 				}
@@ -239,7 +239,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "8650184472983D5D"
+					id: "08650184472983D5"
 					item: {
 						count: 1
 						id: "createpropulsion:auto_glue"
@@ -251,15 +251,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["49A58BC10BD116C5"]
+			dependencies: ["049A58BC10BD116C"]
 			icon: {
 				id: "createpropulsion:assembler_stick"
 			}
-			id: "BA34900E37BC71CE"
+			id: "0BA34900E37BC71C"
 			min_width: 220
 			rewards: [
 				{
-					id: "211094F2485147DF"
+					id: "0211094F2485147D"
 					type: "xp"
 					xp: 15
 				}
@@ -269,7 +269,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "8F343AC9427AC16F"
+					id: "08F343AC9427AC16"
 					item: {
 						count: 1
 						id: "createpropulsion:assembler_stick"
@@ -281,15 +281,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8A84F7CDDD6F9B9F"]
+			dependencies: ["08A84F7CDDD6F9B9"]
 			icon: {
 				id: "aeroworks:control_desk"
 			}
-			id: "2EA41D699EA1B25B"
+			id: "02EA41D699EA1B25"
 			min_width: 220
 			rewards: [
 				{
-					id: "CEAF19F2044B9FB3"
+					id: "0CEAF19F2044B9FB"
 					type: "xp"
 					xp: 25
 				}
@@ -299,7 +299,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "3E489822A846BF86"
+					id: "03E489822A846BF8"
 					item: {
 						count: 1
 						id: "aeroworks:control_desk"
@@ -311,15 +311,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["BA34900E37BC71CE"]
+			dependencies: ["0BA34900E37BC71C"]
 			icon: {
 				id: "aeroworks:joystick"
 			}
-			id: "D07F474A70CFA5E5"
+			id: "0D07F474A70CFA5E"
 			min_width: 220
 			rewards: [
 				{
-					id: "F88989C40155CC5A"
+					id: "0F88989C40155CC5"
 					type: "xp"
 					xp: 20
 				}
@@ -329,7 +329,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "D297AEE7D20F89A1"
+					id: "0D297AEE7D20F89A"
 					item: {
 						count: 1
 						id: "aeroworks:joystick"
@@ -341,15 +341,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["2EA41D699EA1B25B"]
+			dependencies: ["02EA41D699EA1B25"]
 			icon: {
 				id: "aeroworks:gyroscope"
 			}
-			id: "293178B6F16D8B61"
+			id: "0293178B6F16D8B6"
 			min_width: 220
 			rewards: [
 				{
-					id: "2FD17D28D5C993B5"
+					id: "02FD17D28D5C993B"
 					type: "xp"
 					xp: 25
 				}
@@ -359,7 +359,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "759538362F0F2E98"
+					id: "0759538362F0F2E9"
 					item: {
 						count: 1
 						id: "aeroworks:gyroscope"
@@ -371,15 +371,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["49A58BC10BD116C5"]
+			dependencies: ["049A58BC10BD116C"]
 			icon: {
 				id: "ballastmod:ballast_stones"
 			}
-			id: "CEBAF0C396DD0220"
+			id: "0CEBAF0C396DD022"
 			min_width: 220
 			rewards: [
 				{
-					id: "52EDFDA994F1FCFA"
+					id: "052EDFDA994F1FCF"
 					type: "xp"
 					xp: 15
 				}
@@ -389,7 +389,7 @@
 			tasks: [
 				{
 					count: 4
-					id: "8DA1BB63C76156CA"
+					id: "08DA1BB63C76156C"
 					item: {
 						count: 1
 						id: "ballastmod:ballast_stones"
@@ -401,15 +401,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["293178B6F16D8B61", "CEBAF0C396DD0220"]
+			dependencies: ["0293178B6F16D8B6", "0CEBAF0C396DD022"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "0B72EE4A4210CBCD"
+			id: "00B72EE4A4210CBC"
 			min_width: 220
 			rewards: [
 				{
-					id: "C60179B2FFC39BCB"
+					id: "0C60179B2FFC39BC"
 					type: "xp"
 					xp: 40
 				}
@@ -418,7 +418,7 @@
 			size: 1.3d
 			tasks: [
 				{
-					id: "8C2683086D86143E"
+					id: "08C2683086D86143"
 					type: "checkmark"
 				}
 			]
@@ -426,15 +426,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0B72EE4A4210CBCD"]
+			dependencies: ["00B72EE4A4210CBC"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "A97E8E373C21F592"
+			id: "0A97E8E373C21F59"
 			min_width: 220
 			rewards: [
 				{
-					id: "9F12ED86CFB83979"
+					id: "09F12ED86CFB8397"
 					type: "xp"
 					xp: 50
 				}
@@ -443,7 +443,7 @@
 			size: 1.2d
 			tasks: [
 				{
-					id: "84B93825AA2B6B7A"
+					id: "084B93825AA2B6B7"
 					type: "checkmark"
 				}
 			]
@@ -451,15 +451,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0B72EE4A4210CBCD"]
+			dependencies: ["00B72EE4A4210CBC"]
 			icon: {
 				id: "aeroclaims:claim_block"
 			}
-			id: "B8DB98D61E10E7E7"
+			id: "0B8DB98D61E10E7E"
 			min_width: 220
 			rewards: [
 				{
-					id: "D5E2B7F10155A9D0"
+					id: "0D5E2B7F10155A9D"
 					type: "xp"
 					xp: 20
 				}
@@ -469,7 +469,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "35D0A672AD9A80CC"
+					id: "035D0A672AD9A80C"
 					item: {
 						count: 1
 						id: "aeroclaims:claim_block"
@@ -481,15 +481,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["A97E8E373C21F592"]
+			dependencies: ["0A97E8E373C21F59"]
 			icon: {
 				id: "simulatedcoasters:coaster_cart"
 			}
-			id: "DF8EE7CCEE220803"
+			id: "0DF8EE7CCEE22080"
 			min_width: 220
 			rewards: [
 				{
-					id: "D885CCB8A262323E"
+					id: "0D885CCB8A262323"
 					type: "xp"
 					xp: 20
 				}
@@ -499,7 +499,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "A5824BB7447B57C9"
+					id: "0A5824BB7447B57C"
 					item: {
 						count: 1
 						id: "simulatedcoasters:coaster_cart"
@@ -512,15 +512,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0B72EE4A4210CBCD"]
+			dependencies: ["00B72EE4A4210CBC"]
 			icon: {
 				id: "createpropulsion:wing"
 			}
-			id: "23B8FBD8E7AC3EBB"
+			id: "023B8FBD8E7AC3EB"
 			min_width: 220
 			rewards: [
 				{
-					id: "5E70E3F79D677E83"
+					id: "05E70E3F79D677E8"
 					type: "xp"
 					xp: 45
 				}
@@ -530,7 +530,7 @@
 			tasks: [
 				{
 					count: 2
-					id: "AD1A91E9F47599D1"
+					id: "0AD1A91E9F47599D"
 					item: {
 						count: 1
 						id: "createpropulsion:wing"

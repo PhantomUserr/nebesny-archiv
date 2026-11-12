@@ -1,40 +1,48 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/easy_npc/preset/miya.npc.snbt"
+hash = "a4d05bb5bd14a120724b3ae5ecb2c6c0ff9f62d0a7624f518a19e172959723b3"
+
+[[files]]
+file = "config/easy_npc/preset/vesta.npc.snbt"
+hash = "3c01623c36e590604e55b7a12b0da8b2f17c9f8afc7226f449625a5346ae4792"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "1b504da215d85d9e745b4b81245f864d276ab42e4593abdba5f813ad866edfab"
+hash = "6e0e7242b315d4cd570bfbe5639a77386295b17ad6aa83ca28215fb8142d7889"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aeronautics.snbt"
-hash = "e6574a4805a60028ffd9f85d25dc66d9aa27651b7d582dc224433b5c9ab2ffb8"
+hash = "e05d86d56d0849995deb33190d2dce9e51096f1a3e60ea8bfeea491beb65c541"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "28de6710fcd7ab8abf96722e4a5c8442f991dacb7d373aa2d9e4a6e41c099dfb"
+hash = "793677bb7919034c5cdaefe95f0ec0b0e974c109032fba6907dfcee880d49aa0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/exploration.snbt"
-hash = "f25e5982d3aba59dc9aa99e9686e1d069413fdeb9d8d5e94d2b130a9dab661a1"
+hash = "3224c480964a75625e9fa9e8297e1d44a1f8fb87e84c3cb1f3f3f5969ee6f37d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/finale.snbt"
-hash = "523023b27eddc76d2f749e7cac4686fc5fd6c2df80f5b52ca038c3ae4fb8baae"
+hash = "a1520dd3a5d2151f72b285583fb16ea6436b2026a8c11662770dfcf746d2e7ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/homestead.snbt"
-hash = "7da762e677d7b7a349da48c1f60ed1d2e0e4177d12cffe6b6fb26e1ff0838d05"
+hash = "591701f5ef1bc701abbbbf231fd989bcd1c934d7ff586d6733989d81461278e5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/magic.snbt"
-hash = "df37e39a4f5b2aff2cb0e451f8ab08776c89236217c91b25bf76bd0c36a9261b"
+hash = "ab727b1d2d4fa9d648fd747df347da223676f9fd240ddb161cb87c82603a8f0c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/start.snbt"
-hash = "8e99f31065644c5866631899f3222de429fb60da4c9ccfdcdea74b3256c042f8"
+hash = "0d15fe642a0921faae261612e7ee9767538cde300e34fdb8818e88fca291a77a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tech.snbt"
-hash = "f2e7be869e50d8fdd36a3807c8235071d6a3c794e9f1877e829acf5dea398840"
+hash = "cc11e040469f72a82b976595dd7c93eab14bf423e783f0a8f7fbe773d8a9af08"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -42,83 +50,83 @@ hash = "5f5ce5fc5202475f7a8be4e59dc1219dbd62c7d0f8a2a6c97ca64cbf933ca422"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapter.snbt"
-hash = "e38446d2bc95e8f41d84265caca97e324d213e97fc590ee5dba3da25644ccebf"
+hash = "edc93ecba3992079dab70c1b151a3742ca48bc7f01fe83bc0376d921aeb9a474"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapter_group.snbt"
-hash = "5f4659b3c2f0bb38d1b41d0e4eb2722fe868f8e47f0f5b2733c35d3c94d96e5b"
+hash = "78c5bbcd8b4277f3f7e5ea3d6a129d777486551af34b8ffea67fbe1f04fad762"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/aeronautics.snbt"
-hash = "b84877d1ad94e20d3fc1e779a0fb7df8510155ef3d2798ba7eb4e79bb0ff6eb7"
+hash = "fff965390d1c3420b4ea249c2ecedd5565817d102a9e35d8f77ceecaea76717f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/create.snbt"
-hash = "491d7cf1ebbead05b3df5428551b8ca1facd68f0a2166395e7d4ce97530d933f"
+hash = "e1dbe23e5036c5dd9c1cafb4b051dc8e52be427b64ad360f5b7d2472691aaf28"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/exploration.snbt"
-hash = "cb772f68a170bffdb27a3b33a3f150fee12de0f3995314ec063747ca7638fb53"
+hash = "3ded5ac14a7c159fd75d86ff6d4bd55b13dd8aed0274c0bb0d56a24348aeb8ba"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/finale.snbt"
-hash = "eb8001d90262ff318542ebe1b301d8e234ede320fd4c2813b46dc941d46023e9"
+hash = "a5dd335a53a6e05c6847b9fa6f927b07ed953dbdb7c754e5344dfe0379843393"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/homestead.snbt"
-hash = "de0c4e1b02339964cda21cd48b995d35ddb0e2be565b425196dad566db357d73"
+hash = "cc8690a9f7852421bb684a2bf252d6f2ae851ede4a359fd8394713674fb8bc8c"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/magic.snbt"
-hash = "01f3d0dcfd6a0921ce90e79629a7d939a7f735325b43b62e25980c11efb43a56"
+hash = "49056bfa0e0f81950d8e0ba9dee39d7900e4b22f983d90be7697e818090457a8"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/start.snbt"
-hash = "62b588256d23d52d53a8dffcc9e2cd14d4dbb111e4e22c93745ebbbcc091a05a"
+hash = "13d88124982c12f4af79ac533a397b612cf85e8575b8a5e338caadecaca24d27"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/tech.snbt"
-hash = "a821b842426af65259a06c736ecb7dd33e34c8e04909e2580ec1e66a44370f8d"
+hash = "9b0e409b64ab7bf3f5e4b5b4ff41e4f42105db619c6ab91e53cf040e0faceceb"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapter.snbt"
-hash = "e38446d2bc95e8f41d84265caca97e324d213e97fc590ee5dba3da25644ccebf"
+hash = "edc93ecba3992079dab70c1b151a3742ca48bc7f01fe83bc0376d921aeb9a474"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapter_group.snbt"
-hash = "5f4659b3c2f0bb38d1b41d0e4eb2722fe868f8e47f0f5b2733c35d3c94d96e5b"
+hash = "78c5bbcd8b4277f3f7e5ea3d6a129d777486551af34b8ffea67fbe1f04fad762"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/aeronautics.snbt"
-hash = "b84877d1ad94e20d3fc1e779a0fb7df8510155ef3d2798ba7eb4e79bb0ff6eb7"
+hash = "fff965390d1c3420b4ea249c2ecedd5565817d102a9e35d8f77ceecaea76717f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/create.snbt"
-hash = "491d7cf1ebbead05b3df5428551b8ca1facd68f0a2166395e7d4ce97530d933f"
+hash = "e1dbe23e5036c5dd9c1cafb4b051dc8e52be427b64ad360f5b7d2472691aaf28"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/exploration.snbt"
-hash = "cb772f68a170bffdb27a3b33a3f150fee12de0f3995314ec063747ca7638fb53"
+hash = "3ded5ac14a7c159fd75d86ff6d4bd55b13dd8aed0274c0bb0d56a24348aeb8ba"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/finale.snbt"
-hash = "eb8001d90262ff318542ebe1b301d8e234ede320fd4c2813b46dc941d46023e9"
+hash = "a5dd335a53a6e05c6847b9fa6f927b07ed953dbdb7c754e5344dfe0379843393"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/homestead.snbt"
-hash = "de0c4e1b02339964cda21cd48b995d35ddb0e2be565b425196dad566db357d73"
+hash = "cc8690a9f7852421bb684a2bf252d6f2ae851ede4a359fd8394713674fb8bc8c"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/magic.snbt"
-hash = "01f3d0dcfd6a0921ce90e79629a7d939a7f735325b43b62e25980c11efb43a56"
+hash = "49056bfa0e0f81950d8e0ba9dee39d7900e4b22f983d90be7697e818090457a8"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/start.snbt"
-hash = "62b588256d23d52d53a8dffcc9e2cd14d4dbb111e4e22c93745ebbbcc091a05a"
+hash = "13d88124982c12f4af79ac533a397b612cf85e8575b8a5e338caadecaca24d27"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/tech.snbt"
-hash = "a821b842426af65259a06c736ecb7dd33e34c8e04909e2580ec1e66a44370f8d"
+hash = "9b0e409b64ab7bf3f5e4b5b4ff41e4f42105db619c6ab91e53cf040e0faceceb"
 
 [[files]]
 file = "config/iris.properties"
@@ -363,6 +371,10 @@ hash = "cb3a0a083e765ca81141d0d2fd26252245b1679ddbdae35bcc6e12e4f8011704"
 [[files]]
 file = "kubejs/assets/nebesnyarchiv/tips/xaero_maps.json"
 hash = "f44ea070cf50abfee57bb16927947aef55539524e69db62ad4ab899785d39166"
+
+[[files]]
+file = "kubejs/server_scripts/story.js"
+hash = "220c5a03d066425514c616eff7083cd93f596f571ec5a44c5fa907adb983509a"
 
 [[files]]
 file = "mods/advancedae-addon.pw.toml"
@@ -797,6 +809,21 @@ metafile = true
 [[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
 hash = "61222fc4c02f5f803cdf11eb316ab4faabfcead3696987edf2306705f0fa14ae"
+metafile = true
+
+[[files]]
+file = "mods/easy-npc-config-ui.pw.toml"
+hash = "4048d0c728aea9c0395971652223709c328d3d5a7cc33966f6004fedbcacacc4"
+metafile = true
+
+[[files]]
+file = "mods/easy-npc-core.pw.toml"
+hash = "5cc9fa432a3048835b2c7206081a7f3f385849bae1bab4de3a46b5c86863d74c"
+metafile = true
+
+[[files]]
+file = "mods/easynpc-x-ftb-quests-compat.pw.toml"
+hash = "fc8191a381f5718f53c55ecbda7da3fff73cbe182720b14940d9881c29298cf8"
 metafile = true
 
 [[files]]

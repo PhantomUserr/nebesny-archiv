@@ -2,11 +2,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "start"
-	group: "5ADA6ADB5D0E5C03"
+	group: "05ADA6ADB5D0E5C0"
 	icon: {
 		id: "minecraft:lectern"
 	}
-	id: "F90E449932A8DFAC"
+	id: "0F90E449932A8DFA"
 	order_index: 0
 	progression_mode: "flexible"
 	quests: [
@@ -14,11 +14,11 @@
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "893D1BB287C831F7"
+			id: "0893D1BB287C831F"
 			min_width: 220
 			rewards: [
 				{
-					id: "0384AAF0748B4300"
+					id: "00384AAF0748B430"
 					type: "xp"
 					xp: 5
 				}
@@ -27,7 +27,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "7A0EE5C3112888A0"
+					id: "07A0EE5C3112888A"
 					type: "checkmark"
 				}
 			]
@@ -38,11 +38,11 @@
 			icon: {
 				id: "minecraft:oak_log"
 			}
-			id: "A00766F1A4D085BF"
+			id: "0A00766F1A4D085B"
 			min_width: 220
 			rewards: [
 				{
-					id: "A467790F573B3770"
+					id: "0A467790F573B377"
 					type: "xp"
 					xp: 5
 				}
@@ -52,7 +52,7 @@
 			tasks: [
 				{
 					count: 8
-					id: "6DFC2205ACB23631"
+					id: "06DFC2205ACB2363"
 					item: {
 						count: 1
 						id: "minecraft:oak_log"
@@ -67,11 +67,11 @@
 			icon: {
 				id: "minecraft:crafting_table"
 			}
-			id: "B5551A337CA1F70C"
+			id: "0B5551A337CA1F70"
 			min_width: 220
 			rewards: [
 				{
-					id: "36821537A3001622"
+					id: "036821537A300162"
 					type: "xp"
 					xp: 5
 				}
@@ -81,7 +81,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "AFCD58283CF3284E"
+					id: "0AFCD58283CF3284"
 					item: {
 						count: 1
 						id: "minecraft:crafting_table"
@@ -96,11 +96,11 @@
 			icon: {
 				id: "minecraft:wooden_pickaxe"
 			}
-			id: "1EE2CD3A62F77B5D"
+			id: "01EE2CD3A62F77B5"
 			min_width: 220
 			rewards: [
 				{
-					id: "C3D79DB28FC68237"
+					id: "0C3D79DB28FC6823"
 					type: "xp"
 					xp: 5
 				}
@@ -110,7 +110,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "840ECE0FDC116919"
+					id: "0840ECE0FDC11691"
 					item: {
 						count: 1
 						id: "minecraft:wooden_pickaxe"
@@ -125,11 +125,11 @@
 			icon: {
 				id: "minecraft:cobblestone"
 			}
-			id: "3C2335E032BA5D48"
+			id: "03C2335E032BA5D4"
 			min_width: 220
 			rewards: [
 				{
-					id: "5A3D2259FC49C824"
+					id: "05A3D2259FC49C82"
 					type: "xp"
 					xp: 10
 				}
@@ -139,7 +139,7 @@
 			tasks: [
 				{
 					count: 24
-					id: "AC5DE2EE9E9AEC94"
+					id: "0AC5DE2EE9E9AEC9"
 					item: {
 						count: 1
 						id: "minecraft:cobblestone"
@@ -154,11 +154,11 @@
 			icon: {
 				id: "minecraft:stone_pickaxe"
 			}
-			id: "DF0C55FE90F3251B"
+			id: "0DF0C55FE90F3251"
 			min_width: 220
 			rewards: [
 				{
-					id: "AAAE07C8C41373C5"
+					id: "0AAAE07C8C41373C"
 					type: "xp"
 					xp: 10
 				}
@@ -168,7 +168,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "2FE0C581E981B004"
+					id: "02FE0C581E981B00"
 					item: {
 						count: 1
 						id: "minecraft:stone_pickaxe"
@@ -177,7 +177,7 @@
 				}
 				{
 					count: 1
-					id: "257AADFA990E427F"
+					id: "0257AADFA990E427"
 					item: {
 						count: 1
 						id: "minecraft:stone_sword"
@@ -189,15 +189,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DF0C55FE90F3251B"]
+			dependencies: ["0DF0C55FE90F3251"]
 			icon: {
 				id: "minecraft:torch"
 			}
-			id: "B1AA45DE289E7995"
+			id: "0B1AA45DE289E799"
 			min_width: 220
 			rewards: [
 				{
-					id: "E700B7D250D9A29A"
+					id: "0E700B7D250D9A29"
 					type: "xp"
 					xp: 10
 				}
@@ -207,7 +207,7 @@
 			tasks: [
 				{
 					count: 16
-					id: "D2CA3C186D067715"
+					id: "0D2CA3C186D06771"
 					item: {
 						count: 1
 						id: "minecraft:torch"
@@ -219,15 +219,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DF0C55FE90F3251B"]
+			dependencies: ["0DF0C55FE90F3251"]
 			icon: {
 				id: "minecraft:furnace"
 			}
-			id: "872951914D631C14"
+			id: "0872951914D631C1"
 			min_width: 220
 			rewards: [
 				{
-					id: "AFE6913E3EE59F55"
+					id: "0AFE6913E3EE59F5"
 					type: "xp"
 					xp: 10
 				}
@@ -237,7 +237,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "C679213CC0B399CE"
+					id: "0C679213CC0B399C"
 					item: {
 						count: 1
 						id: "minecraft:furnace"
@@ -249,15 +249,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["893D1BB287C831F7"]
+			dependencies: ["0893D1BB287C831F"]
 			icon: {
 				id: "minecraft:bread"
 			}
-			id: "14D6F45E906DC009"
+			id: "014D6F45E906DC00"
 			min_width: 220
 			rewards: [
 				{
-					id: "27882DC25CAC6C2B"
+					id: "027882DC25CAC6C2"
 					type: "xp"
 					xp: 10
 				}
@@ -267,7 +267,7 @@
 			tasks: [
 				{
 					count: 3
-					id: "7CFBEC36A3E91B5F"
+					id: "07CFBEC36A3E91B5"
 					item: {
 						count: 1
 						id: "minecraft:bread"
@@ -279,15 +279,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["893D1BB287C831F7"]
+			dependencies: ["0893D1BB287C831F"]
 			icon: {
 				id: "minecraft:white_bed"
 			}
-			id: "573660879FF5508C"
+			id: "0573660879FF5508"
 			min_width: 220
 			rewards: [
 				{
-					id: "195AE14EAA0286FD"
+					id: "0195AE14EAA0286F"
 					type: "xp"
 					xp: 10
 				}
@@ -297,7 +297,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "B94C4FF2BAF344CE"
+					id: "0B94C4FF2BAF344C"
 					item: {
 						count: 1
 						id: "minecraft:white_bed"
@@ -309,15 +309,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["872951914D631C14"]
+			dependencies: ["0872951914D631C1"]
 			icon: {
 				id: "minecraft:raw_iron"
 			}
-			id: "EABB993094E59A0A"
+			id: "0EABB993094E59A0"
 			min_width: 220
 			rewards: [
 				{
-					id: "F6C0D0025852D00F"
+					id: "0F6C0D0025852D00"
 					type: "xp"
 					xp: 15
 				}
@@ -327,7 +327,7 @@
 			tasks: [
 				{
 					count: 6
-					id: "5633CF459B80BC24"
+					id: "05633CF459B80BC2"
 					item: {
 						count: 1
 						id: "minecraft:raw_iron"
@@ -339,15 +339,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["EABB993094E59A0A"]
+			dependencies: ["0EABB993094E59A0"]
 			icon: {
 				id: "minecraft:iron_pickaxe"
 			}
-			id: "0335C6DFB87DD741"
+			id: "00335C6DFB87DD74"
 			min_width: 220
 			rewards: [
 				{
-					id: "08A1F2A91830B3A1"
+					id: "008A1F2A91830B3A"
 					type: "xp"
 					xp: 15
 				}
@@ -357,7 +357,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "174A534EB0D18BBF"
+					id: "0174A534EB0D18BB"
 					item: {
 						count: 1
 						id: "minecraft:iron_pickaxe"
@@ -369,15 +369,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["B5551A337CA1F70C"]
+			dependencies: ["0B5551A337CA1F70"]
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 			}
-			id: "325A4660FA1790E9"
+			id: "0325A4660FA1790E"
 			min_width: 220
 			rewards: [
 				{
-					id: "1DB017E38FEC259D"
+					id: "01DB017E38FEC259"
 					type: "xp"
 					xp: 10
 				}
@@ -387,7 +387,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "C32ED4D264AF3F5F"
+					id: "0C32ED4D264AF3F5"
 					item: {
 						count: 1
 						id: "sophisticatedbackpacks:backpack"
@@ -399,15 +399,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["893D1BB287C831F7"]
+			dependencies: ["0893D1BB287C831F"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "B96DA29463C25AE1"
+			id: "0B96DA29463C25AE"
 			min_width: 220
 			rewards: [
 				{
-					id: "2E2655AB283E1D0B"
+					id: "02E2655AB283E1D0"
 					type: "xp"
 					xp: 5
 				}
@@ -416,7 +416,7 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "9F46C4556AC6FFDF"
+					id: "09F46C4556AC6FFD"
 					type: "checkmark"
 				}
 			]
@@ -425,15 +425,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["893D1BB287C831F7"]
+			dependencies: ["0893D1BB287C831F"]
 			icon: {
 				id: "minecraft:written_book"
 			}
-			id: "DB077EC7508712D8"
+			id: "0DB077EC7508712D"
 			min_width: 220
 			rewards: [
 				{
-					id: "DD5FAECFDEE62F38"
+					id: "0DD5FAECFDEE62F3"
 					type: "xp"
 					xp: 15
 				}
@@ -443,7 +443,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "85769FB2590C87C7"
+					id: "085769FB2590C87C"
 					item: {
 						count: 1
 						id: "minecraft:written_book"
@@ -452,6 +452,58 @@
 				}
 			]
 			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0893D1BB287C831F"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "07CC9015FEB09D0A"
+			min_width: 220
+			rewards: [
+				{
+					id: "05CA8DEDDCBD9AC0"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					dialogId: "vesta_greet"
+					id: "0134F4AAAC92386C"
+					type: "easynpc_ftbq_compat:easy_npc_task"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0893D1BB287C831F"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "004C54100215FEEA"
+			min_width: 220
+			rewards: [
+				{
+					id: "05BB0BF59D04D2C4"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					dialogId: "miya_greet"
+					id: "0A262F7AB001F489"
+					type: "easynpc_ftbq_compat:easy_npc_task"
+				}
+			]
+			x: 4.0d
 			y: 4.0d
 		}
 	]

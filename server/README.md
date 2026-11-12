@@ -168,7 +168,7 @@ java -jar packwiz-installer-bootstrap.jar -g -s client https://raw.githubusercon
 Lite — это **та же сборка и тот же сервер**, но облегчённый клиент:
 удалены 11 тяжёлых клиентских модов (Iris, Distant Horizons, Particle Rain,
 Sound Physics, First Person, Not Enough Animations, EMF/ETF, GTBCS, Xaero World Map)
-и выставлены низкие настройки. Остаётся 196 модов — это минимум, чтобы видеть все
+и выставлены низкие настройки. Остаётся 199 модов — это минимум, чтобы видеть все
 блоки и предметы сервера.
 
 На Pojav (Poco X5 Pro, 8 ГБ) ожидаемо 15–30 FPS в спокойных местах и 5–15 FPS
@@ -178,7 +178,62 @@ Lite-сервер на 100–150 модов, но это будет другой
 
 ---
 
-## 10. Частые проблемы
+## 10. Сюжетные NPC
+
+В паке есть два NPC — **Веста Урбан** и **Мия Тинь**. Они ставятся сами: скрипт
+`kubejs/server_scripts/story.js` после старта сервера импортирует их рядом с
+точкой появления (у NPC фиксированные UUID, поэтому повторный запуск обновляет
+их, а не плодит копии).
+
+В логе должно появиться:
+
+```
+[story] Story NPCs placed next to the spawn point (X, Y, Z)
+```
+
+Если NPC не появились:
+
+1. Проверьте, что в `config/easy_npc/preset/` лежат `vesta.npc.snbt` и `miya.npc.snbt`.
+2. Поставьте их вручную из консоли сервера:
+
+```
+easy_npc preset import custom easy_npc:preset/vesta.npc.snbt <x> <y> <z> 3f1c9a52-7d64-4e8b-9a10-5c2f8b6d1e40
+easy_npc preset import custom easy_npc:preset/miya.npc.snbt <x> <y> <z> 6b2d4e77-1c85-4f39-8d6a-2e7c1b9f0d53
+```
+
+Координаты — рядом с точкой появления; её можно узнать командой
+`/execute positioned ~ ~ ~ run ...` или из лога `[story]`.
+
+Проверить, что NPC на месте: `easy_npc list` — должно быть `Total NPCs: 2`.
+
+---
+
+## 11. Удалённое управление (RCON)
+
+Для диагностики удобно управлять сервером по RCON. В `server.properties` включите:
+
+```properties
+enable-rcon=true
+rcon.password=СВОЙ_ПАРОЛЬ
+rcon.port=25575
+broadcast-rcon-to-ops=false
+```
+
+Готовый клиент лежит в репозитории (папка `tools/`, рядом с `server/`):
+
+```bat
+node tools\rcon.mjs "list"
+node tools\rcon.mjs "easy_npc list"
+node tools\rcon.mjs "stop"
+```
+
+> RCON — это полный доступ к серверу. Не оставляйте пароль в `server.properties`
+> в открытом репозитории и не открывайте порт наружу: держите его в локальной сети
+> или на VPN.
+
+---
+
+## 12. Частые проблемы
 
 | Симптом | Решение |
 |---|---|
@@ -188,13 +243,14 @@ Lite-сервер на 100–150 модов, но это будет другой
 | Друзья не видят сервер | Radmin VPN не подключён / брандмауэр блокирует Java / неверный IP |
 | Низкий TPS | Уменьшите `view-distance` и `simulation-distance`, не ставьте сервер на слабый ПК |
 | Книга квестов пустая | Пак не докачался; проверьте `config/ftbquests` и лог загрузки |
+| NPC не появились у спавна | Смотрите раздел 10 «Сюжетные NPC» |
 | Краш Alex's Caves при генерации | Не удаляйте **Feature Recycler** — он уже в паке и предотвращает конфликт |
 
 Логи: `logs/latest.log`. При ошибке приложите последние 100 строк и список модов.
 
 ---
 
-## 11. Состав папки
+## 13. Состав папки
 
 ```
 server/

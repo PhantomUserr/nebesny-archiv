@@ -1,10 +1,11 @@
-﻿import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+﻿import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { chapters, groups } from './quest-data.mjs';
+import { questId } from './quest-id.mjs';
 
 const root = process.cwd();
 const targets = [
+  join(root, 'server-test', 'config', 'ftbquests', 'quests'),
   join(root, 'packwiz', 'config', 'ftbquests', 'quests'),
   join(root, 'packwiz-lite', 'config', 'ftbquests', 'quests'),
   'C:\\Users\\qwert\\.minecraftx\\instances\\Nebesny Archiv\\config\\ftbquests\\quests',
@@ -13,7 +14,7 @@ const targets = [
 const itemsFile = join(root, 'research', 'registry-items.txt');
 const entitiesFile = join(root, 'research', 'registry-entities.txt');
 const errors = [];
-function hash16(text) { return createHash('md5').update(text).digest('hex').slice(0, 16).toUpperCase(); }
+function hash16(text) { return questId(text); }
 function readList(path) { if (!existsSync(path)) return null; return new Set(readFileSync(path, 'utf8').split(/\r?\n/).map(s => s.trim()).filter(Boolean)); }
 const items = readList(itemsFile);
 const entities = readList(entitiesFile);
@@ -61,6 +62,12 @@ function snbtChapter(chapter) {
       else if (task.type === 'kill') { checkEntity(task.entity, `${where} task ${ti}`); lines.push(`\t\t\t\t\tentity: ${str(task.entity)}`,`\t\t\t\t\tid: ${str(taskId)}`,'\t\t\t\t\ttype: "kill"',`\t\t\t\t\tvalue: ${task.value ?? 1}`); }
       else if (task.type === 'dimension') { lines.push(`\t\t\t\t\tdimension: ${str(task.dimension)}`,`\t\t\t\t\tid: ${str(taskId)}`,'\t\t\t\t\ttype: "dimension"'); }
       else if (task.type === 'checkmark') { lines.push(`\t\t\t\t\tid: ${str(taskId)}`,'\t\t\t\t\ttype: "checkmark"'); }
+      else if (task.type === 'npc_dialog') {
+        // EasyNPC x FTB Quests Compat: completes when the player reads the
+        // named Easy NPC dialog. The dialog id is the dialog Label, which the
+        // compat mod resolves through UUID.nameUUIDFromBytes(label).
+        lines.push(`\t\t\t\t\tdialogId: ${str(task.dialog)}`,`\t\t\t\t\tid: ${str(taskId)}`,'\t\t\t\t\ttype: "easynpc_ftbq_compat:easy_npc_task"');
+      }
       else errors.push(`${where}: unsupported task type ${task.type}`);
       lines.push('\t\t\t\t}');
     }); lines.push('\t\t\t]'); if (quest.optional) lines.push('\t\t\toptional: true');

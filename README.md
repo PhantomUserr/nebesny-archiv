@@ -1,7 +1,7 @@
 # Nebesny Archiv / Небесный Архив
 
 Сборка для Minecraft **1.21.1 NeoForge 21.1.250**: техника, магия, небесные корабли,
-исследование и 140 дружелюбных к новичкам квестов на русском.
+исследование и 150 дружелюбных к новичку квестов на русском.
 
 > Мир — обломки летающей библиотечной флотилии. Две независимые ветви прогресса
 > (техника и магия), необязательные «техномагические мосты», общий сюжет и личные роли.
@@ -17,13 +17,14 @@
 | Исследование | Alex's Caves, Alex's Mobs, Aether, Deep Aether, Deeper and Darker, Cataclysm, Mowzie's Mobs, Dungeons Arise |
 | Боссы | Cataclysm, Mowzie's Mobs, Bosses of Mass Destruction, Born in Chaos, Goety |
 | Удобство | JEI, Jade, FTB Quests, FTB Teams, Sophisticated Storage/Backpacks, Waystones, Lootr, Bountiful |
+| Сюжет | Easy NPC 7.18.0 (+ Config UI), EasyNPC x FTB Quests Compat 1.0.2 |
 | Графика | Sodium, Iris, Distant Horizons, EMF/ETF, Particle Rain, Sound Physics — **шейдеры выключены по умолчанию** |
 
-Полный список — в `packwiz/mods/` (204 Modrinth-мода + 3 FTB-мода локально).
+Полный список — в `packwiz/mods/` (207 Modrinth-мода + 3 FTB-мода локально).
 
 ### Квесты
 
-8 глав, 140 квестов, 143 задачи. Текст полностью на русском, рассчитан на новичка:
+8 глав, 150 квестов, 154 задачи. Текст полностью на русском, рассчитан на новичка:
 что крафтить, где искать, какие клавиши нажимать. Ветки техники и магии независимы —
 можно пройти одну, а вторую изучать потом.
 
@@ -33,6 +34,24 @@
 | Техника | `create`, `aeronautics`, `tech` |
 | Магия | `magic` |
 | Мир | `exploration`, `finale` |
+
+### Сюжет
+
+Живые NPC с ветвящимся диалогом, который меняется по ходу выполнения квестов.
+
+| NPC | Кто такая | Что говорит |
+|---|---|---|
+| **Веста Урбан** | старший смотритель Каталога | объясняет, что произошло, и даёт первые задания |
+| **Мия Тинь** | инвентаризатор, дочь Ирмы | рассказывает, где что лежит, и ищет мать |
+
+- NPC ставятся сами: скрипт `kubejs/server_scripts/story.js` после старта сервера
+  импортирует их рядом с точкой появления.
+- У каждого NPC несколько диалогов с кнопками-ветками.
+- Пока квест не выполнен, NPC говорит одно; после выполнения — другое
+  (правило хранится в EasyNPC x FTB Quests Compat и привязано к ID квеста).
+- Квесты «Веста Урбан» и «Мия Тинь» закрываются тем, что игрок прочитал диалог.
+- Реплики и правила лежат в `tools/story-data.mjs`, генерируются скриптом
+  `tools/generate-story.mjs`.
 
 ---
 
@@ -68,11 +87,17 @@
 ```
 nebesny-archiv/
 ├─ packwiz/                  # сам пак: pack.toml, index.toml, mods/*.pw.toml, config, kubejs
+├─ packwiz-lite/             # облегчённый вариант того же пака
 ├─ server/                   # серверные скрипты и инструкция
-├─ tools/                    # генераторы квестов, tips и packwiz-метафайлов
-│  ├─ quest-data.mjs         # исходник всех 140 квестов
-│  ├─ generate-quests.mjs    # генерация SNBT + проверка ID по реестру
+├─ tools/                    # генераторы квестов, сюжета, tips и packwiz-метафайлов
+│  ├─ quest-data.mjs         # исходник всех 150 квестов
+│  ├─ quest-id.mjs           # генерация ID квестов, которые FTB умеет читать
+│  ├─ generate-quests-dist.mjs # генерация SNBT во все цели + проверка ID
+│  ├─ story-data.mjs         # NPC, диалоги и привязка к квестам
+│  ├─ generate-story.mjs     # генерация .npc.snbt + проверка связей с квестами
 │  ├─ make-packwiz.mjs       # сборка метафайлов из живого инстанса
+│  ├─ build-test-zip.ps1     # пересборка PC-тестового архива
+│  ├─ rcon.mjs               # RCON-клиент для тестового сервера
 │  └─ fetch-mods.mjs         # загрузка модов по манифесту
 ├─ research/                 # дампы реестров items/entities для валидации
 ├─ dist/                     # .mrpack (в git не коммитится, кладётся в Releases)
@@ -87,12 +112,34 @@ nebesny-archiv/
 ### Обновить квесты
 
 ```bat
-node tools\generate-quests.mjs
+node tools\generate-quests-dist.mjs
 ```
 
-Генератор проверяет все item/entity ID по `research/registry-items.txt` и
+Генератор пишет квесты сразу в `server-test`, `packwiz`, `packwiz-lite` и оба
+XMCL-инстанса. Он проверяет все item/entity ID по `research/registry-items.txt` и
 `research/registry-entities.txt` и падает, если ID неизвестен. Текст квестов — в
 `tools/quest-data.mjs`; русский и английский lang-файлы генерируются одновременно.
+
+> ID квестов генерирует `tools/quest-id.mjs`. Это важно: FTB Quests читает ID как
+> знаковый hex-long, и обычный MD5-префикс примерно в половине случаев в него не
+> влезает — сервер тогда молча меняет ID на случайный, и связи (зависимости,
+> переводы, привязка диалогов) рвутся. Модуль маскирует значение до 63 бит.
+
+### Обновить сюжет
+
+```bat
+node tools\generate-story.mjs
+```
+
+Генератор пишет `.npc.snbt` с диалогами в `config/easy_npc/preset/` во все пять
+целей и проверяет, что каждое правило и каждая задача «поговори с NPC» ссылаются
+на существующие диалог и квест. Правила привязываются к ID квеста, поэтому
+после правки квестов сначала запускай `generate-quests-dist.mjs`, потом
+`generate-story.mjs`.
+
+Диалоги хранятся в `tools/story-data.mjs`. У каждого NPC метки диалогов
+префиксуются его именем (`vesta_greet`, `miya_greet`): Easy NPC выводит UUID
+диалога из метки, поэтому одинаковые метки у разных NPC столкнулись бы.
 
 ### Обновить пак после изменения модов
 
@@ -103,11 +150,21 @@ cd packwiz
 ..\tools\bin\packwiz.exe modrinth export -o ..\dist\NebesnyArchiv-1.0.0.mrpack
 ```
 
+Или всё сразу, вместе с тестовым архивом:
+
+```bat
+powershell -File tools\build-test-zip.ps1
+```
+
 `make-packwiz.mjs` берёт jar-файлы из живого инстанса
 `%USERPROFILE%\.minecraftx\instances\Nebesny Archiv\mods`, находит их на Modrinth,
 пишет `mods/*.pw.toml` с sha512 и копирует конфиги `config/ftbquests`, `kubejs`,
 `config/iris.properties`. Три FTB-мода, которых нет на Modrinth, кладутся в
 `packwiz/mods/` как обычные jar и попадают в `overrides/` при экспорте.
+
+> packwiz пишет манифест как `modrinth.index.json`, а Modrinth и Prism ищут
+> `modrinth.json`. `build-test-zip.ps1` добавляет второе имя внутрь архива —
+> поэтому один и тот же `.mrpack` импортируется и packwiz, и Modrinth.
 
 > Важно: в метафайлах **не должно быть** `mode = "metadata:modrinth"` —
 > packwiz понимает только `url` и `metadata:curseforge`. Обновления Modrinth
@@ -152,10 +209,14 @@ GitHub Pages не обязателен — packwiz отлично работае
 - **Мобильный Lite** — это не отдельный мир, а облегчённый клиент **той же сборки**:
   те же контентные моды, что на сервере, минус 11 тяжёлых клиентских (Iris, Distant Horizons,
   Particle Rain, Sound Physics, First Person, Not Enough Animations, EMF/ETF, GTBCS,
-  Xaero World Map). Остаётся 196 модов — это минимум для совместимости с общим сервером.
+  Xaero World Map). Остаётся 199 модов — это минимум для совместимости с общим сервером.
   На Poco X5 Pro ожидаемо 15–30 FPS в спокойных местах и 5–15 FPS у большой базы;
   загрузка 3–8 минут. Полной плавности телефон не даст. Если не тянет — нужен отдельный
   Lite-сервер с урезанным набором модов, но это уже другой мир.
+- **Диалоги пока не проверены в игре.** Всё сюжетное проверено на сервере: NPC
+  импортируются, метки и ветки диалогов на месте, правила привязки к квестам
+  записаны в NBT сущности. Клик по NPC в окне игры нужно проверить руками —
+  GUI-клиента в этой среде нет.
 - В логе есть некритичные ошибки рецептов и loot-таблиц от Create-аддонов
   (`railways`, `dndecor`, `create_connected`, `tfmg`). Они не мешают игре.
 - `spectrum:fusion_shrine` в старых квестах заменён на `fusion_shrine_basalt`.

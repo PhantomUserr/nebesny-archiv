@@ -2,24 +2,24 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "homestead"
-	group: "5ADA6ADB5D0E5C03"
+	group: "05ADA6ADB5D0E5C0"
 	icon: {
 		id: "minecraft:oak_planks"
 	}
-	id: "18D9A7CF692B9F59"
+	id: "018D9A7CF692B9F5"
 	order_index: 1
 	progression_mode: "flexible"
 	quests: [
 		{
-			dependencies: ["DF0C55FE90F3251B"]
+			dependencies: ["0DF0C55FE90F3251"]
 			icon: {
 				id: "minecraft:wheat"
 			}
-			id: "DCE30778EF9369B9"
+			id: "0DCE30778EF9369B"
 			min_width: 220
 			rewards: [
 				{
-					id: "120C1094B5A8A128"
+					id: "0120C1094B5A8A12"
 					type: "xp"
 					xp: 10
 				}
@@ -29,7 +29,7 @@
 			tasks: [
 				{
 					count: 12
-					id: "66D094A6CE0D9019"
+					id: "066D094A6CE0D901"
 					item: {
 						count: 1
 						id: "minecraft:wheat"
@@ -41,15 +41,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DF0C55FE90F3251B"]
+			dependencies: ["0DF0C55FE90F3251"]
 			icon: {
 				id: "minecraft:wooden_hoe"
 			}
-			id: "973181FAF2164EFB"
+			id: "0973181FAF2164EF"
 			min_width: 220
 			rewards: [
 				{
-					id: "16D455F100972A4A"
+					id: "016D455F100972A4"
 					type: "xp"
 					xp: 5
 				}
@@ -59,7 +59,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "A17B7F0FC8D96B99"
+					id: "0A17B7F0FC8D96B9"
 					item: {
 						count: 1
 						id: "minecraft:wooden_hoe"
@@ -71,15 +71,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DCE30778EF9369B9"]
+			dependencies: ["0DCE30778EF9369B"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "4B17CD8051FC8093"
+			id: "04B17CD8051FC809"
 			min_width: 220
 			rewards: [
 				{
-					id: "89831EE4AD951328"
+					id: "089831EE4AD95132"
 					type: "xp"
 					xp: 10
 				}
@@ -89,7 +89,7 @@
 			tasks: [
 				{
 					entity: "minecraft:cow"
-					id: "6B01DC0AC3903836"
+					id: "06B01DC0AC390383"
 					type: "kill"
 					value: 3
 				}
@@ -98,15 +98,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DCE30778EF9369B9"]
+			dependencies: ["0DCE30778EF9369B"]
 			icon: {
 				id: "farmersdelight:cooking_pot"
 			}
-			id: "C7F08D97E457371F"
+			id: "0C7F08D97E457371"
 			min_width: 220
 			rewards: [
 				{
-					id: "F464E16114F339FC"
+					id: "0F464E16114F339F"
 					type: "xp"
 					xp: 10
 				}
@@ -116,7 +116,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "3D4A52C31AD37851"
+					id: "03D4A52C31AD3785"
 					item: {
 						count: 1
 						id: "farmersdelight:cooking_pot"
@@ -128,15 +128,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["C7F08D97E457371F"]
+			dependencies: ["0C7F08D97E457371"]
 			icon: {
 				id: "farmersdelight:cutting_board"
 			}
-			id: "2A72B93C9C7D30CA"
+			id: "02A72B93C9C7D30C"
 			min_width: 220
 			rewards: [
 				{
-					id: "B87F41394505B798"
+					id: "0B87F41394505B79"
 					type: "xp"
 					xp: 10
 				}
@@ -146,7 +146,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "E0A3A163B5905315"
+					id: "0E0A3A163B590531"
 					item: {
 						count: 1
 						id: "farmersdelight:cutting_board"
@@ -158,15 +158,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["2A72B93C9C7D30CA"]
+			dependencies: ["02A72B93C9C7D30C"]
 			icon: {
 				id: "farmersdelight:stove"
 			}
-			id: "908715FBBA1D7386"
+			id: "0908715FBBA1D738"
 			min_width: 220
 			rewards: [
 				{
-					id: "A2524BE85EB4EF51"
+					id: "0A2524BE85EB4EF5"
 					type: "xp"
 					xp: 10
 				}
@@ -176,7 +176,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "F77BACA20F727D67"
+					id: "0F77BACA20F727D6"
 					item: {
 						count: 1
 						id: "farmersdelight:stove"
@@ -188,15 +188,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DCE30778EF9369B9"]
+			dependencies: ["0DCE30778EF9369B"]
 			icon: {
 				id: "sophisticatedstorage:chest"
 			}
-			id: "DB54F48FFA2479F4"
+			id: "0DB54F48FFA2479F"
 			min_width: 220
 			rewards: [
 				{
-					id: "874D67BFB047F41D"
+					id: "0874D67BFB047F41"
 					type: "xp"
 					xp: 10
 				}
@@ -206,7 +206,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "C0E9D943FFFE8F3E"
+					id: "0C0E9D943FFFE8F3"
 					item: {
 						count: 1
 						id: "sophisticatedstorage:chest"
@@ -218,15 +218,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DB54F48FFA2479F4"]
+			dependencies: ["0DB54F48FFA2479F"]
 			icon: {
 				id: "functionalstorage:simple_compacting_drawer"
 			}
-			id: "6098C1F927FE7DB3"
+			id: "06098C1F927FE7DB"
 			min_width: 220
 			rewards: [
 				{
-					id: "E1A0F2A28BC31746"
+					id: "0E1A0F2A28BC3174"
 					type: "xp"
 					xp: 10
 				}
@@ -236,7 +236,7 @@
 			tasks: [
 				{
 					count: 2
-					id: "4E0EDB0658BAD713"
+					id: "04E0EDB0658BAD71"
 					item: {
 						count: 1
 						id: "functionalstorage:simple_compacting_drawer"
@@ -248,15 +248,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["573660879FF5508C"]
+			dependencies: ["0573660879FF5508"]
 			icon: {
 				id: "comforts:sleeping_bag_white"
 			}
-			id: "FCE7F8943ABC2726"
+			id: "0FCE7F8943ABC272"
 			min_width: 220
 			rewards: [
 				{
-					id: "EE00E54A95EB9AF2"
+					id: "0EE00E54A95EB9AF"
 					type: "xp"
 					xp: 10
 				}
@@ -266,7 +266,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "3FB2EE8F5E163906"
+					id: "03FB2EE8F5E16390"
 					item: {
 						count: 1
 						id: "comforts:sleeping_bag_white"
@@ -278,15 +278,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DB54F48FFA2479F4"]
+			dependencies: ["0DB54F48FFA2479F"]
 			icon: {
 				id: "minecraft:lantern"
 			}
-			id: "D75B2107685C9E53"
+			id: "0D75B2107685C9E5"
 			min_width: 220
 			rewards: [
 				{
-					id: "88DF150DB4891293"
+					id: "088DF150DB489129"
 					type: "xp"
 					xp: 10
 				}
@@ -296,7 +296,7 @@
 			tasks: [
 				{
 					count: 6
-					id: "42BDFA802B5F5545"
+					id: "042BDFA802B5F554"
 					item: {
 						count: 1
 						id: "minecraft:lantern"
@@ -308,15 +308,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DB54F48FFA2479F4"]
+			dependencies: ["0DB54F48FFA2479F"]
 			icon: {
 				id: "minecraft:glass"
 			}
-			id: "77A745D21F71AFDD"
+			id: "077A745D21F71AFD"
 			min_width: 220
 			rewards: [
 				{
-					id: "8FC736004844FFA4"
+					id: "08FC736004844FFA"
 					type: "xp"
 					xp: 10
 				}
@@ -326,7 +326,7 @@
 			tasks: [
 				{
 					count: 16
-					id: "1CFEE06A837ADE0C"
+					id: "01CFEE06A837ADE0"
 					item: {
 						count: 1
 						id: "minecraft:glass"
@@ -338,15 +338,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["77A745D21F71AFDD"]
+			dependencies: ["077A745D21F71AFD"]
 			icon: {
 				id: "minecraft:oak_stairs"
 			}
-			id: "A1757138A17DB988"
+			id: "0A1757138A17DB98"
 			min_width: 220
 			rewards: [
 				{
-					id: "751A4DB34D16D8C8"
+					id: "0751A4DB34D16D8C"
 					type: "xp"
 					xp: 10
 				}
@@ -356,7 +356,7 @@
 			tasks: [
 				{
 					count: 16
-					id: "19EA30299E84257D"
+					id: "019EA30299E84257"
 					item: {
 						count: 1
 						id: "minecraft:oak_stairs"
@@ -368,15 +368,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["77A745D21F71AFDD"]
+			dependencies: ["077A745D21F71AFD"]
 			icon: {
 				id: "minecraft:oak_door"
 			}
-			id: "270586BDB3450F4F"
+			id: "0270586BDB3450F4"
 			min_width: 220
 			rewards: [
 				{
-					id: "FABB529EB6C89ED8"
+					id: "0FABB529EB6C89ED"
 					type: "xp"
 					xp: 10
 				}
@@ -386,7 +386,7 @@
 			tasks: [
 				{
 					count: 2
-					id: "0A556F9BD0D24175"
+					id: "00A556F9BD0D2417"
 					item: {
 						count: 1
 						id: "minecraft:oak_door"
@@ -398,15 +398,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["270586BDB3450F4F", "A1757138A17DB988"]
+			dependencies: ["0270586BDB3450F4", "0A1757138A17DB98"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "3B3A09951C876303"
+			id: "03B3A09951C87630"
 			min_width: 220
 			rewards: [
 				{
-					id: "D0C3A84D87788337"
+					id: "0D0C3A84D8778833"
 					type: "xp"
 					xp: 30
 				}
@@ -415,7 +415,7 @@
 			size: 1.2d
 			tasks: [
 				{
-					id: "7C44BC9A06D574E5"
+					id: "07C44BC9A06D574E"
 					type: "checkmark"
 				}
 			]
@@ -423,15 +423,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["FCE7F8943ABC2726"]
+			dependencies: ["0FCE7F8943ABC272"]
 			icon: {
 				id: "waystones:waystone"
 			}
-			id: "81AF63F940B03D1D"
+			id: "081AF63F940B03D1"
 			min_width: 220
 			rewards: [
 				{
-					id: "D28957943FC92FAC"
+					id: "0D28957943FC92FA"
 					type: "xp"
 					xp: 15
 				}
@@ -441,7 +441,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "328CB1F6762B0319"
+					id: "0328CB1F6762B031"
 					item: {
 						count: 1
 						id: "waystones:waystone"
@@ -453,15 +453,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3B3A09951C876303"]
+			dependencies: ["03B3A09951C87630"]
 			icon: {
 				id: "minecraft:book"
 			}
-			id: "877D68AD2E964BF6"
+			id: "0877D68AD2E964BF"
 			min_width: 220
 			rewards: [
 				{
-					id: "E03310BE34610653"
+					id: "0E03310BE3461065"
 					type: "xp"
 					xp: 10
 				}
@@ -470,7 +470,7 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "3046AA4CE0C5B25A"
+					id: "03046AA4CE0C5B25"
 					type: "checkmark"
 				}
 			]
@@ -479,15 +479,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["DCE30778EF9369B9"]
+			dependencies: ["0DCE30778EF9369B"]
 			icon: {
 				id: "minecraft:beehive"
 			}
-			id: "76EA979E739385F9"
+			id: "076EA979E739385F"
 			min_width: 220
 			rewards: [
 				{
-					id: "981C42DBB4C94D9E"
+					id: "0981C42DBB4C94D9"
 					type: "xp"
 					xp: 15
 				}
@@ -497,7 +497,7 @@
 			tasks: [
 				{
 					count: 1
-					id: "C16CE424171D33FD"
+					id: "0C16CE424171D33F"
 					item: {
 						count: 1
 						id: "minecraft:beehive"
