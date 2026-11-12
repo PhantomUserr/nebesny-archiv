@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/YOUR_GITHUB_USER/nebesny-archiv/main/packwiz/pack.toml
+https://raw.githubusercontent.com/PhantomUserr/nebesny-archiv/main/packwiz/pack.toml

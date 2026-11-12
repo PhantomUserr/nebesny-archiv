@@ -178,8 +178,8 @@ powershell -File tools\build-test-zip.ps1
 
 ### Публикация на GitHub
 
-1. Создайте **публичный** репозиторий `nebesny-archiv`.
-2. Замените `YOUR_GITHUB_USER` в `server/pack-url.txt` и в этом README на свой ник.
+1. Создайте **публичный** репозиторий `nebesny-archiv` (владелец — `PhantomUserr`).
+2. Ник уже подставлен: в `server/pack-url.txt` и в этом README стоит `PhantomUserr`.
 3. Запушьте репозиторий:
 
 ```bat
@@ -187,7 +187,7 @@ git init
 git add .
 git commit -m "Nebesny Archiv 1.0.0"
 git branch -M main
-git remote add origin https://github.com/ВАШ_НИК/nebesny-archiv.git
+git remote add origin https://github.com/PhantomUserr/nebesny-archiv.git
 git push -u origin main
 ```
 
@@ -195,7 +195,7 @@ git push -u origin main
 5. Адрес пака для сервера и packwiz-клиента:
 
 ```
-https://raw.githubusercontent.com/ВАШ_НИК/nebesny-archiv/main/packwiz/pack.toml
+https://raw.githubusercontent.com/PhantomUserr/nebesny-archiv/main/packwiz/pack.toml
 ```
 
 Репозиторий должен быть публичным: raw-ссылки приватных репозиториев требуют токен.
