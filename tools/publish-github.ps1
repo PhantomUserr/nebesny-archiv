@@ -130,10 +130,12 @@ if (-not $release) {
 $hasAsset = $release.assets | Where-Object { $_.name -eq $assetName }
 if ($hasAsset) {
   Write-Host 'Ассет уже загружен — заменяю.'
-  Invoke-RestMethod -Uri "https://uploads.github.com/repos/$Owner/$Repo/releases/assets/$($hasAsset.id)" `
+  Invoke-RestMethod -Uri "https://api.github.com/repos/$Owner/$Repo/releases/assets/$($hasAsset.id)" `
     -Headers @{ 'Authorization' = "Bearer $token"; 'User-Agent' = 'nebesny-archiv-publish'; 'Content-Type' = 'application/octet-stream' } `
     -Method Delete -ErrorAction SilentlyContinue
-  Start-Sleep -Seconds 2
+  Start-Sleep -Seconds 5
+  # после удаления ассета релиз надо перечитать: старый upload_url уже недействителен
+  $release = Invoke-RestMethod -Uri "$api/tags/$ReleaseTag" -Headers $headers -Method Get
 }
 
 $uploadUrl = "https://uploads.github.com/repos/$Owner/$Repo/releases/$($release.id)/assets?name=$([uri]::EscapeDataString($assetName))"

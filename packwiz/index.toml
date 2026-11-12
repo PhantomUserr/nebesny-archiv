@@ -687,11 +687,6 @@ hash = "84d2444d71680240a2ec6f79c7fdfd95451116b01d8cb3a1e55f8114985d5999"
 metafile = true
 
 [[files]]
-file = "mods/carryon-aeronautics-compat.pw.toml"
-hash = "13da69ae86ab352f0db2403efdd3bd9f97e963afee86feaaeb3a280ca0ad50e9"
-metafile = true
-
-[[files]]
 file = "mods/cbc-locometal-armor.pw.toml"
 hash = "3935fc686204bd8a99c33370fb0051484a08979da30c09e75b344da784ce9bc8"
 metafile = true
