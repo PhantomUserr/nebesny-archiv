@@ -52,6 +52,17 @@
 ]
 	},
 	{
+		Label: "miya_catalog",
+		Name: "Что у тебя в журнале?"
+,
+		Actions: [
+		{
+			Cmd: "miya_catalog",
+			Type: "OPEN_NAMED_DIALOG"
+		}
+]
+	},
+	{
 		Label: "miya_bye",
 		Name: "Пока!"
 	}
@@ -92,6 +103,29 @@
 	{
 		Label: "miya_greet",
 		Name: "Спасибо!"
+,
+		Actions: [
+		{
+			Cmd: "miya_greet",
+			Type: "OPEN_NAMED_DIALOG"
+		}
+]
+	}
+]
+},
+{
+	Label: "miya_catalog",
+	Name: "Каталог вкусов",
+	Priority: 5,
+	Texts: [
+	{Text: "Смотри. У меня в журнале пустые страницы. Я записываю всё, что вижу: облако, было в форме библиотеки, а сегодня — в форме облака."},
+	{Text: "А еду я записать не могу. Я её не видела. У Архива был целый раздел про еду — целая полка кулинарных книг, — и теперь его нет. Как и остальных разделов."},
+	{Text: "Еда — это тоже знание, а знание без адреса не существует. Поэтому мне нужен настоящий огород и настоящая кухня. Иди, сделай мне раздел."}
+],
+	Buttons: [
+	{
+		Label: "miya_greet",
+		Name: "Сделаю."
 ,
 		Actions: [
 		{
@@ -149,6 +183,18 @@
 				dialogId:"miya_greet",
 				priority:5,
 				questId:"0DB077EC7508712D"
+			},
+			{
+				condition:"COMPLETED",
+				dialogId:"miya_catalog",
+				priority:20,
+				questId:"0A95399442AF522C"
+			},
+			{
+				condition:"NOT_COMPLETED",
+				dialogId:"miya_greet",
+				priority:5,
+				questId:"0A95399442AF522C"
 			}
 ]
 		},

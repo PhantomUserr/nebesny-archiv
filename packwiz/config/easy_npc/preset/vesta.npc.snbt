@@ -52,6 +52,17 @@
 ]
 	},
 	{
+		Label: "vesta_larder",
+		Name: "Что нужно флоту?"
+,
+		Actions: [
+		{
+			Cmd: "vesta_larder",
+			Type: "OPEN_NAMED_DIALOG"
+		}
+]
+	},
+	{
 		Label: "vesta_bye",
 		Name: "Позже."
 	}
@@ -137,6 +148,29 @@
 ]
 },
 {
+	Label: "vesta_larder",
+	Name: "Кладовая флота",
+	Priority: 5,
+	Texts: [
+	{Text: "Корабли поднимаются в небо голодными — они не поднимутся. Это не страшность, это физика: без еды экипаж не дотянет."},
+	{Text: "Мне нужен огород, мне нужна кухня и мне нужен стол. Не для праздника. Для порядка. И ещё для Мии: у неё в журнале пустой раздел, и она из-за этого злится на весь мир."},
+	{Text: "Построй землю, научись готовить и собери пир. Когда пир будет готов, флот взлетит. Я проверю."}
+],
+	Buttons: [
+	{
+		Label: "vesta_greet",
+		Name: "Будет стол."
+,
+		Actions: [
+		{
+			Cmd: "vesta_greet",
+			Type: "OPEN_NAMED_DIALOG"
+		}
+]
+	}
+]
+},
+{
 	Label: "vesta_after_wood",
 	Name: "Ты вернулся",
 	Priority: 20,
@@ -183,6 +217,18 @@
 				dialogId:"vesta_greet",
 				priority:5,
 				questId:"0A00766F1A4D085B"
+			},
+			{
+				condition:"COMPLETED",
+				dialogId:"vesta_larder",
+				priority:20,
+				questId:"05618F09FC8566CF"
+			},
+			{
+				condition:"NOT_COMPLETED",
+				dialogId:"vesta_greet",
+				priority:5,
+				questId:"05618F09FC8566CF"
 			}
 ]
 		},

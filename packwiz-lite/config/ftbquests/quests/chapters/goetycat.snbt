@@ -1,0 +1,377 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "goetycat"
+	group: "026C7E41AE40BA73"
+	icon: {
+		id: "goety_cataclysm:abyss_essence"
+	}
+	id: "03833646BF9E25D7"
+	order_index: 16
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["046339DAF909D25B"]
+			icon: {
+				id: "goety_cataclysm:abyss_essence"
+			}
+			id: "00628DD93DAFC9BA"
+			min_width: 220
+			rewards: [
+				{
+					id: "0357E5B0014A8061"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0D6B4E8C66BCD7F0"
+					item: {
+						count: 1
+						id: "goety_cataclysm:abyss_essence"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0EE78E3019C1B84F"
+					item: {
+						count: 1
+						id: "goety_cataclysm:primordial_essence"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0254BF0A26E94D82"
+					item: {
+						count: 1
+						id: "goety_cataclysm:arcane_spirit"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "012FDAA36AC89210"
+					item: {
+						count: 1
+						id: "goety_cataclysm:warrior_spirit"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00628DD93DAFC9BA"]
+			icon: {
+				id: "goety_cataclysm:cursed_grave_focus"
+			}
+			id: "0BC667D69F5B1E1D"
+			min_width: 220
+			rewards: [
+				{
+					id: "006BD7294927FA00"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0FE8AB789ACC9ED6"
+					item: {
+						count: 1
+						id: "goety_cataclysm:cursed_grave_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0B3870E54FA8B898"
+					item: {
+						count: 1
+						id: "goety_cataclysm:cursed_cairn_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "04F89213185BF9F0"
+					item: {
+						count: 1
+						id: "goety_cataclysm:cursed_tomb_focus"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00628DD93DAFC9BA"]
+			icon: {
+				id: "goety_cataclysm:battlefield_focus"
+			}
+			id: "080AEA36DE080ABC"
+			min_width: 220
+			rewards: [
+				{
+					id: "05BE956BFD69A834"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0C415C0C81381112"
+					item: {
+						count: 1
+						id: "goety_cataclysm:battlefield_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0A0DBD3027805FC3"
+					item: {
+						count: 1
+						id: "goety_cataclysm:earth_shake_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "046F0B206CEC35B0"
+					item: {
+						count: 1
+						id: "goety_cataclysm:sandstorm_focus"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00628DD93DAFC9BA"]
+			icon: {
+				id: "goety_cataclysm:void_rune_focus"
+			}
+			id: "0E3ABCB508D5B7D5"
+			min_width: 220
+			rewards: [
+				{
+					id: "05AEDA36E9B9A76D"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0F3687E8F9002C50"
+					item: {
+						count: 1
+						id: "goety_cataclysm:void_rune_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "03D1EB53CAD717A0"
+					item: {
+						count: 1
+						id: "goety_cataclysm:void_vortex_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0EBB9B644A9D0791"
+					item: {
+						count: 1
+						id: "goety_cataclysm:void_mold_block"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01989A18675CD797"]
+			icon: {
+				id: "goety_cataclysm:fabricator"
+			}
+			id: "0324C1497D153CF6"
+			min_width: 220
+			rewards: [
+				{
+					id: "0D9E0B94D95A5B27"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0BE262B2A7B149C0"
+					item: {
+						count: 1
+						id: "goety_cataclysm:fabricator"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "06E75235BAC1ACB2"
+					item: {
+						count: 1
+						id: "goety_cataclysm:mechanized_core"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "02176C4CAE753B15"
+					item: {
+						count: 1
+						id: "goety_cataclysm:mechanized_iron_block"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0EFF519D4FA80E2E"
+					item: {
+						count: 1
+						id: "goety_cataclysm:netherite_plating"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00628DD93DAFC9BA"]
+			icon: {
+				id: "goety_cataclysm:ender_golem_skull"
+			}
+			id: "0DFFAFA6EA948541"
+			min_width: 220
+			rewards: [
+				{
+					id: "07EAFB1D906EF476"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0D1B2ACB5977AEEA"
+					item: {
+						count: 1
+						id: "goety_cataclysm:ender_golem_skull"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0974CBFD4393DA8F"
+					item: {
+						count: 1
+						id: "goety_cataclysm:remnant_skull"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "09F077F557CD0EB8"
+					item: {
+						count: 1
+						id: "goety_cataclysm:draugr_necromancer_spawn_egg"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0C6B526D14EE0015"
+					item: {
+						count: 1
+						id: "goety_cataclysm:royal_draugr_servant_spawn_egg"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00628DD93DAFC9BA"]
+			icon: {
+				id: "goety_cataclysm:sunken_tribune_focus"
+			}
+			id: "03943758232C81DF"
+			min_width: 220
+			rewards: [
+				{
+					id: "0D86567C20369D72"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0A8A58D06672C0B1"
+					item: {
+						count: 1
+						id: "goety_cataclysm:sunken_tribune_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "02281A500E765779"
+					item: {
+						count: 1
+						id: "goety_cataclysm:sunken_current_focus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "017D063D021CCEC1"
+					item: {
+						count: 1
+						id: "goety_cataclysm:sunken_swell_focus"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+	]
+}

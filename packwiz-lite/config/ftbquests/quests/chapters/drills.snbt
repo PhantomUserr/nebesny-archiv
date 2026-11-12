@@ -1,0 +1,792 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "drills"
+	group: "0E2842BED84458E2"
+	icon: {
+		id: "createoreexcavation:drilling_machine"
+	}
+	id: "031FBB6108D3983C"
+	order_index: 7
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["030DCB97554A6D90"]
+			icon: {
+				id: "createoreexcavation:drill"
+			}
+			id: "0CEAAEB682A68CE1"
+			min_width: 220
+			rewards: [
+				{
+					id: "050D1CE5851AEC60"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0F27BF2173B5381A"
+					item: {
+						count: 1
+						id: "createoreexcavation:drill"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0643D6A69649597D"
+					item: {
+						count: 1
+						id: "createoreexcavation:diamond_drill"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CEAAEB682A68CE1"]
+			icon: {
+				id: "createoreexcavation:drilling_machine"
+			}
+			id: "0C5432137F6A9BBE"
+			min_width: 220
+			rewards: [
+				{
+					id: "0B35A0171FF2F931"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0CA520E73B23C427"
+					item: {
+						count: 1
+						id: "createoreexcavation:drilling_machine"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0E8B2A5B273D6231"
+					item: {
+						count: 1
+						id: "createoreexcavation:kinetic_input"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0C673F568BC17E06"
+					item: {
+						count: 1
+						id: "createoreexcavation:io_block"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C5432137F6A9BBE"]
+			icon: {
+				id: "createoreexcavation:extractor"
+			}
+			id: "0EEEDC00D0C6FCE3"
+			min_width: 220
+			rewards: [
+				{
+					id: "03BED956BA919C57"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "05596668352F23D7"
+					item: {
+						count: 1
+						id: "createoreexcavation:extractor"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0BC76CC4455DBB6E"
+					item: {
+						count: 1
+						id: "createoreexcavation:multiblock"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0CEAAEB682A68CE1"]
+			icon: {
+				id: "createoreexcavation:vein_finder"
+			}
+			id: "02F5A7B1416954C0"
+			min_width: 220
+			rewards: [
+				{
+					id: "0B334708107A22E3"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0973CE38E3618E78"
+					item: {
+						count: 1
+						id: "createoreexcavation:vein_finder"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "01130040E7E78D20"
+					item: {
+						count: 1
+						id: "createoreexcavation:vein_atlas"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["02F5A7B1416954C0"]
+			icon: {
+				id: "createoreexcavation:sample_drill"
+			}
+			id: "0A40859731D0756B"
+			min_width: 220
+			rewards: [
+				{
+					id: "0AB3E013678F3E6E"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0436AC22DAB5F927"
+					item: {
+						count: 1
+						id: "createoreexcavation:sample_drill"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DEE8AEE433D79F8"
+					item: {
+						count: 1
+						id: "createoreexcavation:raw_emerald"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "008E629B12889A64"
+					item: {
+						count: 1
+						id: "createoreexcavation:raw_redstone"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0C5432137F6A9BBE"]
+			icon: {
+				id: "createoreexcavation:netherite_drill"
+			}
+			id: "07F6BAB475834176"
+			min_width: 220
+			rewards: [
+				{
+					id: "01C15CBCA8F45730"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "054BA26A4B77034E"
+					item: {
+						count: 1
+						id: "createoreexcavation:netherite_drill"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0271EBFF47DBA0B6"
+					item: {
+						count: 1
+						id: "createoreexcavation:raw_diamond"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00B72EE4A4210CBC"]
+			icon: {
+				id: "create_aeronautics_toolgun:magnetic_gun"
+			}
+			id: "0492F36DB4C7BA2C"
+			min_width: 220
+			rewards: [
+				{
+					id: "0F746B1BF55CAFBE"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "06FC0448A5125E0D"
+					item: {
+						count: 1
+						id: "create_aeronautics_toolgun:magnetic_gun"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0492F36DB4C7BA2C"]
+			icon: {
+				id: "create_aeronautics_toolgun:structure_tool"
+			}
+			id: "0C2307504940A2B3"
+			min_width: 220
+			rewards: [
+				{
+					id: "0697339B6D6890A5"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0FEDAC2132A26627"
+					item: {
+						count: 1
+						id: "create_aeronautics_toolgun:structure_tool"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0D86F87A53E7C6AA"
+					item: {
+						count: 1
+						id: "create_aeronautics_toolgun:survival_structure_tool"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0C2307504940A2B3"]
+			icon: {
+				id: "create_aeronautics_toolgun:portable_structure_printer"
+			}
+			id: "0B9AC01CBC16BD25"
+			min_width: 220
+			rewards: [
+				{
+					id: "0AF8748F0F83BCF7"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0CF5D7FD1238693F"
+					item: {
+						count: 1
+						id: "create_aeronautics_toolgun:portable_structure_printer"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "054932B5FCDD0CFC"
+					item: {
+						count: 1
+						id: "create_aeronautics_toolgun:portable_structure_container"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "018865B401D3D552"
+					item: {
+						count: 1
+						id: "create_aeronautics_toolgun:disposable_vehicle_container"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["04162F3301BE4F81"]
+			icon: {
+				id: "aeroencasedpipe:white_envelope_encased_pipe"
+			}
+			id: "0AD91FF7A00B5773"
+			min_width: 220
+			rewards: [
+				{
+					id: "06C1E05154ABB766"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "0C3D049B396E66E9"
+					item: {
+						count: 1
+						id: "aeroencasedpipe:white_envelope_encased_pipe"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "01DE747B36D51AD4"
+					item: {
+						count: 1
+						id: "aeroencasedpipe:black_envelope_encased_pipe"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0492F36DB4C7BA2C"]
+			icon: {
+				id: "aeronautics_utility_objects:hydraulic_rod"
+			}
+			id: "00336AB464C3ACB6"
+			min_width: 220
+			rewards: [
+				{
+					id: "09B854334D95EF68"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "0B91E34FF2BDB2A7"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:hydraulic_rod"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "08CA3BDC9787653E"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:hydraulic_regulator"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "077FBDD57120F3FC"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:hydraulic_connection_head"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00336AB464C3ACB6"]
+			icon: {
+				id: "aeronautics_utility_objects:universal_joint"
+			}
+			id: "02B8C33CC66FFA4B"
+			min_width: 220
+			rewards: [
+				{
+					id: "07C53293992AA5D9"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "08F85A431B8C4FFC"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:universal_joint"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0438110421E04546"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:universal_joint_rod"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "02F2C13151895A4D"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:brass_universal_joint"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02B8C33CC66FFA4B"]
+			icon: {
+				id: "aeronautics_utility_objects:damping_stress_bearing"
+			}
+			id: "08197276447AAE08"
+			min_width: 220
+			rewards: [
+				{
+					id: "06FA4562B39B5F28"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "064A574BFFA64BEA"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:damping_stress_bearing"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "034D4774619ABFEF"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:giant_hydraulic_rod"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "028C8CA5ADA27546"
+					item: {
+						count: 1
+						id: "aeronautics_utility_objects:brass_hydraulic_hinge_head"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0EAB760A1987CC09"]
+			icon: {
+				id: "createthrusters:thruster"
+			}
+			id: "0B3FB77DC74E23E6"
+			min_width: 220
+			rewards: [
+				{
+					id: "00E780C8252CF17A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "06F5F5D89B68781D"
+					item: {
+						count: 1
+						id: "createthrusters:thruster"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "08EEB1EF72F3569F"
+					item: {
+						count: 1
+						id: "createthrusters:small_thruster"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0CC7555E6EF7AC50"
+					item: {
+						count: 1
+						id: "createthrusters:rcs_thruster"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B3FB77DC74E23E6"]
+			icon: {
+				id: "createthrusters:navigation_table"
+			}
+			id: "0CAA32FA4E95E763"
+			min_width: 220
+			rewards: [
+				{
+					id: "0ECE8F962A14F091"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "014DF998DC6B654B"
+					item: {
+						count: 1
+						id: "createthrusters:navigation_table"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0D058025F2FE3E77"
+					item: {
+						count: 1
+						id: "createthrusters:advanced_navigation_table"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "05E61471E7DE471F"
+					item: {
+						count: 1
+						id: "createthrusters:ship_control_module"
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CAA32FA4E95E763"]
+			icon: {
+				id: "createthrusters:ship_dock"
+			}
+			id: "0E0A6A8764BF7FD4"
+			min_width: 220
+			rewards: [
+				{
+					id: "02BBC8E26BE586E5"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0B9B0D8106419748"
+					item: {
+						count: 1
+						id: "createthrusters:ship_dock"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "02DF6666B5724E76"
+					item: {
+						count: 1
+						id: "createthrusters:ship_coupler"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "06A690EC4FE11ADF"
+					item: {
+						count: 1
+						id: "createthrusters:shipping_manifest"
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E0A6A8764BF7FD4"]
+			icon: {
+				id: "createthrusters:smart_tank"
+			}
+			id: "0DD68587BD20255B"
+			min_width: 220
+			rewards: [
+				{
+					id: "0A6A3ACC84CA0F02"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0329C55E1309F7E9"
+					item: {
+						count: 1
+						id: "createthrusters:smart_tank"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0685F44981AA668A"
+					item: {
+						count: 1
+						id: "createthrusters:smart_vault"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "03855EBF7005C31B"
+					item: {
+						count: 1
+						id: "createthrusters:smart_battery"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["09BDAEC055CF53B0"]
+			icon: {
+				id: "ae2:pattern_provider"
+			}
+			id: "0BF4BE656CE8245E"
+			min_width: 220
+			rewards: [
+				{
+					id: "03EB7CC9DDAEB3BD"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0108C1686A3A142B"
+					item: {
+						count: 1
+						id: "ae2:pattern_provider"
+					}
+					type: "item"
+				}
+				{
+					id: "0972941C17326439"
+					type: "checkmark"
+				}
+			]
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+}

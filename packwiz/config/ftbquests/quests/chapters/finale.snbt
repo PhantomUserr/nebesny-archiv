@@ -7,7 +7,7 @@
 		id: "minecraft:nether_star"
 	}
 	id: "024AF87849C48F5B"
-	order_index: 7
+	order_index: 17
 	progression_mode: "flexible"
 	quests: [
 		{
@@ -156,9 +156,9 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0A97E8E373C21F59"]
+			dependencies: ["0A97E8E373C21F59", "0D26202E16225D2B"]
 			icon: {
-				id: "minecraft:book"
+				id: "farmersdelight:roast_chicken"
 			}
 			id: "03A4E2E4089BB241"
 			min_width: 220
@@ -173,8 +173,40 @@
 			size: 1.2d
 			tasks: [
 				{
+					count: 1
 					id: "0395804B5E4D301F"
-					type: "checkmark"
+					item: {
+						count: 1
+						id: "farmersdelight:roast_chicken"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0550DC22E2523B44"
+					item: {
+						count: 1
+						id: "farmersdelight:pasta_with_meatballs"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "05195D3A923F42DB"
+					item: {
+						count: 1
+						id: "farmersdelight:apple_pie"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0E89FBFBCAA57CEA"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
 				}
 			]
 			x: 4.0d

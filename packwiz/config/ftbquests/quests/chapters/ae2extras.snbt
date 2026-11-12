@@ -1,0 +1,605 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "ae2extras"
+	group: "0E2842BED84458E2"
+	icon: {
+		id: "ae2:energy_crystal"
+	}
+	id: "08E99CBE5A8034A9"
+	order_index: 5
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["0B055B1D760A7756"]
+			icon: {
+				id: "ae2cs:certus_quartz_ore"
+			}
+			id: "0D5399006ADFE33F"
+			min_width: 220
+			rewards: [
+				{
+					id: "0E702B948D99F84E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "0872BA35DAC739AB"
+					item: {
+						count: 1
+						id: "ae2cs:certus_quartz_ore"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "035D61C35DA5E725"
+					item: {
+						count: 1
+						id: "ae2cs:certus_quartz_seed"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D5399006ADFE33F"]
+			icon: {
+				id: "ae2cs:charged_certus_quartz_block"
+			}
+			id: "0670CDB18C08EE03"
+			min_width: 220
+			rewards: [
+				{
+					id: "0EC534BC7D74DBF9"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "08E6C4FC3A56D7EF"
+					item: {
+						count: 1
+						id: "ae2cs:charged_certus_quartz_block"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0BAA2F5828E75997"
+					item: {
+						count: 1
+						id: "ae2cs:charged_certus_quartz_ore"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D5399006ADFE33F"]
+			icon: {
+				id: "ae2cs:crystal_growth_chamber"
+			}
+			id: "02AD5AAE2FABF092"
+			min_width: 220
+			rewards: [
+				{
+					id: "05CCF9BBB8949D0E"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0A2CBEDB09E5E6C8"
+					item: {
+						count: 1
+						id: "ae2cs:crystal_growth_chamber"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0EF84B0F10C3922E"
+					item: {
+						count: 1
+						id: "ae2cs:crystal_aggregator"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "04A8E98716B6F748"
+					item: {
+						count: 1
+						id: "ae2cs:crystal_vibration_chamber"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02AD5AAE2FABF092"]
+			icon: {
+				id: "ae2cs:crystal_pulverizer"
+			}
+			id: "0249EF4E4B39AB51"
+			min_width: 220
+			rewards: [
+				{
+					id: "0019E6F0A729529C"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "05D656D3981D4CA4"
+					item: {
+						count: 1
+						id: "ae2cs:crystal_pulverizer"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0CE19A60D48BDF1B"
+					item: {
+						count: 1
+						id: "ae2cs:entropy_variation_reaction_chamber"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0DA8DB7C5E01AF78"]
+			icon: {
+				id: "ae2cs:circuit_etcher"
+			}
+			id: "0ED5FB06E979B99B"
+			min_width: 220
+			rewards: [
+				{
+					id: "0C252547DE0F70E3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "054F697D5DC55A7B"
+					item: {
+						count: 1
+						id: "ae2cs:circuit_etcher"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0E4F938A247FDD8A"
+					item: {
+						count: 1
+						id: "ae2cs:blank_print_press"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0ED5FB06E979B99B"]
+			icon: {
+				id: "ae2cs:ender_crystal_sword"
+			}
+			id: "07CA1B7D2DF4365B"
+			min_width: 220
+			rewards: [
+				{
+					id: "09CFDC31486B1FB2"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0E3C1A2CA738EFC6"
+					item: {
+						count: 1
+						id: "ae2cs:ender_crystal_sword"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "02643E63A5AC2A27"
+					item: {
+						count: 1
+						id: "ae2cs:ender_interface"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0CAD7334EE91E7CF"
+					item: {
+						count: 1
+						id: "ae2cs:ender_linker"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["07CA1B7D2DF4365B"]
+			icon: {
+				id: "ae2cs:ender_crystal_pickaxe"
+			}
+			id: "0D4EEE354365B0A4"
+			min_width: 220
+			rewards: [
+				{
+					id: "049E774DE3EC7079"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0CB9167009E37BFC"
+					item: {
+						count: 1
+						id: "ae2cs:ender_crystal_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0DAFDA343C2BB3A8"
+					item: {
+						count: 1
+						id: "ae2cs:ender_crystal_axe"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04641092348515D7"]
+			icon: {
+				id: "ae2additions:disk_item_1024k"
+			}
+			id: "0C3B286F91C32B2D"
+			min_width: 220
+			rewards: [
+				{
+					id: "02D3EFD2D76D9FF4"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0DE06474BC8FC445"
+					item: {
+						count: 1
+						id: "ae2additions:disk_item_1024k"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "08723AA5CA8578FD"
+					item: {
+						count: 1
+						id: "ae2additions:disk_item_4096k"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "015C091A29091040"
+					item: {
+						count: 1
+						id: "ae2additions:disk_item_16384k"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C3B286F91C32B2D"]
+			icon: {
+				id: "ae2additions:disk_fluid_1024k"
+			}
+			id: "075FC94970D760DA"
+			min_width: 220
+			rewards: [
+				{
+					id: "000347BCAEE77ECE"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0E94CBEEEE3E0E86"
+					item: {
+						count: 1
+						id: "ae2additions:disk_fluid_1024k"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0686704B29F1897E"
+					item: {
+						count: 1
+						id: "ae2additions:disk_chemical_1024k"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0C3B286F91C32B2D"]
+			icon: {
+				id: "ae2additions:item_storage_cell_1024"
+			}
+			id: "008161F72A9687D3"
+			min_width: 220
+			rewards: [
+				{
+					id: "0EFE13D59FA55549"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0CDADF0925D1C4C3"
+					item: {
+						count: 1
+						id: "ae2additions:item_storage_cell_1024"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "09EE4CF5434194C6"
+					item: {
+						count: 1
+						id: "ae2additions:fluid_storage_cell_1024"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "07B6D7893617FACD"
+					item: {
+						count: 1
+						id: "ae2additions:super_cell_65m"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["008161F72A9687D3"]
+			icon: {
+				id: "ae2additions:4096k_crafting_storage"
+			}
+			id: "0171C3EF60CDE4B6"
+			min_width: 220
+			rewards: [
+				{
+					id: "0B88D5CD9F9C8AC0"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0BF0F0E802AF16FC"
+					item: {
+						count: 1
+						id: "ae2additions:4096k_crafting_storage"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0C4BFC562134FF46"
+					item: {
+						count: 1
+						id: "ae2additions:65536k_crafting_storage"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0EE0A2386B696725"]
+			icon: {
+				id: "ae2wtlib:wireless_universal_terminal"
+			}
+			id: "0D061034F3002EB4"
+			min_width: 220
+			rewards: [
+				{
+					id: "03B408D0C4AD62C4"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "06CC9401B7BEE833"
+					item: {
+						count: 1
+						id: "ae2wtlib:wireless_universal_terminal"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "040A9A2260475636"
+					item: {
+						count: 1
+						id: "ae2wtlib:quantum_bridge_card"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["010BA185F8184CF6"]
+			icon: {
+				id: "ae2lt:energy_module_t1"
+			}
+			id: "02B5BFA34615CF1F"
+			min_width: 220
+			rewards: [
+				{
+					id: "093FA6E87FD03812"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0B67720EF5B48332"
+					item: {
+						count: 1
+						id: "ae2lt:energy_module_t1"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "06F40CE3094A3439"
+					item: {
+						count: 1
+						id: "ae2lt:energy_module_t2"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "003811CAB5AF2889"
+					item: {
+						count: 1
+						id: "ae2lt:energy_module_t3"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02B5BFA34615CF1F"]
+			icon: {
+				id: "ae2lt:matter_warping_matrix_pattern_storage_t1"
+			}
+			id: "0EE2E02BC3EBCC6A"
+			min_width: 220
+			rewards: [
+				{
+					id: "0106B9629AB8D988"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0F3CD8943F3AE1E4"
+					item: {
+						count: 1
+						id: "ae2lt:matter_warping_matrix_pattern_storage_t1"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0CEEAB49FAA92242"
+					item: {
+						count: 1
+						id: "ae2lt:matter_warping_matrix_thermal_control_unit_t1"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 6.0d
+		}
+	]
+}

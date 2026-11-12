@@ -795,6 +795,42 @@
       "version": "1.21.1+1.0.2",
       "side": "both",
       "category": "story"
+    },
+    {
+      "slug": "create-ore-excavation",
+      "version": "1.21.1-1.6.8",
+      "side": "both",
+      "category": "create"
+    },
+    {
+      "slug": "create-aeronautics-toolgun",
+      "version": "0.3.9",
+      "side": "both",
+      "category": "aeronautics"
+    },
+    {
+      "slug": "create-aeronautics-encased-fluid-pipes",
+      "version": "1.0.7",
+      "side": "both",
+      "category": "aeronautics"
+    },
+    {
+      "slug": "create-aeronautics-transmission-linkage",
+      "version": "0.2.9",
+      "side": "both",
+      "category": "aeronautics"
+    },
+    {
+      "slug": "create-aeronautics-gadgets-and-gizmos",
+      "version": "2.0.3",
+      "side": "both",
+      "category": "aeronautics"
+    },
+    {
+      "slug": "ae2-pattern-restocker",
+      "version": "1.1.0",
+      "side": "both",
+      "category": "ae2"
     }
   ]
 }

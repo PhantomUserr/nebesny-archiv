@@ -2,47 +2,87 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/easy_npc/preset/miya.npc.snbt"
-hash = "a4d05bb5bd14a120724b3ae5ecb2c6c0ff9f62d0a7624f518a19e172959723b3"
+hash = "0bcc9382cac2d7950fc0c1e5c8c5255c694c95128f8e3900da613fd277ea4a26"
 
 [[files]]
 file = "config/easy_npc/preset/vesta.npc.snbt"
-hash = "3c01623c36e590604e55b7a12b0da8b2f17c9f8afc7226f449625a5346ae4792"
+hash = "539874be497a7196d0bc4c76d8296d0838952cd2b4884c0eb63d4ed9b35a2b56"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "6e0e7242b315d4cd570bfbe5639a77386295b17ad6aa83ca28215fb8142d7889"
+hash = "34a38a6e016eb089e162e8fbc70dff88a2a7bd0c1b4b5d38ec8f331f93b6a97b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ae2extras.snbt"
+hash = "61136bbd3e5aeaaf7963bd7d4c9675c7f529fe53e702c894a17b5439bc3c1fa4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aeronautics.snbt"
-hash = "e05d86d56d0849995deb33190d2dce9e51096f1a3e60ea8bfeea491beb65c541"
+hash = "9f8cdd9f143d186407239b7f683fef0c2c17ff8ab5766573567ba1b9dc70e3b1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/arsaddons.snbt"
+hash = "115d0c6ffccc761d4127672ca0462c65810e2ab7325e4b0f0d303b96f7a07376"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "793677bb7919034c5cdaefe95f0ec0b0e974c109032fba6907dfcee880d49aa0"
+hash = "e76f6fd3e1cea510337dd68b324ec9395be3bf983b83c89ebc34165217cfa01f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/createworks.snbt"
+hash = "b3df8c4526dce162cac83fcc05cd2d73b50fcec4da891317c52c3114d70043bd"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/drills.snbt"
+hash = "29c5db50f22920e74fbde322e41b0c52c97b49d0cb61ed5a7d40236d0056d279"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/exploration.snbt"
-hash = "3224c480964a75625e9fa9e8297e1d44a1f8fb87e84c3cb1f3f3f5969ee6f37d"
+hash = "c5229e578691bc966c7f7c10d52b4339444c925c5e13767349d64ff48cefadf9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/farm.snbt"
+hash = "95fd013f4a355ee7f6d495bd5c643eb90ddf154a94c1c2bbe9aee3c8795f3d1b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/finale.snbt"
-hash = "a1520dd3a5d2151f72b285583fb16ea6436b2026a8c11662770dfcf746d2e7ca"
+hash = "ce4e7d050baa2493b4f8957a31385d5c2a15776a405d486a9bee2b993ce61f3a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/frontiers.snbt"
+hash = "47f218bbda523e0c50fcc950afcdb3dffc2977dda5b5eebf0d28dead237c9c01"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/goetycat.snbt"
+hash = "4b870ec8daac5ae9eb3f7030d681ee45cfff04d6e6c75231ee935e48b53e2c1f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/homestead.snbt"
 hash = "591701f5ef1bc701abbbbf231fd989bcd1c934d7ff586d6733989d81461278e5"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/kitchen.snbt"
+hash = "211f426a785cf7dd069243707289c2b973ae2285a45823dd51820f0004ca55be"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/magic.snbt"
-hash = "ab727b1d2d4fa9d648fd747df347da223676f9fd240ddb161cb87c82603a8f0c"
+hash = "50b1b47bd17aa92a6cd347b758a8458ae72e3ce9e6ef0cbf65822be71ff3286e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/mekanism.snbt"
+hash = "b7810f30d26b962cf8bbcba6d2b275405d07aefd19c2a55c683ad297d072ab0c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/occult.snbt"
+hash = "df759058a9751b4ad70c379e1dead080e07615189208b0179ecb14114ed99c47"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/start.snbt"
-hash = "0d15fe642a0921faae261612e7ee9767538cde300e34fdb8818e88fca291a77a"
+hash = "b0538c6b87cb8555f5561748141d8661c5f6e5d0905aa2ef1685de1c54bd0984"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tech.snbt"
-hash = "cc11e040469f72a82b976595dd7c93eab14bf423e783f0a8f7fbe773d8a9af08"
+hash = "c1bfc55e2245e51a763c113f269ef1390cb46105a9e86c01dfb61fd66ecacbf7"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -50,39 +90,79 @@ hash = "5f5ce5fc5202475f7a8be4e59dc1219dbd62c7d0f8a2a6c97ca64cbf933ca422"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapter.snbt"
-hash = "edc93ecba3992079dab70c1b151a3742ca48bc7f01fe83bc0376d921aeb9a474"
+hash = "f6cc67bc98277c77111204882faa44ef9b6fc8714d8c2309e15c7a7e914520af"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapter_group.snbt"
-hash = "78c5bbcd8b4277f3f7e5ea3d6a129d777486551af34b8ffea67fbe1f04fad762"
+hash = "f7946367fc76391d3390022cc7e2e009957b1a8663846ee07b1757401b2a4818"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/ae2extras.snbt"
+hash = "4444d7155eb26ec2075e3158474ff01a1d9efa24ae33e8a7c02ace235afc07a2"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/aeronautics.snbt"
 hash = "fff965390d1c3420b4ea249c2ecedd5565817d102a9e35d8f77ceecaea76717f"
 
 [[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/arsaddons.snbt"
+hash = "e1b884ebb8ce4a2d7316c88755172594f1c1a42a31b112849d45a03defb28909"
+
+[[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/create.snbt"
 hash = "e1dbe23e5036c5dd9c1cafb4b051dc8e52be427b64ad360f5b7d2472691aaf28"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/createworks.snbt"
+hash = "b59b04b07e60c23ca4cc0fc1b209df177e1945bc297222238469da121b606fc0"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/drills.snbt"
+hash = "27d2cb18dfdf5a515cfd9b2f57397af735b40eef2f2caf94da073fe0da96505f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/exploration.snbt"
 hash = "3ded5ac14a7c159fd75d86ff6d4bd55b13dd8aed0274c0bb0d56a24348aeb8ba"
 
 [[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/farm.snbt"
+hash = "ba2a1bf091a5cb19ffc68cdaafa367f8a1a6776e335ec54fa3de317d1b6020eb"
+
+[[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/finale.snbt"
-hash = "a5dd335a53a6e05c6847b9fa6f927b07ed953dbdb7c754e5344dfe0379843393"
+hash = "459806f41373d55db82c963c9bd044dc5c07ff5f46c147ab18e14d5aba9b040f"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/frontiers.snbt"
+hash = "a42c90a47c052637990771181d065e0de074024dc29d69580e590fccf1c74617"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/goetycat.snbt"
+hash = "ed920bcf25709d531f747e1f2aecbdb1766e1ab5e0e32ebb4bb901bbe01a4372"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/homestead.snbt"
 hash = "cc8690a9f7852421bb684a2bf252d6f2ae851ede4a359fd8394713674fb8bc8c"
 
 [[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/kitchen.snbt"
+hash = "ff942ed10e88cf962b08d3e0cca68969e4cbb61714aa921361cf94d205851294"
+
+[[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/magic.snbt"
 hash = "49056bfa0e0f81950d8e0ba9dee39d7900e4b22f983d90be7697e818090457a8"
 
 [[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/mekanism.snbt"
+hash = "bb296947f07710f83ab80c49756de260493a5355fb0b076b3649575981d99e0b"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/occult.snbt"
+hash = "62135c1943bba2b29e2cda76865103ccdc7b73f16cfc44b254f175bad6387352"
+
+[[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/start.snbt"
-hash = "13d88124982c12f4af79ac533a397b612cf85e8575b8a5e338caadecaca24d27"
+hash = "d45f075b28c0d6136f6ea99d719422584d04008b26bddf4462d1140a1da70e83"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us/chapters/tech.snbt"
@@ -90,39 +170,79 @@ hash = "9b0e409b64ab7bf3f5e4b5b4ff41e4f42105db619c6ab91e53cf040e0faceceb"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapter.snbt"
-hash = "edc93ecba3992079dab70c1b151a3742ca48bc7f01fe83bc0376d921aeb9a474"
+hash = "f6cc67bc98277c77111204882faa44ef9b6fc8714d8c2309e15c7a7e914520af"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapter_group.snbt"
-hash = "78c5bbcd8b4277f3f7e5ea3d6a129d777486551af34b8ffea67fbe1f04fad762"
+hash = "f7946367fc76391d3390022cc7e2e009957b1a8663846ee07b1757401b2a4818"
+
+[[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/ae2extras.snbt"
+hash = "4444d7155eb26ec2075e3158474ff01a1d9efa24ae33e8a7c02ace235afc07a2"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/aeronautics.snbt"
 hash = "fff965390d1c3420b4ea249c2ecedd5565817d102a9e35d8f77ceecaea76717f"
 
 [[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/arsaddons.snbt"
+hash = "e1b884ebb8ce4a2d7316c88755172594f1c1a42a31b112849d45a03defb28909"
+
+[[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/create.snbt"
 hash = "e1dbe23e5036c5dd9c1cafb4b051dc8e52be427b64ad360f5b7d2472691aaf28"
+
+[[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/createworks.snbt"
+hash = "b59b04b07e60c23ca4cc0fc1b209df177e1945bc297222238469da121b606fc0"
+
+[[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/drills.snbt"
+hash = "27d2cb18dfdf5a515cfd9b2f57397af735b40eef2f2caf94da073fe0da96505f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/exploration.snbt"
 hash = "3ded5ac14a7c159fd75d86ff6d4bd55b13dd8aed0274c0bb0d56a24348aeb8ba"
 
 [[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/farm.snbt"
+hash = "ba2a1bf091a5cb19ffc68cdaafa367f8a1a6776e335ec54fa3de317d1b6020eb"
+
+[[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/finale.snbt"
-hash = "a5dd335a53a6e05c6847b9fa6f927b07ed953dbdb7c754e5344dfe0379843393"
+hash = "459806f41373d55db82c963c9bd044dc5c07ff5f46c147ab18e14d5aba9b040f"
+
+[[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/frontiers.snbt"
+hash = "a42c90a47c052637990771181d065e0de074024dc29d69580e590fccf1c74617"
+
+[[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/goetycat.snbt"
+hash = "ed920bcf25709d531f747e1f2aecbdb1766e1ab5e0e32ebb4bb901bbe01a4372"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/homestead.snbt"
 hash = "cc8690a9f7852421bb684a2bf252d6f2ae851ede4a359fd8394713674fb8bc8c"
 
 [[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/kitchen.snbt"
+hash = "ff942ed10e88cf962b08d3e0cca68969e4cbb61714aa921361cf94d205851294"
+
+[[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/magic.snbt"
 hash = "49056bfa0e0f81950d8e0ba9dee39d7900e4b22f983d90be7697e818090457a8"
 
 [[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/mekanism.snbt"
+hash = "bb296947f07710f83ab80c49756de260493a5355fb0b076b3649575981d99e0b"
+
+[[files]]
+file = "config/ftbquests/quests/lang/ru_ru/chapters/occult.snbt"
+hash = "62135c1943bba2b29e2cda76865103ccdc7b73f16cfc44b254f175bad6387352"
+
+[[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/start.snbt"
-hash = "13d88124982c12f4af79ac533a397b612cf85e8575b8a5e338caadecaca24d27"
+hash = "d45f075b28c0d6136f6ea99d719422584d04008b26bddf4462d1140a1da70e83"
 
 [[files]]
 file = "config/ftbquests/quests/lang/ru_ru/chapters/tech.snbt"
@@ -402,6 +522,11 @@ hash = "01e5d62a295b887eef65c4127385f49081290bbf780eeba8beb76f0b87bdb256"
 metafile = true
 
 [[files]]
+file = "mods/ae2-pattern-restocker.pw.toml"
+hash = "1518f530591d517c9b39c792213ccebaa8b5dbdfe78f95aaa59e6961dd7af091"
+metafile = true
+
+[[files]]
 file = "mods/ae2.pw.toml"
 hash = "8160a3e8e433d4eb9773823945f321f7fe7acec72f52eb27d0ae8ba7bed4dd3b"
 metafile = true
@@ -612,6 +737,26 @@ hash = "0e9c3b7628faed459af3e9b022aa054382c97166f8b313f6a99e8a7c1e00c7b2"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-encased-fluid-pipes.pw.toml"
+hash = "6dd657cfaad860445a8078ff1babf8c48d9351d46085fdea0fd222fa26e3d8c8"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-gadgets-and-gizmos.pw.toml"
+hash = "7f5bec937c8b8d07af3a72c36f99390e2bfef7416bebae7c0b2e22446e293e04"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-toolgun.pw.toml"
+hash = "98ce27c9547b66295ebefb2c7d014c9f832725f4e8b4aa3d79c34c625b6b7458"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-transmission-linkage.pw.toml"
+hash = "ecff1b44da22ec37dab93ac818050a4e74862111d8f18a32d087fbf52fbdee90"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "769cbabc23a4ceb4e135b7316f09f437b7536845c64480d8e0bc5a7175e8530c"
 metafile = true
@@ -729,6 +874,11 @@ metafile = true
 [[files]]
 file = "mods/create-nowheel.pw.toml"
 hash = "ce9076f05afff6dd695d13cf5788f6fc1463531fac496b4f8a0ca64ec1590525"
+metafile = true
+
+[[files]]
+file = "mods/create-ore-excavation.pw.toml"
+hash = "58c85a985be22fa213bf1477dc3fd87c0f4fdea2298535265b0c9e3bd6999eff"
 metafile = true
 
 [[files]]

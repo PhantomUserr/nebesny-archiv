@@ -2,37 +2,18 @@
 // aimed at Russian-speaking beginners, and both en_us and ru_ru locale files get
 // the same strings so the quest book never falls back to English.
 
+import { I, K, D, C, N, XP, Q } from './quest-helpers.mjs';
+import { extraChapters } from './quest-data-extra.mjs';
+
 export const groups = [
   { key: 'prologue', title: 'Пролог' },
+  { key: 'farming', title: 'Фермерство' },
   { key: 'tech', title: 'Технологии' },
   { key: 'magic', title: 'Магия' },
   { key: 'world', title: 'Мир и приключения' },
 ];
 
-const I = (item, count = 1) => ({ type: 'item', item, count });
-const K = (entity, value = 1) => ({ type: 'kill', entity, value });
-const D = (dimension) => ({ type: 'dimension', dimension });
-const C = () => ({ type: 'checkmark' });
-// Talk to an Easy NPC: the task completes when the named dialog is read.
-// The id is the Easy NPC dialog label, see tools/story-data.mjs.
-const N = (dialog) => ({ type: 'npc_dialog', dialog });
-const XP = (xp) => ({ type: 'xp', xp });
 const R = (item, count = 1) => ({ type: 'item', item, count });
-
-const Q = (key, title, desc, tasks, opts = {}) => ({
-  key,
-  title,
-  desc: Array.isArray(desc) ? desc : [desc],
-  tasks,
-  rewards: opts.rewards || [],
-  icon: opts.icon,
-  deps: opts.deps || [],
-  x: opts.x,
-  y: opts.y,
-  shape: opts.shape,
-  size: opts.size,
-  optional: opts.optional || false,
-});
 
 // ------------------------------------------------------------------ 1. start
 const start = {
@@ -125,7 +106,18 @@ const start = {
     Q('miya', 'Мия Тинь',
       ['Немного в стороне, на ящике у обломков сидит ещё одна женщина — помоложе. Она замечает тебя и машет рукой.',
        'Поговори с Мией: она дочь инвентаризатора и знает, где что лежит. Наведись на неё и нажми правую кнопку мыши.'],
-      [N('miya_greet')], { x: 4, y: 4, deps: ['awake'], rewards: [XP(15)] }),  ],
+      [N('miya_greet')], { x: 4, y: 4, deps: ['awake'], rewards: [XP(15)] }),
+
+    Q('tastes', 'Каталог вкусов',
+      ['Мия открывает свой журнал и показывает пустые страницы: она записывает всё, что видит, но еду она пока не записала.',
+       '«У Архива был целый раздел про еду. Еда — это тоже знание, а знание без адреса не существует». Ей нужен настоящий огород и кухня.'],
+      [N('miya_catalog')], { x: 6, y: 4, deps: ['miya'], rewards: [XP(20)] }),
+
+    Q('larder', 'Кладовая флота',
+      ['Веста зовёт к себе: у неё в руках список, и список — не про книги.',
+       '«Корабли поднимаются в небо голодными — они не поднимутся. Собери еду: землю, огород и кухню. Пир флота это подтвердит».'],
+      [N('vesta_larder')], { x: 8, y: 4, deps: ['vesta'], rewards: [XP(20)] }),
+  ],
 };
 
 // --------------------------------------------------------------- 2. homestead
@@ -226,7 +218,7 @@ const homestead = {
 const create = {
   filename: 'create',
   group: 'tech',
-  order: 2,
+  order: 8,
   title: 'Шестерни и пар',
   subtitle: 'Create: от водяного колеса до поезда',
   icon: 'create:cogwheel',
@@ -333,7 +325,7 @@ const create = {
 const aeronautics = {
   filename: 'aeronautics',
   group: 'tech',
-  order: 3,
+  order: 9,
   title: 'Небесный флот',
   subtitle: 'Create Aeronautics: корабли, крылья и тяга',
   icon: 'createpropulsion:thruster',
@@ -427,7 +419,7 @@ const aeronautics = {
 const tech = {
   filename: 'tech',
   group: 'tech',
-  order: 4,
+  order: 10,
   title: 'Энергия и материя',
   subtitle: 'Mekanism и Applied Energistics 2',
   icon: 'ae2:controller',
@@ -528,7 +520,7 @@ const tech = {
 const magic = {
   filename: 'magic',
   group: 'magic',
-  order: 5,
+  order: 12,
   title: 'Магия',
   subtitle: 'Ars Nouveau, Iron’s Spellbooks, Malum, Goety, Spectrum',
   icon: 'ars_nouveau:novice_spell_book',
@@ -649,7 +641,7 @@ const magic = {
 const exploration = {
   filename: 'exploration',
   group: 'world',
-  order: 6,
+  order: 15,
   title: 'Опасные земли',
   subtitle: 'Измерения, боссы и сокровища',
   icon: 'minecraft:ender_eye',
@@ -747,7 +739,7 @@ const exploration = {
 const finale = {
   filename: 'finale',
   group: 'world',
-  order: 7,
+  order: 17,
   title: 'Хранитель Архива',
   subtitle: 'Финал: собрать знания и вернуть библиотеку в небо',
   icon: 'minecraft:nether_star',
@@ -776,8 +768,9 @@ const finale = {
 
     Q('fleet', 'Флот в небе',
       ['Собери хотя бы три летающих корабля: грузовой, боевой и исследовательский.',
-       'Архив снова должен подняться в небо.'],
-      [C()], { x: 4, y: 2, deps: ['aeronautics:fly'], shape: 'hexagon', size: 1.2, rewards: [XP(50)] }),
+       'Перед взлётом флот кормят. Приготовь пир из Кухни Архива: без стола корабли в небо не поднимутся.'],
+      [I('farmersdelight:roast_chicken', 1), I('farmersdelight:pasta_with_meatballs', 1), I('farmersdelight:apple_pie', 1), I('minecraft:bread', 8)],
+      { x: 4, y: 2, deps: ['aeronautics:fly', 'kitchen:feast'], shape: 'hexagon', size: 1.2, rewards: [XP(50)] }),
 
     Q('technomagic', 'Техномагия',
       ['Соедини технологии и магию: автоматизируй алтари, подключи магические машины к AE2, поставь на корабль магический реактор.',
@@ -809,4 +802,4 @@ const finale = {
   ],
 };
 
-export const chapters = [start, homestead, create, aeronautics, tech, magic, exploration, finale];
+export const chapters = [start, homestead, ...extraChapters, create, aeronautics, tech, magic, exploration, finale];

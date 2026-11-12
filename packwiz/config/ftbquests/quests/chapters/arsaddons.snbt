@@ -1,0 +1,521 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "arsaddons"
+	group: "09573D5735C2780B"
+	icon: {
+		id: "ars_additions:golden_charm"
+	}
+	id: "0DB1FDBAD4CF12D3"
+	order_index: 14
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["07E1FE8E0EBF40AE"]
+			icon: {
+				id: "ars_additions:cracked_sourcestone"
+			}
+			id: "0472AA96AC7A536F"
+			min_width: 220
+			rewards: [
+				{
+					id: "041A16CF0E83E028"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "0445827AE621CEAF"
+					item: {
+						count: 1
+						id: "ars_additions:cracked_sourcestone"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00C62F6014F5D843"
+					item: {
+						count: 1
+						id: "ars_additions:sourcestone_chain"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08EABCE222C59AE6"
+					item: {
+						count: 1
+						id: "ars_additions:polished_sourcestone_chain"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0472AA96AC7A536F"]
+			icon: {
+				id: "ars_additions:sourcestone_lantern"
+			}
+			id: "00F1609440E1F4C8"
+			min_width: 220
+			rewards: [
+				{
+					id: "077D9499DEDBB6B5"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "066557B55CF4C5CD"
+					item: {
+						count: 1
+						id: "ars_additions:sourcestone_lantern"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0058F5695C0B5F09"
+					item: {
+						count: 1
+						id: "ars_additions:magelight_lantern"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "08828B944C452517"
+					item: {
+						count: 1
+						id: "ars_additions:golden_lantern"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0614B37C889FD261"
+					item: {
+						count: 1
+						id: "ars_additions:archwood_lantern"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02DEF308668B69DB"]
+			icon: {
+				id: "ars_additions:fire_resistance_charm"
+			}
+			id: "0A0F876423A9923F"
+			min_width: 220
+			rewards: [
+				{
+					id: "0244304407E8FC0C"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "02DAF2DF806145B7"
+					item: {
+						count: 1
+						id: "ars_additions:fire_resistance_charm"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "01902ED93AFFFB5B"
+					item: {
+						count: 1
+						id: "ars_additions:night_vision_charm"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "034FC7956C3EC59E"
+					item: {
+						count: 1
+						id: "ars_additions:water_breathing_charm"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "09877FB1E4D3E4AE"
+					item: {
+						count: 1
+						id: "ars_additions:undying_charm"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A0F876423A9923F"]
+			icon: {
+				id: "ars_additions:golden_charm"
+			}
+			id: "096DD3DB7C9DD1F6"
+			min_width: 220
+			rewards: [
+				{
+					id: "04E3192054785BB9"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0BB6301C05B5109B"
+					item: {
+						count: 1
+						id: "ars_additions:golden_charm"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "068A840B8F242BAE"
+					item: {
+						count: 1
+						id: "ars_additions:golden_chain"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "015B5C085AE15A53"
+					item: {
+						count: 1
+						id: "ars_additions:archwood_chain"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0BD3254F6AFA36F8"
+					item: {
+						count: 1
+						id: "ars_additions:sourcestone_chain"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["062C252126931DE0"]
+			icon: {
+				id: "ars_additions:codex_entry"
+			}
+			id: "0ACF2AA5526C424F"
+			min_width: 220
+			rewards: [
+				{
+					id: "05F43A6185DBCF37"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "09758623B57D06BB"
+					item: {
+						count: 1
+						id: "ars_additions:codex_entry"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0A165A12BE4B93A9"
+					item: {
+						count: 1
+						id: "ars_additions:ancient_codex_entry"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0BFF2FA94C38E9F8"
+					item: {
+						count: 1
+						id: "ars_additions:lost_codex_entry"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "03C63FB596E898DF"
+					item: {
+						count: 1
+						id: "ars_additions:imbued_spell_parchment"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F05C2E6F3C5289F"]
+			icon: {
+				id: "ars_additions:warp_index"
+			}
+			id: "0B86B221F6F9F610"
+			min_width: 220
+			rewards: [
+				{
+					id: "0830733ED8379879"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0EAD292FE9BB2475"
+					item: {
+						count: 1
+						id: "ars_additions:warp_index"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "09998657794BFA46"
+					item: {
+						count: 1
+						id: "ars_additions:stabilized_warp_index"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "01B7AACD44D374BC"
+					item: {
+						count: 1
+						id: "ars_additions:wayfinder"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "08F1D2D0D246124E"
+					item: {
+						count: 1
+						id: "ars_additions:exploration_warp_scroll"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0BF47B19C711FDD0"]
+			icon: {
+				id: "ars_additions:enchanting_wixie_cauldron"
+			}
+			id: "0D18A5EF32595D74"
+			min_width: 220
+			rewards: [
+				{
+					id: "0262390302C6CD18"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0A1C44E66897EC8A"
+					item: {
+						count: 1
+						id: "ars_additions:enchanting_wixie_cauldron"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0F146CBF9302BCEB"
+					item: {
+						count: 1
+						id: "ars_additions:xp_jar"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0472AA96AC7A536F"]
+			icon: {
+				id: "ars_additions:handy_haversack"
+			}
+			id: "0801270E9CCBAE21"
+			min_width: 220
+			rewards: [
+				{
+					id: "09F78DB95623BBC9"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "001570E99096EB1C"
+					item: {
+						count: 1
+						id: "ars_additions:handy_haversack"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "012DDBD925665C3E"
+					item: {
+						count: 1
+						id: "ars_additions:memory_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["03DB3D5C95AED671"]
+			icon: {
+				id: "ars_additions:unstable_reliquary"
+			}
+			id: "0FDE8A21B1FAE69D"
+			min_width: 220
+			rewards: [
+				{
+					id: "0BD81966C45DBD75"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0080A3B44F08AC7C"
+					item: {
+						count: 1
+						id: "ars_additions:unstable_reliquary"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "01B29C17AE53F472"
+					item: {
+						count: 1
+						id: "ars_additions:ritual_chunk_loading"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0015EA2EC4B0A72F"
+					item: {
+						count: 1
+						id: "ars_additions:ritual_locate_structure"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B86B221F6F9F610"]
+			icon: {
+				id: "ars_additions:warp_nexus"
+			}
+			id: "0AB2A2A4CDB205C5"
+			min_width: 220
+			rewards: [
+				{
+					id: "02EC85B7E8FA6933"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "05E34A29CEBF8C08"
+					item: {
+						count: 1
+						id: "ars_additions:warp_nexus"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0CF491791013B272"
+					item: {
+						count: 1
+						id: "ars_additions:nexus_warp_scroll"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0F50ED415447BA32"
+					item: {
+						count: 1
+						id: "ars_additions:exploration_warp_scroll"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+	]
+}

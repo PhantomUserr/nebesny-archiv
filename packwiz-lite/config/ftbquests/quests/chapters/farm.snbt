@@ -1,0 +1,812 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "farm"
+	group: "0CF7FB199BF26906"
+	icon: {
+		id: "farmersdelight:cabbage"
+	}
+	id: "0740E7B2AADF90CB"
+	order_index: 2
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["0DCE30778EF9369B"]
+			icon: {
+				id: "minecraft:iron_hoe"
+			}
+			id: "0D6074AF0629B0C2"
+			min_width: 220
+			rewards: [
+				{
+					id: "0390365A84BF3B56"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0AE7F771C034B7F7"
+					item: {
+						count: 1
+						id: "minecraft:iron_hoe"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "034D5295713EEB91"
+					item: {
+						count: 1
+						id: "minecraft:dirt"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D6074AF0629B0C2"]
+			icon: {
+				id: "farmersdelight:organic_compost"
+			}
+			id: "0C800A411131E037"
+			min_width: 220
+			rewards: [
+				{
+					id: "019D82D73C1E5CEC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "0CA98D0EDBA6DED5"
+					item: {
+						count: 1
+						id: "farmersdelight:organic_compost"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0C800A411131E037"]
+			icon: {
+				id: "farmersdelight:rich_soil"
+			}
+			id: "07AC5685D5D09A19"
+			min_width: 220
+			rewards: [
+				{
+					id: "0EED74E9A570A932"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "056722E60BAC17E4"
+					item: {
+						count: 1
+						id: "farmersdelight:rich_soil"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0390447EE2FE339C"
+					item: {
+						count: 1
+						id: "farmersdelight:rich_soil_farmland"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0D6074AF0629B0C2"]
+			icon: {
+				id: "minecraft:water_bucket"
+			}
+			id: "0E458E0D8C6AE974"
+			min_width: 220
+			rewards: [
+				{
+					id: "040287B34BBD5061"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "029502E4AD1B62C4"
+					item: {
+						count: 1
+						id: "minecraft:water_bucket"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "02B716CB688852F9"
+					item: {
+						count: 1
+						id: "minecraft:bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07AC5685D5D09A19"]
+			icon: {
+				id: "farmersdelight:cabbage"
+			}
+			id: "038C3F0540D3DAE9"
+			min_width: 220
+			rewards: [
+				{
+					id: "0F342A6575B336E8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 4
+					id: "0E95BB296D3E99FC"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0043C4666DFAA24D"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage_seeds"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["07AC5685D5D09A19"]
+			icon: {
+				id: "farmersdelight:tomato"
+			}
+			id: "0E5469DC6B132E1D"
+			min_width: 220
+			rewards: [
+				{
+					id: "0D09ACEAC26F27AD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 4
+					id: "0DBCC01279A0959A"
+					item: {
+						count: 1
+						id: "farmersdelight:tomato"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0EF0818FD0E1FAB6"
+					item: {
+						count: 1
+						id: "farmersdelight:tomato_seeds"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["07AC5685D5D09A19"]
+			icon: {
+				id: "farmersdelight:onion"
+			}
+			id: "0DA574E80D837F9F"
+			min_width: 220
+			rewards: [
+				{
+					id: "0937DA89E743F6B2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 4
+					id: "0EAA07F700545C4D"
+					item: {
+						count: 1
+						id: "farmersdelight:onion"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0E458E0D8C6AE974"]
+			icon: {
+				id: "farmersdelight:rice"
+			}
+			id: "0F17F16AB746606D"
+			min_width: 220
+			rewards: [
+				{
+					id: "07A3B5DB33F0A53F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 4
+					id: "01392DA82547AA72"
+					item: {
+						count: 1
+						id: "farmersdelight:rice"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DCE30778EF9369B"]
+			icon: {
+				id: "farmersdelight:wheat_dough"
+			}
+			id: "08BB391E517E1FB7"
+			min_width: 220
+			rewards: [
+				{
+					id: "0F22B2E49FCDF0A2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 3
+					id: "04464FE3C82D4725"
+					item: {
+						count: 1
+						id: "farmersdelight:wheat_dough"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0C23A453CF67BC79"
+					item: {
+						count: 1
+						id: "minecraft:wheat"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0DCE30778EF9369B"]
+			icon: {
+				id: "farmersdelight:straw"
+			}
+			id: "0257D26862E7CCF1"
+			min_width: 220
+			rewards: [
+				{
+					id: "02507381667C29A4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 16
+					id: "01FC5EF55FA79548"
+					item: {
+						count: 1
+						id: "farmersdelight:straw"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0257D26862E7CCF1"]
+			icon: {
+				id: "farmersdelight:straw_bale"
+			}
+			id: "083C463051338CFE"
+			min_width: 220
+			rewards: [
+				{
+					id: "059E993C9196A66B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "011324CF2F0BD0BF"
+					item: {
+						count: 1
+						id: "farmersdelight:straw_bale"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["04B17CD8051FC809"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "0529CA3BB812B1BE"
+			min_width: 220
+			rewards: [
+				{
+					id: "05F410AD98634880"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					entity: "minecraft:sheep"
+					id: "074E0DEAEF2F4729"
+					type: "kill"
+					value: 2
+				}
+			]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0529CA3BB812B1BE"]
+			icon: {
+				id: "farmersdelight:canvas"
+			}
+			id: "00260F6E5B97E451"
+			min_width: 220
+			rewards: [
+				{
+					id: "0964C65C92094C93"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "045FF1FE78F094AB"
+					item: {
+						count: 1
+						id: "farmersdelight:canvas"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["08BB391E517E1FB7"]
+			icon: {
+				id: "farmersdelight:horse_feed"
+			}
+			id: "03CF9E1D2DFC6772"
+			min_width: 220
+			rewards: [
+				{
+					id: "0FADFF207C7AEEAF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "06420650770EBAE0"
+					item: {
+						count: 1
+						id: "farmersdelight:horse_feed"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "05CEF095D9EDF698"
+					item: {
+						count: 1
+						id: "farmersdelight:dog_food"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["03CF9E1D2DFC6772"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "081D64B675337CE9"
+			min_width: 220
+			rewards: [
+				{
+					id: "0E95B67F50CE8E5C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					entity: "minecraft:pig"
+					id: "09F7703EA04DE291"
+					type: "kill"
+					value: 2
+				}
+				{
+					entity: "minecraft:chicken"
+					id: "01D5869ACCCA3001"
+					type: "kill"
+					value: 2
+				}
+			]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["081D64B675337CE9"]
+			icon: {
+				id: "farmersdelight:milk_bottle"
+			}
+			id: "0F93FA91D53F83BF"
+			min_width: 220
+			rewards: [
+				{
+					id: "076AA9B0D0CF81FB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "08BC585F95964BC7"
+					item: {
+						count: 1
+						id: "farmersdelight:milk_bottle"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["00260F6E5B97E451"]
+			icon: {
+				id: "farmersdelight:wooden_basket"
+			}
+			id: "02AB745CEF342858"
+			min_width: 220
+			rewards: [
+				{
+					id: "02A754367A645E36"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "00B6F7F784AB0DA6"
+					item: {
+						count: 1
+						id: "farmersdelight:wooden_basket"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0B4530A57BFC24C9"
+					item: {
+						count: 1
+						id: "farmersdelight:bamboo_basket"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["00260F6E5B97E451"]
+			icon: {
+				id: "farmersdelight:oak_cabinet"
+			}
+			id: "027EE743AF249249"
+			min_width: 220
+			rewards: [
+				{
+					id: "0FE1B3E876B8CC13"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "070A62C1DDBC13E4"
+					item: {
+						count: 1
+						id: "farmersdelight:oak_cabinet"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["02AB745CEF342858"]
+			icon: {
+				id: "farmersdelight:cabbage_crate"
+			}
+			id: "0C5A861581AC43F3"
+			min_width: 220
+			rewards: [
+				{
+					id: "09D56260C4C43A30"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "010B1EBFD4CECFA8"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage_crate"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "075438F71DDA2732"
+					item: {
+						count: 1
+						id: "farmersdelight:tomato_crate"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "07CB6A2B1174F93C"
+					item: {
+						count: 1
+						id: "farmersdelight:onion_crate"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["00260F6E5B97E451"]
+			icon: {
+				id: "minecraft:barrel"
+			}
+			id: "08B4E047B69A9F60"
+			min_width: 220
+			rewards: [
+				{
+					id: "0F7851AB8DBF0057"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "05C62B97A166D411"
+					item: {
+						count: 1
+						id: "minecraft:barrel"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["00260F6E5B97E451"]
+			icon: {
+				id: "farmersdelight:full_tatami_mat"
+			}
+			id: "036567D99AA1CAD6"
+			min_width: 220
+			rewards: [
+				{
+					id: "0775E55B895141E5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "0D4E95718E1DE19C"
+					item: {
+						count: 1
+						id: "farmersdelight:full_tatami_mat"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["083C463051338CFE"]
+			icon: {
+				id: "farmersdelight:rope"
+			}
+			id: "0473CBF804314CDD"
+			min_width: 220
+			rewards: [
+				{
+					id: "04F8DBDD30910DDE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "0FFD5D0E29B251B5"
+					item: {
+						count: 1
+						id: "farmersdelight:rope"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "026A12DF941F56CA"
+					item: {
+						count: 1
+						id: "farmersdelight:rope_fence"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["00260F6E5B97E451"]
+			icon: {
+				id: "farmersdelight:canvas_sign"
+			}
+			id: "0285A9D0E90AD354"
+			min_width: 220
+			rewards: [
+				{
+					id: "0810DD746E6A6B04"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 4
+					id: "05F4D1E836BAB670"
+					item: {
+						count: 1
+						id: "farmersdelight:canvas_sign"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0FC0E9E825C6DCC8"
+					item: {
+						count: 1
+						id: "farmersdelight:hanging_canvas_sign"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 10.0d
+		}
+	]
+}

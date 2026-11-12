@@ -1,0 +1,521 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "mekanism"
+	group: "0E2842BED84458E2"
+	icon: {
+		id: "mekanismtools:iron_paxel"
+	}
+	id: "0D1EAF6A2760C551"
+	order_index: 11
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["0FC122D05AFA785A"]
+			icon: {
+				id: "mekanismtools:iron_paxel"
+			}
+			id: "0D287F9A41255F7A"
+			min_width: 220
+			rewards: [
+				{
+					id: "09684640F7A7B1A9"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0C49C843ED70C416"
+					item: {
+						count: 1
+						id: "mekanismtools:iron_paxel"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0B6F25E2C0FB87BE"
+					item: {
+						count: 1
+						id: "mekanismtools:gold_paxel"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "07D5974183EFF3A3"
+					item: {
+						count: 1
+						id: "mekanismtools:diamond_paxel"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0FC122D05AFA785A"]
+			icon: {
+				id: "mekanismtools:osmium_helmet"
+			}
+			id: "0493528483A11822"
+			min_width: 220
+			rewards: [
+				{
+					id: "05A572884525EA8E"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0A394A0C3887C33B"
+					item: {
+						count: 1
+						id: "mekanismtools:osmium_helmet"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0813B2FD215752EF"
+					item: {
+						count: 1
+						id: "mekanismtools:osmium_chestplate"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0587227AA1DF0B82"
+					item: {
+						count: 1
+						id: "mekanismtools:osmium_leggings"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "09F89880FAFC601C"
+					item: {
+						count: 1
+						id: "mekanismtools:osmium_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01989A18675CD797"]
+			icon: {
+				id: "mekanismtools:steel_helmet"
+			}
+			id: "0FFDA4D24FA5FE77"
+			min_width: 220
+			rewards: [
+				{
+					id: "07CAB844AABF9DEC"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "075CE1D34F34FFD1"
+					item: {
+						count: 1
+						id: "mekanismtools:steel_helmet"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0C67D9659E2372BD"
+					item: {
+						count: 1
+						id: "mekanismtools:steel_chestplate"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0968760468070E21"
+					item: {
+						count: 1
+						id: "mekanismtools:steel_leggings"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0ACC4D49CB614FBC"
+					item: {
+						count: 1
+						id: "mekanismtools:steel_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0FFDA4D24FA5FE77"]
+			icon: {
+				id: "mekanismtools:refined_glowstone_pickaxe"
+			}
+			id: "096FBD30281721C0"
+			min_width: 220
+			rewards: [
+				{
+					id: "04BB16C1FE30289B"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0A7768272A8E99AF"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_glowstone_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0FA522C14BF09F02"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_glowstone_sword"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0BEEB81F56D8B16C"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_glowstone_shield"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0FFDA4D24FA5FE77"]
+			icon: {
+				id: "mekanismtools:refined_obsidian_pickaxe"
+			}
+			id: "0543300C8C135A49"
+			min_width: 220
+			rewards: [
+				{
+					id: "091544B5C774AD7E"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0F5D22B1053D6050"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_obsidian_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "04471CE38149B123"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_obsidian_axe"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "01F9077D2FF6A9E5"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_obsidian_shield"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0493528483A11822"]
+			icon: {
+				id: "mekanismtools:bronze_shield"
+			}
+			id: "012E9935E4FEE85F"
+			min_width: 220
+			rewards: [
+				{
+					id: "04BCA232CE4702B6"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0884BF766648377D"
+					item: {
+						count: 1
+						id: "mekanismtools:bronze_shield"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0F7080C689055E4D"
+					item: {
+						count: 1
+						id: "mekanismtools:lapis_lazuli_shield"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0D26131E951DAC84"
+					item: {
+						count: 1
+						id: "mekanismtools:refined_glowstone_shield"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0493528483A11822"]
+			icon: {
+				id: "mekanismtools:bronze_pickaxe"
+			}
+			id: "0CBFD8E8127E53CB"
+			min_width: 220
+			rewards: [
+				{
+					id: "0BBF51E6E29119D2"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0BD64AC0298EEC01"
+					item: {
+						count: 1
+						id: "mekanismtools:bronze_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0755A7153850D3D4"
+					item: {
+						count: 1
+						id: "mekanismtools:bronze_sword"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0C0CF1BCC8E63CD0"
+					item: {
+						count: 1
+						id: "mekanismtools:bronze_shovel"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "04300187F107CFD2"
+					item: {
+						count: 1
+						id: "mekanismtools:bronze_hoe"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0DB8070E390B55C0"]
+			icon: {
+				id: "mekanismadditions:black_plastic"
+			}
+			id: "0D1621F4944DF00B"
+			min_width: 220
+			rewards: [
+				{
+					id: "0A280A04AA9A0822"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "0DDBD1CCE577111E"
+					item: {
+						count: 1
+						id: "mekanismadditions:black_plastic"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "00306F05D5054751"
+					item: {
+						count: 1
+						id: "mekanismadditions:white_plastic"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0DF46DBDBAB685C6"
+					item: {
+						count: 1
+						id: "mekanismadditions:aqua_plastic"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D1621F4944DF00B"]
+			icon: {
+				id: "mekanismadditions:walkie_talkie"
+			}
+			id: "0653F5F441FB13D8"
+			min_width: 220
+			rewards: [
+				{
+					id: "0388207D852B22A7"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0C8287B4F3559C47"
+					item: {
+						count: 1
+						id: "mekanismadditions:walkie_talkie"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "03A95293595CED58"
+					item: {
+						count: 1
+						id: "mekanismadditions:obsidian_tnt"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["012E9935E4FEE85F"]
+			icon: {
+				id: "mekanismtools:lapis_lazuli_helmet"
+			}
+			id: "04F12781628D9CF4"
+			min_width: 220
+			rewards: [
+				{
+					id: "0D7D2A696350D2D7"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0D757ADFE56BC1EE"
+					item: {
+						count: 1
+						id: "mekanismtools:lapis_lazuli_helmet"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0186F37227C0875B"
+					item: {
+						count: 1
+						id: "mekanismtools:lapis_lazuli_chestplate"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "0048BECD93F2C466"
+					item: {
+						count: 1
+						id: "mekanismtools:lapis_lazuli_leggings"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "084FA26E2B8D8445"
+					item: {
+						count: 1
+						id: "mekanismtools:lapis_lazuli_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+}

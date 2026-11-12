@@ -7,7 +7,7 @@
 		id: "minecraft:ender_eye"
 	}
 	id: "05A1D6D1BFEC4E8E"
-	order_index: 6
+	order_index: 15
 	progression_mode: "flexible"
 	quests: [
 		{

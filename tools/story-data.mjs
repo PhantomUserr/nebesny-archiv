@@ -75,6 +75,13 @@ export const storyNodes = [
             ],
           },
           {
+            label: 'larder',
+            name: 'Что нужно флоту?',
+            actions: [
+              { type: 'OPEN_NAMED_DIALOG', cmd: 'larder' },
+            ],
+          },
+          {
             label: 'bye',
             name: 'Позже.',
             actions: [],
@@ -145,6 +152,25 @@ export const storyNodes = [
         ],
       },
       {
+        label: 'larder',
+        name: 'Кладовая флота',
+        priority: 5,
+        texts: [
+          'Корабли поднимаются в небо голодными — они не поднимутся. Это не страшность, это физика: без еды экипаж не дотянет.',
+          'Мне нужен огород, мне нужна кухня и мне нужен стол. Не для праздника. Для порядка. И ещё для Мии: у неё в журнале пустой раздел, и она из-за этого злится на весь мир.',
+          'Построй землю, научись готовить и собери пир. Когда пир будет готов, флот взлетит. Я проверю.',
+        ],
+        buttons: [
+          {
+            label: 'greet',
+            name: 'Будет стол.',
+            actions: [
+              { type: 'OPEN_NAMED_DIALOG', cmd: 'greet' },
+            ],
+          },
+        ],
+      },
+      {
         label: 'after_wood',
         name: 'Ты вернулся',
         priority: 20,
@@ -166,6 +192,8 @@ export const storyNodes = [
     rules: [
       { quest: 'start:wood', dialog: 'after_wood', condition: 'COMPLETED', priority: 20 },
       { quest: 'start:wood', dialog: 'greet', condition: 'NOT_COMPLETED', priority: 5 },
+      { quest: 'start:larder', dialog: 'larder', condition: 'COMPLETED', priority: 20 },
+      { quest: 'start:larder', dialog: 'greet', condition: 'NOT_COMPLETED', priority: 5 },
     ],
   },
   {
@@ -196,6 +224,13 @@ export const storyNodes = [
             name: 'Где что лежит?',
             actions: [
               { type: 'OPEN_NAMED_DIALOG', cmd: 'hint' },
+            ],
+          },
+          {
+            label: 'catalog',
+            name: 'Что у тебя в журнале?',
+            actions: [
+              { type: 'OPEN_NAMED_DIALOG', cmd: 'catalog' },
             ],
           },
           {
@@ -243,6 +278,25 @@ export const storyNodes = [
         ],
       },
       {
+        label: 'catalog',
+        name: 'Каталог вкусов',
+        priority: 5,
+        texts: [
+          'Смотри. У меня в журнале пустые страницы. Я записываю всё, что вижу: облако, было в форме библиотеки, а сегодня — в форме облака.',
+          'А еду я записать не могу. Я её не видела. У Архива был целый раздел про еду — целая полка кулинарных книг, — и теперь его нет. Как и остальных разделов.',
+          'Еда — это тоже знание, а знание без адреса не существует. Поэтому мне нужен настоящий огород и настоящая кухня. Иди, сделай мне раздел.',
+        ],
+        buttons: [
+          {
+            label: 'greet',
+            name: 'Сделаю.',
+            actions: [
+              { type: 'OPEN_NAMED_DIALOG', cmd: 'greet' },
+            ],
+          },
+        ],
+      },
+      {
         label: 'after_journal',
         name: 'Ты записал',
         priority: 20,
@@ -264,6 +318,8 @@ export const storyNodes = [
     rules: [
       { quest: 'start:journal', dialog: 'after_journal', condition: 'COMPLETED', priority: 20 },
       { quest: 'start:journal', dialog: 'greet', condition: 'NOT_COMPLETED', priority: 5 },
+      { quest: 'start:tastes', dialog: 'catalog', condition: 'COMPLETED', priority: 20 },
+      { quest: 'start:tastes', dialog: 'greet', condition: 'NOT_COMPLETED', priority: 5 },
     ],
   },
 ];
