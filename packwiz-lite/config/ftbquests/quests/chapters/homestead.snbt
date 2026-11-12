@@ -1,0 +1,512 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "homestead"
+	group: "5ADA6ADB5D0E5C03"
+	icon: {
+		id: "minecraft:oak_planks"
+	}
+	id: "18D9A7CF692B9F59"
+	order_index: 1
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["DF0C55FE90F3251B"]
+			icon: {
+				id: "minecraft:wheat"
+			}
+			id: "DCE30778EF9369B9"
+			min_width: 220
+			rewards: [
+				{
+					id: "120C1094B5A8A128"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 12
+					id: "66D094A6CE0D9019"
+					item: {
+						count: 1
+						id: "minecraft:wheat"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DF0C55FE90F3251B"]
+			icon: {
+				id: "minecraft:wooden_hoe"
+			}
+			id: "973181FAF2164EFB"
+			min_width: 220
+			rewards: [
+				{
+					id: "16D455F100972A4A"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "A17B7F0FC8D96B99"
+					item: {
+						count: 1
+						id: "minecraft:wooden_hoe"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DCE30778EF9369B9"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "4B17CD8051FC8093"
+			min_width: 220
+			rewards: [
+				{
+					id: "89831EE4AD951328"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					entity: "minecraft:cow"
+					id: "6B01DC0AC3903836"
+					type: "kill"
+					value: 3
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DCE30778EF9369B9"]
+			icon: {
+				id: "farmersdelight:cooking_pot"
+			}
+			id: "C7F08D97E457371F"
+			min_width: 220
+			rewards: [
+				{
+					id: "F464E16114F339FC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "3D4A52C31AD37851"
+					item: {
+						count: 1
+						id: "farmersdelight:cooking_pot"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["C7F08D97E457371F"]
+			icon: {
+				id: "farmersdelight:cutting_board"
+			}
+			id: "2A72B93C9C7D30CA"
+			min_width: 220
+			rewards: [
+				{
+					id: "B87F41394505B798"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "E0A3A163B5905315"
+					item: {
+						count: 1
+						id: "farmersdelight:cutting_board"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A72B93C9C7D30CA"]
+			icon: {
+				id: "farmersdelight:stove"
+			}
+			id: "908715FBBA1D7386"
+			min_width: 220
+			rewards: [
+				{
+					id: "A2524BE85EB4EF51"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "F77BACA20F727D67"
+					item: {
+						count: 1
+						id: "farmersdelight:stove"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DCE30778EF9369B9"]
+			icon: {
+				id: "sophisticatedstorage:chest"
+			}
+			id: "DB54F48FFA2479F4"
+			min_width: 220
+			rewards: [
+				{
+					id: "874D67BFB047F41D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "C0E9D943FFFE8F3E"
+					item: {
+						count: 1
+						id: "sophisticatedstorage:chest"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DB54F48FFA2479F4"]
+			icon: {
+				id: "functionalstorage:simple_compacting_drawer"
+			}
+			id: "6098C1F927FE7DB3"
+			min_width: 220
+			rewards: [
+				{
+					id: "E1A0F2A28BC31746"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "4E0EDB0658BAD713"
+					item: {
+						count: 1
+						id: "functionalstorage:simple_compacting_drawer"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["573660879FF5508C"]
+			icon: {
+				id: "comforts:sleeping_bag_white"
+			}
+			id: "FCE7F8943ABC2726"
+			min_width: 220
+			rewards: [
+				{
+					id: "EE00E54A95EB9AF2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "3FB2EE8F5E163906"
+					item: {
+						count: 1
+						id: "comforts:sleeping_bag_white"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DB54F48FFA2479F4"]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "D75B2107685C9E53"
+			min_width: 220
+			rewards: [
+				{
+					id: "88DF150DB4891293"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 6
+					id: "42BDFA802B5F5545"
+					item: {
+						count: 1
+						id: "minecraft:lantern"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DB54F48FFA2479F4"]
+			icon: {
+				id: "minecraft:glass"
+			}
+			id: "77A745D21F71AFDD"
+			min_width: 220
+			rewards: [
+				{
+					id: "8FC736004844FFA4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 16
+					id: "1CFEE06A837ADE0C"
+					item: {
+						count: 1
+						id: "minecraft:glass"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77A745D21F71AFDD"]
+			icon: {
+				id: "minecraft:oak_stairs"
+			}
+			id: "A1757138A17DB988"
+			min_width: 220
+			rewards: [
+				{
+					id: "751A4DB34D16D8C8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 16
+					id: "19EA30299E84257D"
+					item: {
+						count: 1
+						id: "minecraft:oak_stairs"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["77A745D21F71AFDD"]
+			icon: {
+				id: "minecraft:oak_door"
+			}
+			id: "270586BDB3450F4F"
+			min_width: 220
+			rewards: [
+				{
+					id: "FABB529EB6C89ED8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2
+					id: "0A556F9BD0D24175"
+					item: {
+						count: 1
+						id: "minecraft:oak_door"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["270586BDB3450F4F", "A1757138A17DB988"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "3B3A09951C876303"
+			min_width: 220
+			rewards: [
+				{
+					id: "D0C3A84D87788337"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7C44BC9A06D574E5"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FCE7F8943ABC2726"]
+			icon: {
+				id: "waystones:waystone"
+			}
+			id: "81AF63F940B03D1D"
+			min_width: 220
+			rewards: [
+				{
+					id: "D28957943FC92FAC"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "328CB1F6762B0319"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B3A09951C876303"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "877D68AD2E964BF6"
+			min_width: 220
+			rewards: [
+				{
+					id: "E03310BE34610653"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "3046AA4CE0C5B25A"
+					type: "checkmark"
+				}
+			]
+			optional: true
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DCE30778EF9369B9"]
+			icon: {
+				id: "minecraft:beehive"
+			}
+			id: "76EA979E739385F9"
+			min_width: 220
+			rewards: [
+				{
+					id: "981C42DBB4C94D9E"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "C16CE424171D33FD"
+					item: {
+						count: 1
+						id: "minecraft:beehive"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+	]
+}

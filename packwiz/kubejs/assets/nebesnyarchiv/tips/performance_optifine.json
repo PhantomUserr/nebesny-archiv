@@ -1,0 +1,1 @@
+{"type":"tipsmod:simple","title":"Не ставь OptiFine","text":"В сборке уже есть Sodium/Embeddium и Iris. OptiFine конфликтует с ними и ломает моды.","cycle_time":11000}

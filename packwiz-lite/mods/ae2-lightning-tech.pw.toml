@@ -1,0 +1,12 @@
+name = "AE2 Lightning Tech"
+filename = "ae2lt-2.1.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ArHeh5Fz/versions/GGx4RqQt/ae2lt-2.1.3.jar"
+hash-format = "sha512"
+hash = "6604fb1b2c879d6ef274b7f89136a3e3ee1f34ab042f9025dfb923fe2e5b6cb5d3825cd915971ca3ac75a5e63f7be3310da44ca34e158335b872c9c01d57eaec"
+
+[update.modrinth]
+mod-id = "ArHeh5Fz"
+version = "GGx4RqQt"

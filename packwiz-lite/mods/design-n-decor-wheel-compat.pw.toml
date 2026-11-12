@@ -1,0 +1,12 @@
+name = "Design N' Decor Wheel Compat"
+filename = "dndecorwheelcompat-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LltyOPh7/versions/taFxYhg1/dndecorwheelcompat-1.0.0.jar"
+hash-format = "sha512"
+hash = "f355eb1c5c3718e33b2612849ac92ae99d4e8371060c9565316fbcc296145e971f573b9c556fc553930367001a185e62776b8d1a91b3a24fde0b4e4d28124d2c"
+
+[update.modrinth]
+mod-id = "LltyOPh7"
+version = "taFxYhg1"

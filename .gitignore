@@ -1,0 +1,24 @@
+# Build artifacts
+dist/
+*.mrpack
+
+# Local server test / runtime
+server-test/
+**/world/
+**/logs/
+**/crash-reports/
+**/.sable/
+**/*.log
+
+# Downloaded tools
+tools/bin/
+tools/**/*.zip
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# packwiz local cache
+.packwiz/

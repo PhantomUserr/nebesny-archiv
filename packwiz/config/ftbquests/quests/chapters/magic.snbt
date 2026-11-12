@@ -1,0 +1,762 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "magic"
+	group: "9573D5735C2780BB"
+	icon: {
+		id: "ars_nouveau:novice_spell_book"
+	}
+	id: "89277A89ED2616E7"
+	order_index: 5
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["0335C6DFB87DD741"]
+			icon: {
+				id: "ars_nouveau:novice_spell_book"
+			}
+			id: "87BBA1E7C4F987FE"
+			min_width: 220
+			rewards: [
+				{
+					id: "301CFBE599DC73F1"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "01C822832977DEE1"
+					item: {
+						count: 1
+						id: "ars_nouveau:novice_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["87BBA1E7C4F987FE"]
+			icon: {
+				id: "ars_nouveau:wand"
+			}
+			id: "2A79940E91D1BF82"
+			min_width: 220
+			rewards: [
+				{
+					id: "12BC0AF323346E3D"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "633F893383BBA996"
+					item: {
+						count: 1
+						id: "ars_nouveau:wand"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["87BBA1E7C4F987FE"]
+			icon: {
+				id: "ars_nouveau:source_jar"
+			}
+			id: "7E1FE8E0EBF40AE0"
+			min_width: 220
+			rewards: [
+				{
+					id: "2306848D836AA7AC"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "56770B76E0C90908"
+					item: {
+						count: 1
+						id: "ars_nouveau:source_jar"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E1FE8E0EBF40AE0"]
+			icon: {
+				id: "ars_nouveau:imbuement_chamber"
+			}
+			id: "2DEF308668B69DB6"
+			min_width: 220
+			rewards: [
+				{
+					id: "9C95EFF3C6A3FB77"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "E0A3CE5884C45F3D"
+					item: {
+						count: 1
+						id: "ars_nouveau:imbuement_chamber"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2DEF308668B69DB6"]
+			icon: {
+				id: "ars_nouveau:enchanting_apparatus"
+			}
+			id: "787325E0953E1C55"
+			min_width: 220
+			rewards: [
+				{
+					id: "9826DCBF0291B133"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "2FC5254ACA929B84"
+					item: {
+						count: 1
+						id: "ars_nouveau:enchanting_apparatus"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E1FE8E0EBF40AE0"]
+			icon: {
+				id: "ars_nouveau:ritual_brazier"
+			}
+			id: "BF47B19C711FDD02"
+			min_width: 220
+			rewards: [
+				{
+					id: "6DA5FC6CD2E4DA0B"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "03D433AE5AFA09B4"
+					item: {
+						count: 1
+						id: "ars_nouveau:ritual_brazier"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0335C6DFB87DD741"]
+			icon: {
+				id: "irons_spellbooks:iron_spell_book"
+			}
+			id: "62C252126931DE0B"
+			min_width: 220
+			rewards: [
+				{
+					id: "0113FD044967A69B"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "9465C4DE7F4F0F9A"
+					item: {
+						count: 1
+						id: "irons_spellbooks:iron_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62C252126931DE0B"]
+			icon: {
+				id: "irons_spellbooks:inscription_table"
+			}
+			id: "6999FB97AAF9DC5A"
+			min_width: 220
+			rewards: [
+				{
+					id: "2904823A4953C28A"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "756945E793F847AB"
+					item: {
+						count: 1
+						id: "irons_spellbooks:inscription_table"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6999FB97AAF9DC5A"]
+			icon: {
+				id: "irons_spellbooks:arcane_anvil"
+			}
+			id: "7053DA085042999E"
+			min_width: 220
+			rewards: [
+				{
+					id: "270BCE172E7597F5"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "466B2EC9CAA5D88A"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_anvil"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7053DA085042999E"]
+			icon: {
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "49C8CEA3AB150F80"
+			min_width: 220
+			rewards: [
+				{
+					id: "88B51C0EED3426A8"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "65C21A1C28DC75A1"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0335C6DFB87DD741"]
+			icon: {
+				id: "malum:runic_workbench"
+			}
+			id: "CC3472B3AF2958AB"
+			min_width: 220
+			rewards: [
+				{
+					id: "2E408AA3DB677933"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "875F93890B65C123"
+					item: {
+						count: 1
+						id: "malum:runic_workbench"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["CC3472B3AF2958AB"]
+			icon: {
+				id: "malum:spirit_altar"
+			}
+			id: "3DB3D5C95AED671D"
+			min_width: 220
+			rewards: [
+				{
+					id: "D0F54F3BAA4B4804"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "6D8435D2CD8781B1"
+					item: {
+						count: 1
+						id: "malum:spirit_altar"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["CC3472B3AF2958AB"]
+			icon: {
+				id: "malum:crude_scythe"
+			}
+			id: "176ABE8D5143C058"
+			min_width: 220
+			rewards: [
+				{
+					id: "51C20E0D25EEB8F4"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "31A210EAB96C1B2B"
+					item: {
+						count: 1
+						id: "malum:crude_scythe"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DB3D5C95AED671D"]
+			icon: {
+				id: "malum:spirit_jar"
+			}
+			id: "F660D65109DEE229"
+			min_width: 220
+			rewards: [
+				{
+					id: "37A454BD3F13BD62"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "274837A830F79EA2"
+					item: {
+						count: 1
+						id: "malum:spirit_jar"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3DB3D5C95AED671D"]
+			icon: {
+				id: "malum:soul_stained_steel_ingot"
+			}
+			id: "8DAA256D111E987E"
+			min_width: 220
+			rewards: [
+				{
+					id: "5EDCBD02AF0D5C35"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 4
+					id: "693ABE9E21B74593"
+					item: {
+						count: 1
+						id: "malum:soul_stained_steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8DAA256D111E987E"]
+			icon: {
+				id: "goety:dark_wand"
+			}
+			id: "BD26CFD5683648B9"
+			min_width: 220
+			rewards: [
+				{
+					id: "58E80D35EE8AF739"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "A6F87C521935EB46"
+					item: {
+						count: 1
+						id: "goety:dark_wand"
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["BD26CFD5683648B9"]
+			icon: {
+				id: "goety:dark_altar"
+			}
+			id: "31234A1B12295C27"
+			min_width: 220
+			rewards: [
+				{
+					id: "DF1F48D760751682"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "5777209F734AAB80"
+					item: {
+						count: 1
+						id: "goety:dark_altar"
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0335C6DFB87DD741"]
+			icon: {
+				id: "spectrum:pigment_palette"
+			}
+			id: "F7367F8E895B1DE0"
+			min_width: 220
+			rewards: [
+				{
+					id: "046E7CEE0D1B22A7"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "108F8C926DB5AE59"
+					item: {
+						count: 1
+						id: "spectrum:pigment_palette"
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["F7367F8E895B1DE0"]
+			icon: {
+				id: "spectrum:fusion_shrine_basalt"
+			}
+			id: "222F66BF8474764B"
+			min_width: 220
+			rewards: [
+				{
+					id: "3024B82E64C804A9"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "D6F3A8E531BBCB18"
+					item: {
+						count: 1
+						id: "spectrum:fusion_shrine_basalt"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F7367F8E895B1DE0"]
+			icon: {
+				id: "spectrum:enchanter"
+			}
+			id: "E956E2D733D08C57"
+			min_width: 220
+			rewards: [
+				{
+					id: "B88C04CB2CE0B7E7"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "E23295FF7B10CE45"
+					item: {
+						count: 1
+						id: "spectrum:enchanter"
+					}
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["222F66BF8474764B"]
+			icon: {
+				id: "theurgy:calcination_oven"
+			}
+			id: "94FA70507FCE3558"
+			min_width: 220
+			rewards: [
+				{
+					id: "9F9B2530464E62C5"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "C026744F2C61CC84"
+					item: {
+						count: 1
+						id: "theurgy:calcination_oven"
+					}
+					type: "item"
+				}
+			]
+			optional: true
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["94FA70507FCE3558"]
+			icon: {
+				id: "theurgy:liquefaction_cauldron"
+			}
+			id: "73E40A96223605DF"
+			min_width: 220
+			rewards: [
+				{
+					id: "3378F1A660DFD590"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "B212CF3BC9F8913D"
+					item: {
+						count: 1
+						id: "theurgy:liquefaction_cauldron"
+					}
+					type: "item"
+				}
+			]
+			optional: true
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["222F66BF8474764B"]
+			icon: {
+				id: "aether:aether_portal_frame"
+			}
+			id: "F05C2E6F3C5289F6"
+			min_width: 220
+			rewards: [
+				{
+					id: "477AB512EC9D0B87"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "B083EA6ADA7DFF66"
+					item: {
+						count: 1
+						id: "aether:aether_portal_frame"
+					}
+					type: "item"
+				}
+			]
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F05C2E6F3C5289F6"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "626DFC8FBBD81345"
+			min_width: 220
+			rewards: [
+				{
+					id: "13559B90457B33E9"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					dimension: "aether:the_aether"
+					id: "FF834BD78447EEDC"
+					type: "dimension"
+				}
+			]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["787325E0953E1C55"]
+			icon: {
+				id: "ars_nouveau:archmage_spell_book"
+			}
+			id: "676C35EBD45F8CBC"
+			min_width: 220
+			rewards: [
+				{
+					id: "DB17E6A17E6BAC01"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "866D2395829A9F36"
+					item: {
+						count: 1
+						id: "ars_nouveau:archmage_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+	]
+}

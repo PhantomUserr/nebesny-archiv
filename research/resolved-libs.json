@@ -1,0 +1,547 @@
+{
+  "generatedAt": "2026-11-11T21:50:31.809Z",
+  "game": "1.21.1",
+  "loader": "neoforge",
+  "manifest": "libs.manifest.json",
+  "modsDir": "C:\\Users\\qwert\\.minecraftx\\instances\\Nebesny Archiv\\mods",
+  "totalRequested": 16,
+  "totalResolved": 26,
+  "downloadedBytes": 0,
+  "missing": [],
+  "failed": [],
+  "mods": [
+    {
+      "status": "ok",
+      "slug": "carryon-aeronautics-compat",
+      "projectId": "MpnDZ1Lx",
+      "title": "Carry On + Create Aeronautics Compat",
+      "versionNumber": "1.1.1",
+      "versionId": "z7xbAdje",
+      "filename": "CarryOnAeroCompat-1.21.1-1.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/MpnDZ1Lx/versions/z7xbAdje/CarryOnAeroCompat-1.21.1-1.1.1.jar",
+      "sha512": "93684af538863a276232a8bf2a30a54573334023cff9c0a8290a7ff504c222562c447429bc402e591069a26e6fa20e861e5b438d0ce503d5ecdf385067643ed3",
+      "side": "both",
+      "category": "aeronautics",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "optional",
+          "projectId": "oWaK0Q19"
+        },
+        {
+          "type": "required",
+          "projectId": "joEfVgkn"
+        }
+      ],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "create-coasters-simulated",
+      "projectId": "W1ZUfWdr",
+      "title": "Create: Coasters Simulated",
+      "versionNumber": "0.1.5",
+      "versionId": "PGhQoSBq",
+      "filename": "simulatedcoasters-0.1.5.jar",
+      "url": "https://cdn.modrinth.com/data/W1ZUfWdr/versions/PGhQoSBq/simulatedcoasters-0.1.5.jar",
+      "sha512": "1fd31aaac63755e7cdf76de1498c9e0b38973977e66aaf49e380774ec30a1b09834f1c44e3e9ccc965403d440e4cafc46bce42f83307979bf790b6689d3cfb1f",
+      "side": "both",
+      "category": "aeronautics",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "LNytGWDc"
+        },
+        {
+          "type": "required",
+          "projectId": "T9PomCSv"
+        }
+      ],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "create-simulated-additions",
+      "projectId": "rlv7S1aF",
+      "title": "Create Simulated Additions",
+      "versionNumber": "0.2.3",
+      "versionId": "tP7OCy3K",
+      "filename": "create_simulated_additions-0.2.3-neoforge-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/rlv7S1aF/versions/tP7OCy3K/create_simulated_additions-0.2.3-neoforge-1.21.1.jar",
+      "sha512": "b67e62a4e6e5e090e4aa668195a9d7feb3f16f72ebd1199e47dbcd52929de58a2456b2ab779c7f23f220f6858f92611995e6a0ea0a29995665ea98cf01209bc7",
+      "side": "both",
+      "category": "aeronautics",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "oWaK0Q19"
+        },
+        {
+          "type": "required",
+          "projectId": "LNytGWDc"
+        }
+      ],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "simulated-extra",
+      "projectId": "L064RU4O",
+      "title": "Simulated Extra",
+      "versionNumber": "0.3-beta",
+      "versionId": "HtKNrbWA",
+      "filename": "simulatedextra-0.3-beta.jar",
+      "url": "https://cdn.modrinth.com/data/L064RU4O/versions/HtKNrbWA/simulatedextra-0.3-beta.jar",
+      "sha512": "b7a82d2afba2842d684525745f91c44da608506494f816833623e18eee9210f468ee0e7e1ed37b1c149e4f71e2c8bd6c42fd3da258ce38dfe7958402aab26df3",
+      "side": "both",
+      "category": "aeronautics",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "design-n-decor-wheel-compat",
+      "projectId": "LltyOPh7",
+      "title": "Design N' Decor Wheel Compat",
+      "versionNumber": "1.0.0b",
+      "versionId": "taFxYhg1",
+      "filename": "dndecorwheelcompat-1.0.0.jar",
+      "url": "https://cdn.modrinth.com/data/LltyOPh7/versions/taFxYhg1/dndecorwheelcompat-1.0.0.jar",
+      "sha512": "f355eb1c5c3718e33b2612849ac92ae99d4e8371060c9565316fbcc296145e971f573b9c556fc553930367001a185e62776b8d1a91b3a24fde0b4e4d28124d2c",
+      "side": "both",
+      "category": "create",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "x49wilh8"
+        },
+        {
+          "type": "required",
+          "projectId": "oWaK0Q19"
+        }
+      ],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "steam-n-rails-wheel-compat",
+      "projectId": "O9V583Vp",
+      "title": "Steam 'n Rails Wheel Compat",
+      "versionNumber": "1.0.0",
+      "versionId": "A7aHEJbm",
+      "filename": "snrailswheelcompat-1.0.0.jar",
+      "url": "https://cdn.modrinth.com/data/O9V583Vp/versions/A7aHEJbm/snrailswheelcompat-1.0.0.jar",
+      "sha512": "aa47221ea2bdad2a61f5fb244515c50fd6da81cadcf0a683b710197fb46c85b6825c5e6f8be073196de43f75b40e90f4627ee64ccda67aff448cafa6330d167a",
+      "side": "both",
+      "category": "create",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "LNytGWDc"
+        },
+        {
+          "type": "required",
+          "projectId": "oWaK0Q19"
+        },
+        {
+          "type": "required",
+          "projectId": "L3Jv0QZI"
+        }
+      ],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "ccKDOlHs",
+      "projectId": "ccKDOlHs",
+      "title": "oωo (owo-lib)",
+      "versionNumber": "0.12.15.6-beta.1+1.21",
+      "versionId": "wbdHEItB",
+      "filename": "owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar",
+      "url": "https://cdn.modrinth.com/data/ccKDOlHs/versions/wbdHEItB/owo-lib-neoforge-0.12.15.6-beta.1%2B1.21.jar",
+      "sha512": "fc843ef350c4af6748d9fd6ecd3c28f96262cf46d46a8329029f49ea4f9eb87238113a8a415e8bba2c4f346c718bf450194f6f5823dfbf1ae7312529a81c3e5c",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "YhmgMVyu",
+      "deps": [],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "joEfVgkn",
+      "projectId": "joEfVgkn",
+      "title": "Carry On",
+      "versionNumber": "2.2.6",
+      "versionId": "PV8oLZ1q",
+      "filename": "carryon-neoforge-1.21.1-2.2.6.13.jar",
+      "url": "https://cdn.modrinth.com/data/joEfVgkn/versions/PV8oLZ1q/carryon-neoforge-1.21.1-2.2.6.13.jar",
+      "sha512": "e097b11d6f14e0957bab6c0276b81542e786cb86b9c31d9f25975f8c9fb04a734188b8790683298bbc5c695dc3de7d6e947616a20ad26d4a728a3beb0bb78667",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "carryon-aeronautics-compat",
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "kkmrDlKT",
+      "projectId": "kkmrDlKT",
+      "title": "TerraBlender",
+      "versionNumber": "4.1.0.8",
+      "versionId": "6e8GCrLb",
+      "filename": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "url": "https://cdn.modrinth.com/data/kkmrDlKT/versions/6e8GCrLb/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "sha512": "9d4b2a1be5139c0fb2fad92ed21805b17d9e83b6ea48e637e018bb14063c1823a206390755dbfe8d025c20fd62ac11cdd84db53ddb956dabaeda01bff57bac50",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "aeroblender",
+      "deps": [],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "L3Jv0QZI",
+      "projectId": "L3Jv0QZI",
+      "title": "Steam 'n' Rails Neoforge",
+      "versionNumber": "0.2.1+neoforge-mc1.21.1",
+      "versionId": "HOPX5oro",
+      "filename": "railways-0.2.1+neoforge-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/L3Jv0QZI/versions/HOPX5oro/railways-0.2.1%2Bneoforge-mc1.21.1.jar",
+      "sha512": "dac8efb7c8b4b525114c2548bd2a8254d3b1e9e44664ba84b0f4e8467e1584029f8a219dd1ddf4389ab0a94e525183ee7753d33babdf319926cd63d2fc9cdffd",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "steam-n-rails-wheel-compat",
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "LNytGWDc"
+        }
+      ],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "LNytGWDc",
+      "projectId": "LNytGWDc",
+      "title": "Create",
+      "versionNumber": "6.0.10+mc1.21.1",
+      "versionId": "UjX6dr61",
+      "filename": "create-1.21.1-6.0.10.jar",
+      "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/create-1.21.1-6.0.10.jar",
+      "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "create-coasters-simulated",
+      "deps": [],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "NNAgCjsB",
+      "projectId": "NNAgCjsB",
+      "title": "Entity Culling",
+      "versionNumber": "1.11.3",
+      "versionId": "eieYbWYb",
+      "filename": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/eieYbWYb/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "sha512": "93e83dd690b91d610be29451b34836c9daa7e08bd952f88ffa07c62d8774bbaac2ff0c6768d2cbf1b14f47d0b86f98cef9fd341e0d29bd37207eaf4aa2abea63",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "create-nowheel",
+      "deps": [],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "oWaK0Q19",
+      "projectId": "oWaK0Q19",
+      "title": "Create Aeronautics",
+      "versionNumber": "1.3.2+mc1.21.1",
+      "versionId": "44pLdPGg",
+      "filename": "create-aeronautics-bundled-1.21.1-1.3.2.jar",
+      "url": "https://cdn.modrinth.com/data/oWaK0Q19/versions/44pLdPGg/create-aeronautics-bundled-1.21.1-1.3.2.jar",
+      "sha512": "dc7e8e1148fa442243889ba29412207137e1bb86206e6c92bc0a589f1374a466e93de22bdbf14f753984d86c29308fbbdc0f14a4b9618b14c0ac1666a36b46f5",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "create-simulated-additions",
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "T9PomCSv"
+        },
+        {
+          "type": "required",
+          "projectId": "LNytGWDc"
+        }
+      ],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "T9PomCSv",
+      "projectId": "T9PomCSv",
+      "title": "Sable",
+      "versionNumber": "2.0.6+mc1.21.1",
+      "versionId": "fg9dTRz9",
+      "filename": "sable-neoforge-1.21.1-2.0.6.jar",
+      "url": "https://cdn.modrinth.com/data/T9PomCSv/versions/fg9dTRz9/sable-neoforge-1.21.1-2.0.6.jar",
+      "sha512": "76d293ce751a01cb9c095a3659b0a41e03e005480bc9d76dfdc73ec7c2eabf7923740c7b077921d42616673c496cd5143569f2085ddcebe174fd91d81e2a04b8",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "oWaK0Q19",
+      "deps": [
+        {
+          "type": "embedded",
+          "projectId": "3KUWeVhG"
+        },
+        {
+          "type": "optional",
+          "projectId": "LNytGWDc"
+        },
+        {
+          "type": "optional",
+          "projectId": "qy8EtCnG"
+        }
+      ],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "x49wilh8",
+      "projectId": "x49wilh8",
+      "title": "Create: Design n' Decor",
+      "versionNumber": "2.2b",
+      "versionId": "uQsIRky8",
+      "filename": "Design-n-Decor-1.21.1-2.2b.jar",
+      "url": "https://cdn.modrinth.com/data/x49wilh8/versions/uQsIRky8/Design-n-Decor-1.21.1-2.2b.jar",
+      "sha512": "d888553c8a254c3654f8da2ae2cae0bb642594546c71988739c93bf6b18668145e0ce5b1c20ae0544b9b6019f17e4da944bd5bc17e4c6b73e7f1374cfa2c9db9",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "design-n-decor-wheel-compat",
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "LNytGWDc"
+        }
+      ],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "YhmgMVyu",
+      "projectId": "YhmgMVyu",
+      "title": "The Aether",
+      "versionNumber": "1.21.1-1.5.10-neoforge",
+      "versionId": "K5X5qMwG",
+      "filename": "aether-1.21.1-1.5.10-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/YhmgMVyu/versions/K5X5qMwG/aether-1.21.1-1.5.10-neoforge.jar",
+      "sha512": "4b004daed6d09362646e204f068dee28e80523e705e862778036c492775672071ca9cc95f9574a842f34d2e058b46138c6154c6a2f251dcdad7a8803907dad46",
+      "side": "both",
+      "category": "dependency",
+      "dependencyOf": "aeroblender",
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "ccKDOlHs"
+        },
+        {
+          "type": "embedded",
+          "projectId": "jtmvUHXj"
+        },
+        {
+          "type": "embedded",
+          "projectId": "sq1f0DCq"
+        }
+      ],
+      "downloaded": "cached"
+    },
+    {
+      "status": "ok",
+      "slug": "aeroblender",
+      "projectId": "1eaq94ok",
+      "title": "AeroBlender",
+      "versionNumber": "1.0.0",
+      "versionId": "wSvpPEr3",
+      "filename": "aeroblender-1.21.1-1.0.0-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/1eaq94ok/versions/wSvpPEr3/aeroblender-1.21.1-1.0.0-neoforge.jar",
+      "sha512": "d7f05700088301b9a9d3cf0570c26008c933611f2d42eec7b230e5424d0d01f2620234e33c5e59bce05a5981b707ea7bec46c97275b936d7d0dbc3809be9e637",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "kkmrDlKT"
+        },
+        {
+          "type": "required",
+          "projectId": "YhmgMVyu"
+        }
+      ],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "apollib",
+      "projectId": "VDI2Ytax",
+      "title": "Apollib",
+      "versionNumber": "1.2.0-neoforge-21.1",
+      "versionId": "zMAIdVwq",
+      "filename": "apollib-1.2.0-neoforge-21.1.jar",
+      "url": "https://cdn.modrinth.com/data/VDI2Ytax/versions/zMAIdVwq/apollib-1.2.0-neoforge-21.1.jar",
+      "sha512": "cd047ad08832826995ebeeb6fa5e2bede8eeabe28a06676b1e11c6fc2bc9f61d84c54714433505b7cdcfc9be9422e7f3afa7565f9aa38223d2a95661551f980e",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "caelus",
+      "projectId": "40FYwb4z",
+      "title": "Caelus API",
+      "versionNumber": "7.0.1+1.21.1",
+      "versionId": "KsfI4QsR",
+      "filename": "caelus-neoforge-7.0.1+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/40FYwb4z/versions/KsfI4QsR/caelus-neoforge-7.0.1%2B1.21.1.jar",
+      "sha512": "3763f95304ade2bacb217828c74eeef7905a114f71d41537d56121af58c182c2685467a5afb7e03ddb3997ec3d7496bdfdf71a9946a9f33e3470393e7a13306d",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "irons-lib",
+      "projectId": "9nfaJPtX",
+      "title": "Iron's Lib",
+      "versionNumber": "1.21.1-2.3.0",
+      "versionId": "dgH7P81J",
+      "filename": "irons_lib-1.21.1-2.3.0.jar",
+      "url": "https://cdn.modrinth.com/data/9nfaJPtX/versions/dgH7P81J/irons_lib-1.21.1-2.3.0.jar",
+      "sha512": "74c609a583af1547c36ad39a7f89074a221f106fad5a246810d4921f91d0fc2df5660ef75f47f33e5f546cc51147d78ecbcff883da4a53f24002311697d0a99b",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "kambrik",
+      "projectId": "zfbCkvdZ",
+      "title": "Kambrik",
+      "versionNumber": "8.0.0-beta.2",
+      "versionId": "rCSmCZpX",
+      "filename": "kambrik-neoforge-8.0.0-beta.2.jar",
+      "url": "https://cdn.modrinth.com/data/zfbCkvdZ/versions/rCSmCZpX/kambrik-neoforge-8.0.0-beta.2.jar",
+      "sha512": "c110728232ca6eb63df43c404cc1e9c6c4e1ba22f266de71faa665a2a07efaef2941fae13117a496782747ae3f84b1706fb017a860cc0ff7876077d4f0d91984",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "lodestonelib",
+      "projectId": "bN3xUWdo",
+      "title": "Lodestone",
+      "versionNumber": "1.8.2",
+      "versionId": "CohX6yP1",
+      "filename": "lodestone-1.21.1-1.8.2.jar",
+      "url": "https://cdn.modrinth.com/data/bN3xUWdo/versions/CohX6yP1/lodestone-1.21.1-1.8.2.jar",
+      "sha512": "6917080339b982d96cb4a7c98205ade5d89730191bc9113f4f8cd36bb1a760a91ad2421c8869c7063f8dea22a200d7d1896e0bb5e0e64119bb7590e32a998a23",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "paucal",
+      "projectId": "TZo2wHFe",
+      "title": "PAUCAL",
+      "versionNumber": "0.7.0",
+      "versionId": "zgpdzVKd",
+      "filename": "paucal-0.7.0+neoforge-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/TZo2wHFe/versions/zgpdzVKd/paucal-0.7.0%2Bneoforge-1.21.1.jar",
+      "sha512": "49364da2d43ddbab5533300a2da0163ff6328f2680111efb2128822a497abd94c9c770b8844b21aabc57b77b8b275ae50cc2f922462cf44322b58cf4916ae467",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "playeranimator",
+      "projectId": "gedNE4y2",
+      "title": "playerAnimator",
+      "versionNumber": "2.0.4+1.21.1-forge",
+      "versionId": "HJZB6bmA",
+      "filename": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gedNE4y2/versions/HJZB6bmA/player-animation-lib-forge-2.0.4%2B1.21.1.jar",
+      "sha512": "fc00450fb6c95ec1779021bdc726122dacb5915c6baddaacc981cd221b01b8db35f2a0dfde5d6fa6766d877266dc82f58854f571ea53cc5c4d468b80e1548a5f",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "optional",
+          "projectId": "aRnIEV0F"
+        }
+      ],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "revelationary",
+      "projectId": "eXrl5E3G",
+      "title": "Revelationary",
+      "versionNumber": "1.5.2+1.21.1",
+      "versionId": "775bsBpl",
+      "filename": "revelationary-neoforge-1.5.2+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/eXrl5E3G/versions/775bsBpl/revelationary-neoforge-1.5.2%2B1.21.1.jar",
+      "sha512": "203a1d682ceac2da9183ba68f446a40d1ff7e18adfde103f93c77e4466f60408e46844ce4d2fbb9d0f30b1cfec49092235e1adc0ca0fbb2f68cce50fc6cf8ccb",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    },
+    {
+      "status": "ok",
+      "slug": "create-nowheel",
+      "projectId": "c47YxuuI",
+      "title": "Create: Nowheel",
+      "versionNumber": "2.1.1+1.21.1neoforge",
+      "versionId": "3NKOvEei",
+      "filename": "nowheel-2.1.1+1.21.1neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/c47YxuuI/versions/3NKOvEei/nowheel-2.1.1%2B1.21.1neoforge.jar",
+      "sha512": "87e71aa5c7db450c4f42242922cf192537be99ff041ae8c959c219938ddebc06455858693afe9a536c8d7fcfd6fda136a8d0f017c050e4f27d04350b7cb43956",
+      "side": "client",
+      "category": "qol",
+      "dependencyOf": null,
+      "deps": [
+        {
+          "type": "required",
+          "projectId": "NNAgCjsB"
+        },
+        {
+          "type": "required",
+          "projectId": "LNytGWDc"
+        }
+      ],
+      "downloaded": "yes"
+    }
+  ]
+}

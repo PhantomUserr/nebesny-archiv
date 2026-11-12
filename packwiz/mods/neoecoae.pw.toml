@@ -1,0 +1,12 @@
+name = "Neo Eco AE Extension"
+filename = "neoecoae-21.2.16.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/udZtKfzP/versions/XZ8STSI4/neoecoae-21.2.16.jar"
+hash-format = "sha512"
+hash = "3e1eba725a4e721bb6a95b5b4fe5a1f8c14af5c5ecf14eada6adfc400f217ce2780cf6af47a726f813b2d614891b1d1e10c4b9e18725cc674566e7d1bd2c2713"
+
+[update.modrinth]
+mod-id = "udZtKfzP"
+version = "XZ8STSI4"

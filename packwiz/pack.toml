@@ -1,0 +1,13 @@
+name = "Nebesny Archiv"
+author = "Nebesny Archiv Team"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "83a5939edb95fa710e8f4a0b6ad24d563ffdff1834c7aab81d24665570ad3efb"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.250"

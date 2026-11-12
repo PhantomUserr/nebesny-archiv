@@ -1,0 +1,458 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "start"
+	group: "5ADA6ADB5D0E5C03"
+	icon: {
+		id: "minecraft:lectern"
+	}
+	id: "F90E449932A8DFAC"
+	order_index: 0
+	progression_mode: "flexible"
+	quests: [
+		{
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "893D1BB287C831F7"
+			min_width: 220
+			rewards: [
+				{
+					id: "0384AAF0748B4300"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7A0EE5C3112888A0"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:oak_log"
+			}
+			id: "A00766F1A4D085BF"
+			min_width: 220
+			rewards: [
+				{
+					id: "A467790F573B3770"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 8
+					id: "6DFC2205ACB23631"
+					item: {
+						count: 1
+						id: "minecraft:oak_log"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:crafting_table"
+			}
+			id: "B5551A337CA1F70C"
+			min_width: 220
+			rewards: [
+				{
+					id: "36821537A3001622"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "AFCD58283CF3284E"
+					item: {
+						count: 1
+						id: "minecraft:crafting_table"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:wooden_pickaxe"
+			}
+			id: "1EE2CD3A62F77B5D"
+			min_width: 220
+			rewards: [
+				{
+					id: "C3D79DB28FC68237"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "840ECE0FDC116919"
+					item: {
+						count: 1
+						id: "minecraft:wooden_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:cobblestone"
+			}
+			id: "3C2335E032BA5D48"
+			min_width: 220
+			rewards: [
+				{
+					id: "5A3D2259FC49C824"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 24
+					id: "AC5DE2EE9E9AEC94"
+					item: {
+						count: 1
+						id: "minecraft:cobblestone"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:stone_pickaxe"
+			}
+			id: "DF0C55FE90F3251B"
+			min_width: 220
+			rewards: [
+				{
+					id: "AAAE07C8C41373C5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "2FE0C581E981B004"
+					item: {
+						count: 1
+						id: "minecraft:stone_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "257AADFA990E427F"
+					item: {
+						count: 1
+						id: "minecraft:stone_sword"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DF0C55FE90F3251B"]
+			icon: {
+				id: "minecraft:torch"
+			}
+			id: "B1AA45DE289E7995"
+			min_width: 220
+			rewards: [
+				{
+					id: "E700B7D250D9A29A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 16
+					id: "D2CA3C186D067715"
+					item: {
+						count: 1
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DF0C55FE90F3251B"]
+			icon: {
+				id: "minecraft:furnace"
+			}
+			id: "872951914D631C14"
+			min_width: 220
+			rewards: [
+				{
+					id: "AFE6913E3EE59F55"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "C679213CC0B399CE"
+					item: {
+						count: 1
+						id: "minecraft:furnace"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["893D1BB287C831F7"]
+			icon: {
+				id: "minecraft:bread"
+			}
+			id: "14D6F45E906DC009"
+			min_width: 220
+			rewards: [
+				{
+					id: "27882DC25CAC6C2B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 3
+					id: "7CFBEC36A3E91B5F"
+					item: {
+						count: 1
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["893D1BB287C831F7"]
+			icon: {
+				id: "minecraft:white_bed"
+			}
+			id: "573660879FF5508C"
+			min_width: 220
+			rewards: [
+				{
+					id: "195AE14EAA0286FD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "B94C4FF2BAF344CE"
+					item: {
+						count: 1
+						id: "minecraft:white_bed"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["872951914D631C14"]
+			icon: {
+				id: "minecraft:raw_iron"
+			}
+			id: "EABB993094E59A0A"
+			min_width: 220
+			rewards: [
+				{
+					id: "F6C0D0025852D00F"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 6
+					id: "5633CF459B80BC24"
+					item: {
+						count: 1
+						id: "minecraft:raw_iron"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["EABB993094E59A0A"]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+			}
+			id: "0335C6DFB87DD741"
+			min_width: 220
+			rewards: [
+				{
+					id: "08A1F2A91830B3A1"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "174A534EB0D18BBF"
+					item: {
+						count: 1
+						id: "minecraft:iron_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["B5551A337CA1F70C"]
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "325A4660FA1790E9"
+			min_width: 220
+			rewards: [
+				{
+					id: "1DB017E38FEC259D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "C32ED4D264AF3F5F"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["893D1BB287C831F7"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "B96DA29463C25AE1"
+			min_width: 220
+			rewards: [
+				{
+					id: "2E2655AB283E1D0B"
+					type: "xp"
+					xp: 5
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "9F46C4556AC6FFDF"
+					type: "checkmark"
+				}
+			]
+			optional: true
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["893D1BB287C831F7"]
+			icon: {
+				id: "minecraft:written_book"
+			}
+			id: "DB077EC7508712D8"
+			min_width: 220
+			rewards: [
+				{
+					id: "DD5FAECFDEE62F38"
+					type: "xp"
+					xp: 15
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "85769FB2590C87C7"
+					item: {
+						count: 1
+						id: "minecraft:written_book"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+}

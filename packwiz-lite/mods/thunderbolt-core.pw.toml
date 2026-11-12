@@ -1,0 +1,12 @@
+name = "Thunderbolt Core"
+filename = "thunderbolt-2.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/M5jhzZXH/versions/i3H7uX2O/thunderbolt-2.0.3.jar"
+hash-format = "sha512"
+hash = "94ccf79450ce5542403a76efb76ca9d914116afc617b5d3f7844e5807636a1904d9f7c5049b918baf446a1e7c7266f372e722865b4702872753c472dddddd3ba"
+
+[update.modrinth]
+mod-id = "M5jhzZXH"
+version = "i3H7uX2O"

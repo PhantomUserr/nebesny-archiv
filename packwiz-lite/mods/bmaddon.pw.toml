@@ -1,0 +1,12 @@
+name = "BloodMagic AE2 Addition"
+filename = "bmaddon1.21.1-beta1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qPydPwtX/versions/kKLZdIPS/bmaddon1.21.1-beta1.jar"
+hash-format = "sha512"
+hash = "02a6c1b6acd84fcff4e4acce3d76e9788b2da1c117bb530e0f1c9a4bd2d7a52b6ca6cda4e46a6df872bf6ee80c7dffe27a14fec5e30c33fb0fdc164cddcf3455"
+
+[update.modrinth]
+mod-id = "qPydPwtX"
+version = "kKLZdIPS"

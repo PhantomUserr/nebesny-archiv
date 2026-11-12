@@ -1,0 +1,24 @@
+{
+  "name": "Nebesny Archiv — libraries and extra addons",
+  "game": "1.21.1",
+  "loader": "neoforge",
+  "mods": [
+    { "slug": "playeranimator", "side": "both", "category": "lib" },
+    { "slug": "irons-lib", "side": "both", "category": "lib" },
+    { "slug": "kambrik", "side": "both", "category": "lib" },
+    { "slug": "lodestonelib", "side": "both", "category": "lib" },
+    { "slug": "paucal", "side": "both", "category": "lib" },
+    { "slug": "caelus", "side": "both", "category": "lib" },
+    { "slug": "revelationary", "side": "both", "category": "lib" },
+    { "slug": "aeroblender", "side": "both", "category": "lib" },
+    { "slug": "apollib", "side": "both", "category": "lib" },
+
+    { "slug": "create-simulated-additions", "side": "both", "category": "aeronautics" },
+    { "slug": "carryon-aeronautics-compat", "side": "both", "category": "aeronautics" },
+    { "slug": "create-coasters-simulated", "side": "both", "category": "aeronautics" },
+    { "slug": "simulated-extra", "side": "both", "category": "aeronautics" },
+    { "slug": "design-n-decor-wheel-compat", "side": "both", "category": "create" },
+    { "slug": "steam-n-rails-wheel-compat", "side": "both", "category": "create" },
+    { "slug": "create-nowheel", "side": "client", "category": "qol" }
+  ]
+}

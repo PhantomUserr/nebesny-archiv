@@ -1,0 +1,538 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "exploration"
+	group: "26C7E41AE40BA738"
+	icon: {
+		id: "minecraft:ender_eye"
+	}
+	id: "5A1D6D1BFEC4E8E1"
+	order_index: 6
+	progression_mode: "flexible"
+	quests: [
+		{
+			dependencies: ["81AF63F940B03D1D"]
+			icon: {
+				id: "waystones:warp_stone"
+			}
+			id: "96678F3071D4453F"
+			min_width: 220
+			rewards: [
+				{
+					id: "2B10699B4E491595"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "95AA1E51DAC0DFAF"
+					item: {
+						count: 1
+						id: "waystones:warp_stone"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["96678F3071D4453F"]
+			icon: {
+				id: "naturescompass:naturescompass"
+			}
+			id: "7943C546267E7316"
+			min_width: 220
+			rewards: [
+				{
+					id: "64C8A921322DA33F"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "0BB793B038B6BB74"
+					item: {
+						count: 1
+						id: "naturescompass:naturescompass"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0335C6DFB87DD741"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "236FB373FE35468D"
+			min_width: 220
+			rewards: [
+				{
+					id: "CEB3E99050738087"
+					type: "xp"
+					xp: 20
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "AFF8CBC822A0E749"
+					type: "dimension"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["236FB373FE35468D"]
+			icon: {
+				id: "minecraft:blaze_rod"
+			}
+			id: "C76BF012DD5C5B29"
+			min_width: 220
+			rewards: [
+				{
+					id: "CD97C096DCA3A95A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 6
+					id: "FFD13F9F0BD21A70"
+					item: {
+						count: 1
+						id: "minecraft:blaze_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["236FB373FE35468D"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "6FE7D3AE9C2FF015"
+			min_width: 220
+			rewards: [
+				{
+					id: "6AD0BD65A1ADDBC8"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "A5CE0A5A367A913A"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6FE7D3AE9C2FF015"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "DAD239B0AC82E630"
+			min_width: 220
+			rewards: [
+				{
+					id: "3BEF07E3C9DFF22A"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "cataclysm:ancient_remnant"
+					id: "350D455EBB88DE81"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["C76BF012DD5C5B29"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "DB194EAAA0308612"
+			min_width: 220
+			rewards: [
+				{
+					id: "21F8070BD5B7FD89"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "31F90B60C64E857B"
+					type: "dimension"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DB194EAAA0308612"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "5BF5EEE3B7C032D5"
+			min_width: 220
+			rewards: [
+				{
+					id: "E550A90B5E3C5856"
+					type: "xp"
+					xp: 60
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [
+				{
+					entity: "minecraft:ender_dragon"
+					id: "977C687F54002FDF"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BF5EEE3B7C032D5"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "40B017D33391EC6B"
+			min_width: 220
+			rewards: [
+				{
+					id: "6423CDE49719F2CB"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "cataclysm:ender_guardian"
+					id: "81999C0598D3543A"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C76BF012DD5C5B29"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "A0835DA9996CA441"
+			min_width: 220
+			rewards: [
+				{
+					id: "8EB7062674AAD9B9"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					id: "0794745E04557D4D"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["A0835DA9996CA441"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "46339DAF909D25B3"
+			min_width: 220
+			rewards: [
+				{
+					id: "58BA2D3BD3F66972"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "goety:vizier"
+					id: "52DBB7BDE5F5DC30"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DB194EAAA0308612"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "1A79092B0F32F023"
+			min_width: 220
+			rewards: [
+				{
+					id: "8DDC46DB5C9D85A9"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					id: "5CC3EEE36C951B21"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46339DAF909D25B3"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "B481433B78922A55"
+			min_width: 220
+			rewards: [
+				{
+					id: "8AB8A70ED444D3E1"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "irons_spellbooks:dead_king"
+					id: "3A60B3BC2F34DBF9"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1A79092B0F32F023"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "82668E645C13BA92"
+			min_width: 220
+			rewards: [
+				{
+					id: "093773AA70BF4F0B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:void_blossom"
+					id: "0FDA4A7EB31EF566"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["626DFC8FBBD81345"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "9FF93584B0AD6747"
+			min_width: 220
+			rewards: [
+				{
+					id: "8F7EE9A2C532EC8D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					entity: "aether:valkyrie_queen"
+					id: "B37CB1FFE975B0D9"
+					type: "kill"
+					value: 1
+				}
+			]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DB194EAAA0308612"]
+			icon: {
+				id: "minecraft:echo_shard"
+			}
+			id: "DEBB53EF5F6F23AE"
+			min_width: 220
+			rewards: [
+				{
+					id: "D9A530407ECF7BE1"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 4
+					id: "78A573824655D92A"
+					item: {
+						count: 1
+						id: "minecraft:echo_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["DEBB53EF5F6F23AE"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "B3673ADD17AFFE0B"
+			min_width: 220
+			rewards: [
+				{
+					id: "EE61A2CEB94C5DF4"
+					type: "xp"
+					xp: 40
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					dimension: "deeperdarker:otherside"
+					id: "55840D74ACA3DEB7"
+					type: "dimension"
+				}
+			]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DEBB53EF5F6F23AE"]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "5EC79E08BA72A892"
+			min_width: 220
+			rewards: [
+				{
+					id: "401FD2B7BAF51303"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5AF4CC5A702FF2FA"
+					type: "checkmark"
+				}
+			]
+			optional: true
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7943C546267E7316"]
+			icon: {
+				id: "minecraft:map"
+			}
+			id: "9A3AF953679ABE51"
+			min_width: 220
+			rewards: [
+				{
+					id: "CA5907A980BE33FA"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 1
+					id: "D505E76A1F4C5A14"
+					item: {
+						count: 1
+						id: "minecraft:map"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 4.0d
+		}
+	]
+}

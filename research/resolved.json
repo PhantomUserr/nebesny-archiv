@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-11-12T03:50:02.456Z",
+  "game": "1.21.1",
+  "loader": "neoforge",
+  "manifest": "mods.manifest.json",
+  "modsDir": "C:\\Users\\qwert\\.minecraftx\\instances\\Nebesny Archiv\\mods",
+  "totalRequested": 1,
+  "totalResolved": 1,
+  "downloadedBytes": 0,
+  "missing": [],
+  "failed": [],
+  "mods": [
+    {
+      "status": "ok",
+      "slug": "feature-recycler",
+      "projectId": "IAzu52kG",
+      "title": "Feature Recycler",
+      "versionNumber": "2.0.0-neoforge",
+      "versionId": "TsMXDaL7",
+      "filename": "Feature-Recycler-neoforge-2.0.0.jar",
+      "url": "https://cdn.modrinth.com/data/IAzu52kG/versions/TsMXDaL7/Feature-Recycler-neoforge-2.0.0.jar",
+      "sha512": "0909f39c1ec6f435eb2a51b95bdc4d48b2b3c31466002f0e36aec1e1315f54079faed084a440e1ef91ac267fdcedc313bd4e6dd0eac81afdd4a7a6e16db162e9",
+      "side": "both",
+      "category": "lib",
+      "dependencyOf": null,
+      "deps": [],
+      "downloaded": "yes"
+    }
+  ]
+}
