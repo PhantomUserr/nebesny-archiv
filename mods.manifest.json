@@ -576,7 +576,8 @@
     {
       "slug": "jei",
       "side": "both",
-      "category": "qol"
+      "category": "qol",
+      "version": "19.70.0.469"
     },
     {
       "slug": "jade",
@@ -630,11 +631,6 @@
     },
     {
       "slug": "observable",
-      "side": "both",
-      "category": "qol"
-    },
-    {
-      "slug": "chunky",
       "side": "both",
       "category": "qol"
     },

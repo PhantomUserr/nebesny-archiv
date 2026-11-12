@@ -702,11 +702,6 @@ hash = "dc4e8cf1e194a0de8f7cd4cbc5c5fb2e50cfcc06aca5f3b17dce7b4c00d2fbbe"
 metafile = true
 
 [[files]]
-file = "mods/chunky.pw.toml"
-hash = "a8f576f5bdc4947751eca5934346347ecb3f6d17e82bd5ee95568b8ae534bf2c"
-metafile = true
-
-[[files]]
 file = "mods/citadel-1.21.1-port.pw.toml"
 hash = "bffa06db7aa84a22805ea26331168d12a367f8ca8de81d647ced182bd6bd0fa2"
 metafile = true
@@ -1145,7 +1140,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "492fca2e4352c5950e9083f0b027aa2abc8bf8bd3f1e52f5c2b2cb73d828fa0b"
+hash = "03a4aa3ce31ca42f8fa09641b2447f6e6ff190d00e23d44a4b18f5f5586595a1"
 metafile = true
 
 [[files]]
