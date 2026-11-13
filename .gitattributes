@@ -1,0 +1,5 @@
+# Shell-скрипты едут на Linux-машину — держим LF, иначе bash ругается
+# на «/usr/bin/env bash^M».
+*.sh text eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
