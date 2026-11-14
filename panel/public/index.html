@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MCPanel — панель серверов</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- ================= вход ================= -->
+  <div id="login" class="login hidden">
+    <form class="login-card" id="loginForm" autocomplete="on">
+      <div class="login-logo">▦</div>
+      <h1>MCPanel</h1>
+      <p class="muted">панель серверов</p>
+      <input id="loginPassword" type="password" placeholder="Пароль панели" autocomplete="current-password" required>
+      <button type="submit" class="btn primary wide">Войти</button>
+      <div id="loginError" class="form-error"></div>
+      <p class="hint">Пароль по умолчанию: <code>nebesny2026</code><br>Смените его в «Настройках».</p>
+    </form>
+  </div>
+
+  <!-- ================= приложение ================= -->
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">▦</div>
+        <div class="brand-text">
+          <b id="brandName">MCPanel</b>
+          <small id="brandTagline">панель серверов</small>
+        </div>
+      </div>
+
+      <div class="server-picker">
+        <label for="serverSelect">Сервер</label>
+        <select id="serverSelect">
+          <option value="">— не выбран —</option>
+        </select>
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <button class="nav-item active" data-view="desk"><span>🗂</span> Рабочий стол</button>
+        <button class="nav-item" data-view="overview"><span>📊</span> Обзор</button>
+        <button class="nav-item" data-view="console"><span>🖥</span> Консоль</button>
+        <button class="nav-item" data-view="players"><span>👥</span> Игроки</button>
+        <button class="nav-item" data-view="files"><span>📁</span> Файлы</button>
+        <button class="nav-item" data-view="mods"><span>🧩</span> Моды</button>
+        <button class="nav-item" data-view="backups"><span>💾</span> Бэкапы</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> Настройки</button>
+      </nav>
+
+      <div class="side-foot">
+        <div class="side-state">
+          <span id="sideDot" class="dot"></span>
+          <span id="sideState">нет сервера</span>
+        </div>
+        <button id="logoutBtn" class="btn tiny ghost" type="button">Выйти</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-title">
+          <h2 id="viewTitle">Рабочий стол</h2>
+          <div class="muted" id="viewSub">Все серверы на этой машине</div>
+        </div>
+        <div class="actions" id="topActions"></div>
+      </header>
+
+      <!-- ---------- рабочий стол ---------- -->
+      <section id="view-desk" class="view">
+        <div id="hostStats" class="hostbar"></div>
+        <div class="section-head">
+          <div>
+            <h3>Серверы</h3>
+            <div class="muted small" id="serversHint">—</div>
+          </div>
+          <button id="addServerBtn" class="btn primary" type="button">+ Добавить сервер</button>
+        </div>
+        <div id="serverCards" class="server-grid"></div>
+      </section>
+
+      <!-- ---------- обзор ---------- -->
+      <section id="view-overview" class="view hidden">
+        <div id="overviewStats" class="grid"></div>
+        <div class="two-col">
+          <div class="card">
+            <div class="card-head">
+              <span>Последние действия</span>
+              <button class="link" type="button" data-goto="console">Консоль →</button>
+            </div>
+            <div id="activityList" class="activity"><div class="empty">Загрузка…</div></div>
+          </div>
+          <div class="card">
+            <div class="card-head">
+              <span>Мини-лог</span>
+              <span class="dot live"></span>
+            </div>
+            <div id="miniLog" class="mini-log"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><span>Быстрые действия</span></div>
+          <div class="quick" id="quickActions">
+            <button class="btn ghost" type="button" data-quick="backup">💾 Бэкап мира</button>
+            <button class="btn ghost" type="button" data-quick="files">📁 Файлы</button>
+            <button class="btn ghost" type="button" data-quick="mods">🧩 Моды</button>
+            <button class="btn ghost" type="button" data-quick="restart">⟳ Перезапустить</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- консоль ---------- -->
+      <section id="view-console" class="view hidden">
+        <div class="card console-card">
+          <div class="console-head">
+            <div class="console-title"><span class="dot live"></span> Консоль сервера</div>
+            <div class="console-tools">
+              <label class="check"><input type="checkbox" id="autoscroll" checked> автопрокрутка</label>
+              <button class="btn tiny ghost" id="clearLog" type="button">Очистить</button>
+              <a class="btn tiny ghost" id="downloadLog" href="#" download>Скачать лог</a>
+            </div>
+          </div>
+          <div class="console-body" id="console"></div>
+          <form class="console-input" id="commandForm" autocomplete="off">
+            <input id="command" placeholder="Команда: list, say Привет, tps…" autocomplete="off">
+            <button class="btn primary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ---------- игроки ---------- -->
+      <section id="view-players" class="view hidden">
+        <div class="card">
+          <div class="card-head">
+            <span>Игроки онлайн</span>
+            <span class="pill" id="playerCount">—</span>
+          </div>
+          <div id="onlinePlayers" class="players"><div class="empty">Загрузка…</div></div>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <div class="card-head"><span>Белый список</span><span class="pill" id="wlCount">0</span></div>
+            <form class="inline-form" data-access-form="whitelist">
+              <input name="name" placeholder="Ник" maxlength="16" autocomplete="off">
+              <button class="btn tiny primary" type="submit">Добавить</button>
+            </form>
+            <div id="whitelistList" class="access-list"></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><span>Операторы</span><span class="pill" id="opCount">0</span></div>
+            <form class="inline-form" data-access-form="ops">
+              <input name="name" placeholder="Ник" maxlength="16" autocomplete="off">
+              <button class="btn tiny primary" type="submit">Добавить</button>
+            </form>
+            <div id="opsList" class="access-list"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><span>Забаненные</span><span class="pill" id="banCount">0</span></div>
+          <form class="inline-form" data-access-form="banned">
+            <input name="name" placeholder="Ник" maxlength="16" autocomplete="off">
+            <button class="btn tiny danger" type="submit">Забанить</button>
+          </form>
+          <div id="bannedList" class="access-list"></div>
+        </div>
+      </section>
+
+      <!-- ---------- файлы ---------- -->
+      <section id="view-files" class="view hidden">
+        <div class="card files-card">
+          <div class="files-toolbar">
+            <div id="crumbs" class="crumbs"></div>
+            <div class="files-tools">
+              <button class="btn tiny ghost" id="filesUp" type="button" title="Наверх">↑ Наверх</button>
+              <button class="btn tiny ghost" id="filesRefresh" type="button">⟳</button>
+              <button class="btn tiny ghost" id="filesMkdir" type="button">+ Папка</button>
+              <button class="btn tiny primary" id="filesUploadBtn" type="button">↑ Загрузить</button>
+              <input type="file" id="filesInput" class="hidden" multiple>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th>Имя</th><th class="col-size">Размер</th><th class="col-date">Изменён</th><th class="col-actions"></th></tr>
+              </thead>
+              <tbody id="filesBody">
+                <tr><td colspan="4" class="empty">Загрузка…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- моды ---------- -->
+      <section id="view-mods" class="view hidden">
+        <div class="card">
+          <div class="mods-head">
+            <div class="search">
+              <input id="modSearch" placeholder="Поиск по названию…" autocomplete="off">
+            </div>
+            <div class="mods-actions">
+              <span class="pill" id="modCount">—</span>
+              <button class="btn tiny primary" id="modsUploadBtn" type="button">↑ Загрузить .jar</button>
+              <input type="file" id="modsInput" accept=".jar" class="hidden">
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th>Мод</th><th class="col-size">Размер</th><th class="col-date">Изменён</th><th class="col-actions"></th></tr>
+              </thead>
+              <tbody id="modsBody">
+                <tr><td colspan="4" class="empty">Загрузка…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- бэкапы ---------- -->
+      <section id="view-backups" class="view hidden">
+        <div class="card">
+          <div class="card-head">
+            <span>Бэкапы</span>
+            <div class="backup-tools">
+              <button class="btn tiny ghost" data-backup="world" type="button">💾 Мир</button>
+              <button class="btn tiny ghost" data-backup="config" type="button">⚙ Конфиги</button>
+              <button class="btn tiny ghost" data-backup="full" type="button">📦 Полный</button>
+            </div>
+          </div>
+          <div id="backupBanner" class="banner hidden"></div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th>Файл</th><th>Тип</th><th class="col-size">Размер</th><th class="col-date">Создан</th><th class="col-actions"></th></tr>
+              </thead>
+              <tbody id="backupsBody">
+                <tr><td colspan="5" class="empty">Загрузка…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <form class="card" id="scheduleForm">
+          <div class="card-head"><span>Автоматические бэкапы</span></div>
+          <div class="settings-grid">
+            <label class="check-field"><input type="checkbox" name="enabled"> Включено</label>
+            <label class="field"><span>Каждые, часов</span><input type="number" name="everyHours" min="1" max="168"></label>
+            <label class="field"><span>Хранить автобэкапов</span><input type="number" name="keep" min="1" max="50"></label>
+            <label class="field"><span>Что сохранять</span>
+              <select name="scope">
+                <option value="world">Мир</option>
+                <option value="config">Конфиги</option>
+                <option value="full">Полный</option>
+              </select>
+            </label>
+          </div>
+          <div class="settings-foot">
+            <button class="btn primary" type="submit">Сохранить расписание</button>
+            <span class="muted">Проверка раз в 10 минут. Автобэкапы помечаются «auto».</span>
+          </div>
+        </form>
+      </section>
+
+      <!-- ---------- настройки ---------- -->
+      <section id="view-settings" class="view hidden">
+        <form class="card settings" id="settingsForm">
+          <div class="card-head">
+            <span>server.properties</span>
+            <span class="muted small">изменения применятся после перезапуска</span>
+          </div>
+          <div id="settingsFields" class="settings-grid"><div class="empty">Загрузка…</div></div>
+          <div class="settings-foot">
+            <button class="btn primary" type="submit">Сохранить настройки</button>
+          </div>
+        </form>
+
+        <form class="card settings" id="jvmForm">
+          <div class="card-head"><span>Память Java</span></div>
+          <div class="settings-grid">
+            <label class="field"><span>Минимум (-Xms)</span><input name="min" placeholder="3G" pattern="\d{1,4}[MG]"></label>
+            <label class="field"><span>Максимум (-Xmx)</span><input name="max" placeholder="4G" pattern="\d{1,4}[MG]"></label>
+          </div>
+          <div class="settings-foot">
+            <button class="btn primary" type="submit">Сохранить память</button>
+            <span class="muted">Меняется в start-server.sh. Требуется перезапуск.</span>
+          </div>
+        </form>
+
+        <form class="card settings" id="passwordForm">
+          <div class="card-head"><span>Пароль панели</span></div>
+          <div class="settings-grid">
+            <label class="field"><span>Текущий пароль</span><input name="current" type="password" autocomplete="current-password"></label>
+            <label class="field"><span>Новый пароль</span><input name="next" type="password" autocomplete="new-password"></label>
+            <label class="field"><span>Повторите новый</span><input name="repeat" type="password" autocomplete="new-password"></label>
+          </div>
+          <div class="settings-foot">
+            <button class="btn primary" type="submit">Сменить пароль</button>
+          </div>
+        </form>
+
+        <div class="card danger-zone">
+          <div class="card-head"><span>Убрать сервер из панели</span></div>
+          <p class="muted">Сервер исчезнет из MCPanel, но его файлы, служба и миры на диске останутся нетронутыми.</p>
+          <button class="btn danger" id="removeServerBtn" type="button">Убрать «<span id="removeServerName">сервер</span>» из панели</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="modalRoot" class="modal-root hidden">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <span id="modalTitle">—</span>
+        <button class="modal-x" type="button" data-modal-close aria-label="Закрыть">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-foot" id="modalFoot"></div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

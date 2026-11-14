@@ -12,10 +12,11 @@
 set -euo pipefail
 
 TARGET_DIR="${1:-$HOME/nebesny-archiv}"
-PACK_URL="$(head -n 1 "$(dirname "$0")/../server/pack-url.txt" 2>/dev/null | tr -d '\r\n')"
 NEOFORGE="21.1.250"
 HERE="$(cd "$(dirname "$0")" && pwd)"
-KIT="$(cd "$HERE/.." && pwd)/server"
+KIT="$HERE"
+
+PACK_URL="$(head -n 1 "$KIT/pack-url.txt" 2>/dev/null | tr -d '\r\n' || true)"
 
 say() { printf '\n\033[1;36m==> %s\033[0m\n' "$*"; }
 die() { printf '\n\033[1;31m!!! %s\033[0m\n' "$*" >&2; exit 1; }
@@ -54,6 +55,11 @@ for f in packwiz-installer-bootstrap.jar start-server.sh user_jvm_args.txt pack-
 done
 [ -f pack-url.txt ] || printf '%s\n' "$PACK_URL" > pack-url.txt
 chmod +x start-server.sh 2>/dev/null || true
+
+# start-server.sh ищет jre/bin/java рядом с собой — подсовываем Temurin из ~/jre
+if [ -x "$HOME/jre/bin/java" ]; then
+  ln -sfn "$HOME/jre" "$TARGET_DIR/jre"
+fi
 ls -1
 
 # --- 3. NeoForge ------------------------------------------------------------

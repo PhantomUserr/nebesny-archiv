@@ -22,3 +22,11 @@ Thumbs.db
 
 # packwiz local cache
 .packwiz/
+
+# Panel runtime / deps
+panel/node_modules/
+panel/data/
+panel/.password
+panel/.secret
+panel/.env
+tools/__pycache__/

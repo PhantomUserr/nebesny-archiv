@@ -5,6 +5,10 @@ set -euo pipefail
 
 TARGET_DIR="${1:-$HOME/nebesny-archiv}"
 SERVICE="nebesny-archiv"
+# при запуске через sudo $USER = root, а сервер должен работать от владельца каталога
+RUN_USER="${SUDO_USER:-$USER}"
+RUN_HOME="$(getent passwd "$RUN_USER" | cut -d: -f6)"
+[ -n "$RUN_HOME" ] || RUN_HOME="$HOME"
 
 [ -f "$TARGET_DIR/start-server.sh" ] || { echo "!!! нет $TARGET_DIR/start-server.sh"; exit 1; }
 
@@ -17,8 +21,9 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=$USER
+User=$RUN_USER
 WorkingDirectory=$TARGET_DIR
+Environment=HOME=$RUN_HOME
 ExecStart=/bin/bash $TARGET_DIR/start-server.sh
 Restart=on-failure
 RestartSec=15
@@ -36,7 +41,7 @@ EOF
 echo "==> включаем"
 systemctl daemon-reload
 systemctl enable "$SERVICE"
-loginctl enable-linger "$USER" 2>/dev/null || true
+loginctl enable-linger "$RUN_USER" 2>/dev/null || true
 
 echo "==> firewall"
 if command -v ufw >/dev/null 2>&1; then

@@ -1,0 +1,17 @@
+{
+  "name": "mcpanel",
+  "version": "2.0.0",
+  "private": true,
+  "description": "MCPanel — web control panel for multiple Minecraft servers",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "rcon-client": "^4.2.5"
+  }
+}
